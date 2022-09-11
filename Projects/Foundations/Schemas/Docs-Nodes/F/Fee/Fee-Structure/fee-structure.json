@@ -1,0 +1,228 @@
+{
+    "type": "Fee Structure",
+    "definition": {
+        "text": "The fee structure is a parameter fundamental to the calculation of fees, both in testing and live trading sessions.",
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Fee Structure является параметром, основополагающим для расчета комиссий как во время тестирования, так и во время торговых сессий.",
+                "updated": 1638962976222
+            },
+            {
+                "language": "DE",
+                "text": "Die fee structure (Gebührenstruktur) ist ein grundlegender Parameter für die Berechnung der fees (Gebühren), sowohl bei Test- als auch bei live trading sessions",
+                "updated": 1639768099432
+            },
+            {
+                "language": "TR",
+                "text": "Ücret yapısı, hem test hem de canlı işlem seanslarında ücretlerin hesaplanmasında temel bir parametredir.",
+                "updated": 1654418959896
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content"
+        },
+        {
+            "style": "Text",
+            "text": "Exchange fees are a crucial part of trading. A strategy may work like a charm when you leave fees out of the equation but would lead you to bankruptcy in a live trading situation.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Биржевые комисси - важная часть торговли. Стратегия может отработать прибыльно, когда вы исключите комиссию из уравнения, но в реальной торговой ситуации она приведет вас к банкротству.",
+                    "updated": 1638963085832
+                },
+                {
+                    "language": "DE",
+                    "text": "Exchange fees (Börsengebühren) sind ein wesentlicher Bestandteil des trading (Handels). Eine Strategie kann sehr gut funktionieren, wenn man die Gebühren außer Acht lässt, aber in einer realen trading situation würde sie zum Bankrott führen.",
+                    "updated": 1639768315255
+                },
+                {
+                    "language": "TR",
+                    "text": "Borsa ücretleri ticaretin çok önemli bir parçasıdır. Bir strateji, ücretleri denklemin dışında bıraktığınızda bir cazibe gibi çalışabilir, ancak canlı bir ticaret durumunda sizi iflasa götürecektir.",
+                    "updated": 1654418966252,
+                    "style": "Text"
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": "Exchanges don't usually report the amount charged in fees on each transaction, thus, the system calculates fees and subtract them from balances. Learn more about the handling of fees.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Биржи обычно не сообщают сумму комиссий по каждой транзакции, поэтому система рассчитывает комиссию и вычитает ее из балансов. Узнайте больше об обработке комиссий.",
+                    "updated": 1638963192716
+                },
+                {
+                    "language": "TR",
+                    "text": "Borsalar genellikle her işlemde alınan ücret miktarını bildirmez, bu nedenle sistem ücretleri hesaplar ve bakiyelerden çıkarır. Ücretlerin işlenmesi hakkında daha fazla bilgi edinin.",
+                    "updated": 1654418971920,
+                    "style": "Text"
+                }
+            ]
+        },
+        {
+            "style": "Important",
+            "text": "The accuracy of the internal account-keeping depends on this parameter. Make sure you obtain the correct fee structure from the exchange corresponding to the tier of your account.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "От этого параметра зависит точность ведения внутреннего учета. Убедитесь, что вы получили правильную структуру комиссий от биржи, соответствующую уровню вашей учетной записи.",
+                    "updated": 1638963227924
+                },
+                {
+                    "language": "DE",
+                    "text": "Die Genauigkeit der internen Kontoführung hängt von diesem Parameter ab. Vergewissern Sie sich, dass Sie die richtige Gebührenstruktur (fee structure) von der Börse erhalten, die der Stufe Ihres Kontos entspricht.",
+                    "updated": 1639768752508
+                },
+                {
+                    "language": "TR",
+                    "text": "Dahili hesap tutmanın doğruluğu bu parametreye bağlıdır. Hesabınızın kademesine karşılık gelen borsadan doğru ücret yapısını aldığınızdan emin olun.",
+                    "updated": 1654418977620,
+                    "style": "Important"
+                }
+            ]
+        },
+        {
+            "style": "Block",
+            "text": "Configuring",
+            "updated": 1610120917432
+        },
+        {
+            "style": "Title",
+            "text": "Fee Structure Configuration",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Конфмгурация Fee Structure",
+                    "updated": 1638963247347
+                },
+                {
+                    "language": "DE",
+                    "text": "Fee Structure Konfiguration",
+                    "updated": 1639768765120
+                },
+                {
+                    "language": "TR",
+                    "text": "Ücret Yapısı Yapılandırması",
+                    "updated": 1654418983942,
+                    "style": "Title"
+                }
+            ]
+        },
+        {
+            "style": "Subtitle",
+            "text": "Properties",
+            "updated": 1609676653644,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Свойства",
+                    "updated": 1638963255764
+                },
+                {
+                    "language": "DE",
+                    "text": "Eigenschaften:",
+                    "updated": 1639768788960
+                },
+                {
+                    "language": "TR",
+                    "text": "Özellikler",
+                    "updated": 1654418990008,
+                    "style": "Subtitle"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "maker is the setting for the fee the exchange charges when an order adds liquidity to the market, such as with limit orders.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "maker - это настройка комиссии, взимаемой биржей, когда ордер добавляет ликвидности на рынок, например, с лимитными ордерами.",
+                    "updated": 1638963307124
+                },
+                {
+                    "language": "DE",
+                    "text": "maker ist die EInstellung für die Gebühr, die die Börse erhebt, wenn ein Auftrag dem Markt Liquidität zuführt, z. B. bei limit orders (Limitaufträgen).",
+                    "updated": 1639768906785
+                },
+                {
+                    "language": "TR",
+                    "text": "maker, limitli emirlerde olduğu gibi, bir emir piyasaya likidite kattığında borsanın aldığı ücretin ayarıdır.",
+                    "updated": 1654418995971,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "taker is the setting for the fee the exchange charges when an order takes liquidity from the market, such as with market or instant orders.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "taker - это настройка комиссии, взимаемой биржей, когда ордер забирает ликвидность с рынка, например, с рыночными или мгновенными ордерами.",
+                    "updated": 1638963299251
+                },
+                {
+                    "language": "DE",
+                    "text": "taker ist die Einstellung für die Gebühr, die die Börse erhebt, wenn ein Auftrag dem Markt Liquidität entzieht, z. B. bei market (Markt)- oder instant orders (Sofortaufträgen).",
+                    "updated": 1639769024374
+                },
+                {
+                    "language": "TR",
+                    "text": "taker, piyasa veya anlık emirlerde olduğu gibi, bir emir piyasadan likidite aldığında borsanın aldığı ücretin ayarıdır.",
+                    "updated": 1654419002465,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "Note",
+            "text": "If the fee structure parameter is left empty or detached both from your session and your trading system, fees are not computed during simulations.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Если параметр структуры комиссионных оставлен пустым или отключен как от вашей сессии, так и от вашей торговой системы, комиссии не вычисляются во время симулирования.",
+                    "updated": 1638963356875
+                },
+                {
+                    "language": "DE",
+                    "text": "Wenn der Parameter für die Gebührenstruktur leer gelassen oder sowohl von Ihrer Sitzung als auch von Ihrem Handelssystem abgetrennt wird, werden die Gebühren während der Simulationen nicht berechnet.",
+                    "updated": 1639769068096
+                },
+                {
+                    "language": "TR",
+                    "text": "Ücret yapısı parametresi boş bırakılırsa veya hem oturumunuzdan hem de yatırım sisteminizden ayrılırsa, simülasyonlar sırasında ücretler hesaplanmaz.",
+                    "updated": 1654419008825,
+                    "style": "Note"
+                }
+            ]
+        },
+        {
+            "style": "Important",
+            "text": "Remember that, for the time being, and until the new execution engine is released, all orders placed by the trading bot are market orders, thus, the taker fee applies in all cases.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Помните, что на данный момент и до тех пор, пока не будет выпущен новый механизм исполнения, все ордера, размещенные торговым ботом, являются рыночными ордерами, поэтому во всех случаях применяется комиссия тейкера (taker).",
+                    "updated": 1638963519307
+                },
+                {
+                    "language": "DE",
+                    "text": "Denken Sie daran, dass bis zur Freigabe des neuen execution engine (Ausführungsengine) alle vom Trading Bot erteilten Aufträge(orders) Marktaufträge sind und daher in allen Fällen die taker-Gebühr gilt.",
+                    "updated": 1639769450557
+                },
+                {
+                    "language": "TR",
+                    "text": "Şu an için ve yeni yürütme motoru piyasaya sürülene kadar, ticaret botu tarafından verilen tüm emirlerin piyasa emri olduğunu ve bu nedenle alıcı ücretinin her durumda geçerli olduğunu unutmayın.",
+                    "updated": 1654419015658,
+                    "style": "Important"
+                }
+            ]
+        }
+    ]
+}

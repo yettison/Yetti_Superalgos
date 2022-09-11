@@ -1,0 +1,92 @@
+{
+    "type": "API Path Parameters",
+    "definition": {
+        "text": "API Path Parameters are embedded as part of an URL path. They allow you to specify the unique path to your endpoint.",
+        "updated": 1622771530317,
+        "translations": [
+            {
+                "language": "RU",
+                "text": "API Path Parameters встроены как часть пути URL. Они позволяют указать уникальный путь к вашей конечной точке.",
+                "updated": 1638628818802
+            },
+            {
+                "language": "TR",
+                "text": "API Yol Parametreleri bir URL yolunun parçası olarak gömülür. Uç noktanıza giden benzersiz yolu belirtmenizi sağlarlar.",
+                "updated": 1654391366972
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Title",
+            "text": "How to identify API Path Parameters",
+            "updated": 1622772536805,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Как определить API Path Parameters",
+                    "updated": 1638628858672
+                },
+                {
+                    "language": "TR",
+                    "text": "API Yol Parametreleri nasıl belirlenir",
+                    "updated": 1654391373130,
+                    "style": "Title"
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": "The API you are trying to map should have it's API Path Parameters documented. If not, check any examples they may provide for how to request the data and see if there are inner folders below the main folder of the API Enpoint. Each one of these folders are an API Path Parameter that needs to be defined.",
+            "updated": 1622772590217,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "API, который вы пытаетесь сопоставить, должен иметь задокументированные параметры пути API. Если нет, проверьте любые примеры, которые они могут предоставить для запроса данных, и посмотрите, есть ли внутренние папки под основной папкой API Enpoint. Каждая из этих папок представляет собой параметр пути к API, который необходимо определить.",
+                    "updated": 1638628888293
+                },
+                {
+                    "language": "TR",
+                    "text": "Eşlemeye çalıştığınız API'nin API Yolu Parametreleri belgelenmiş olmalıdır. Değilse, verilerin nasıl talep edileceğine dair sağlayabilecekleri örnekleri kontrol edin ve API Enpoint'in ana klasörünün altında iç klasörler olup olmadığına bakın. Bu klasörlerin her biri tanımlanması gereken bir API Yolu Parametresidir.",
+                    "updated": 1654391378856,
+                    "style": "Text"
+                }
+            ]
+        },
+        {
+            "style": "Success",
+            "text": "As with everything else in Superalgos, node children are considered clockwise. This is important because it will affect the order in which Superalgos builds the URL request you will send to the API.",
+            "updated": 1622773291926,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Как и во всем остальном в Superalgos, дочерние узлы рассматриваются по часовой стрелке. Это важно, потому что это повлияет на порядок, в котором Superalgos создает URL-запрос, который вы отправите в API.",
+                    "updated": 1638628966941
+                },
+                {
+                    "language": "TR",
+                    "text": "Superalgos'taki diğer her şeyde olduğu gibi, düğüm çocukları saat yönünde kabul edilir. Bu önemlidir çünkü Superalgos'un API'ye göndereceğiniz URL isteğini oluşturma sırasını etkileyecektir.",
+                    "updated": 1654391385778,
+                    "style": "Success"
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": ""
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Topic->Data Mining - Fetching Data From APIs->Main Workflow",
+            "updated": 1621951167309,
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Foundations->Topic->Data Mining - API'lerden Veri Getirme->Ana İş Akışı",
+                    "updated": 1654391391261,
+                    "style": "Include"
+                }
+            ]
+        }
+    ]
+}

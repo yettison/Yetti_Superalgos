@@ -1,0 +1,32 @@
+{
+    "topic": "User Profile",
+    "pageNumber": 6,
+    "type": "Community Building Programs Intro",
+    "definition": {
+        "text": "Help us build a strong and healthy Community!",
+        "updated": 1630494969779,
+        "translations": [
+            {
+                "language": "ES",
+                "text": "Ayúdanos a construir una comunidad  (Community) fuerte y saludable!",
+                "updated": 1640959012632
+            },
+            {
+                "language": "TR",
+                "text": "Özet: Güçlü ve sağlıklı bir Topluluk ( Community ) oluşturmamıza yardım edin!",
+                "updated": 1646302238163
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Include",
+            "text": "Governance->Node->Community Building Programs->Definition",
+            "updated": 1630495003728
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Node->Community Building Programs->Content"
+        }
+    ]
+}

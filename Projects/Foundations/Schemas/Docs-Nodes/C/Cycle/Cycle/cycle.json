@@ -1,0 +1,77 @@
+{
+    "type": "Cycle",
+    "definition": {
+        "text": "The trading bot performs its duties in regards to exchange orders and accounts in two consecutive cycles for each candle.",
+        "translations": [
+            {
+                "language": "ES",
+                "text": "The trading bot realiza sus funciones con respecto las órdenes del exchange y cuentas en dos ciclos consecutivos para cada vela.",
+                "updated": 1624457112696
+            },
+            {
+                "language": "RU",
+                "text": "Торговый бот выполняет свои обязанности в отношении биржевых ордеров и счетов в два последовательных цикла для каждой свечи.",
+                "updated": 1637596581446
+            },
+            {
+                "language": "TR",
+                "text": "Ticaret botu, her mum için birbirini izleyen iki döngüde emir ve hesap alışverişi ile ilgili görevlerini yerine getirir.",
+                "updated": 1652799612808
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content"
+        },
+        {
+            "style": "Text",
+            "text": "In the first cycle, it checks the status of orders at the exchange, synchronizes the accounts, and verifies if conditions to place new orders are met.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "В первом цикле он проверяет статус ордеров на бирже, синхронизирует счета и проверяет, выполняются ли условия для размещения новых ордеров.",
+                    "updated": 1638649170403
+                },
+                {
+                    "language": "TR",
+                    "text": "İlk döngüde, borsadaki emirlerin durumunu kontrol eder, hesapları senkronize eder ve yeni emir verme koşullarının karşılanıp karşılanmadığını doğrular.",
+                    "updated": 1652799621731
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": "In the second cycle, it creates the orders at the exchange, provided conditions where met on the previous cycle.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Во втором цикле он создает ордера на бирже при условии, что выполнялись условия в предыдущем цикле.",
+                    "updated": 1638649186261
+                },
+                {
+                    "language": "TR",
+                    "text": "İkinci döngüde, bir önceki döngüde karşılanan koşullar sağlanarak borsada emirleri oluşturur.",
+                    "updated": 1652799629932
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": "The two possible values for the cycle node are First and Second.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Два возможных значения для узла цикла - Первое и Второе.",
+                    "updated": 1638649219103
+                },
+                {
+                    "language": "TR",
+                    "text": "Döngü düğümü için iki olası değer Birinci ve İkinci'dir.",
+                    "updated": 1652799637499
+                }
+            ]
+        }
+    ]
+}

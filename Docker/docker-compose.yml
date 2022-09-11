@@ -4,13 +4,16 @@ services:
     build: 
       context: ..
       dockerfile: ./Docker/Dockerfile
-    image: superalgos
+    image: ghcr.io/superalgos/superalgos:latest
     command: ["minMemo"]
+    user: "$UID:$GID"
     ports:
       - '34248:34248'
       - '18041:18041'
     volumes:
-      - ../Data-Storage:/app/Data-Storage
-      - ../Log-Files:/app/Log-Files
-      - ../My-Workspaces:/app/My-Workspaces
+      - ./My-Data-Storage:/app/Platform/My-Data-Storage
+      - ./My-Log-Files:/app/Platform/My-Log-Files
+      - ./My-Workspaces:/app/Platform/My-Workspaces
+      - ./My-Network-Nodes-Data:/app/Platform/My-Network-Nodes-Data
+      - ./My-Social-Trading-Data:/app/Platform/My-Social-Trading-Data
     restart: on-failure

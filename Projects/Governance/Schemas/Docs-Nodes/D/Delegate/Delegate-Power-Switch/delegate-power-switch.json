@@ -1,0 +1,98 @@
+{
+    "type": "Delegate Power Switch",
+    "definition": {
+        "text": "Use this switch as an organizational device, and spawn User Delegate nodes.",
+        "updated": 1630421941682,
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Используйте этот переключатель в качестве организационного устройства и создавайте узлы делегирования User Delegate.",
+                "updated": 1639139926960
+            },
+            {
+                "language": "TR",
+                "text": "Bu anahtarı bir organizasyon cihazı olarak kullanın ve Kullanıcı Temsilcisi düğümleri oluşturun.",
+                "updated": 1654394679046
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content",
+            "updated": 1630421951903
+        },
+        {
+            "style": "Text",
+            "text": "You may use this switch for two different purposes:",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Вы можете использовать этот переключатель для двух разных целей:",
+                    "updated": 1639139938164
+                },
+                {
+                    "language": "TR",
+                    "text": "Bu anahtarı iki farklı amaç için kullanabilirsiniz:",
+                    "updated": 1654394685016,
+                    "style": "Text"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "As an organizational device: You may create arbitrary arrangements, spawning more switches and User Delegate nodes.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "В качестве организационного устройства: вы можете создавать произвольные схемы, порождая больше переключателей и узлов User Delegate.",
+                    "updated": 1639139991779
+                },
+                {
+                    "language": "TR",
+                    "text": "Organizasyonel bir araç olarak: Daha fazla anahtar ve Kullanıcı Temsilcisi düğümü oluşturarak rastgele düzenlemeler oluşturabilirsiniz.",
+                    "updated": 1654394691717,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "As a switch: You may control the flow of Delegate Power, pretty much like with a Token Power Switch, but within the Delegation Program. If you need a reminder, read about how Token Power Flows.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "В качестве переключателя: вы можете управлять потоком Delegate Power, во многом как с помощью Token Power Switch, но в рамках программы Delegation Program. Если вам нужно напоминание, прочитайте пояснения Token Power Flow.",
+                    "updated": 1639140099455
+                },
+                {
+                    "language": "TR",
+                    "text": "Anahtar olarak: Delege Gücünün akışını, tıpkı bir Token Güç Anahtarında olduğu gibi, ancak Delegasyon Programı içinde kontrol edebilirsiniz. Hatırlatmaya ihtiyacınız varsa, Token Gücünün nasıl Aktığını okuyun.",
+                    "updated": 1654394697676,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "Block",
+            "text": "Configuration"
+        },
+        {
+            "style": "Title",
+            "text": "Configuration",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Конфигурация",
+                    "updated": 1639140110873
+                },
+                {
+                    "language": "TR",
+                    "text": "Konfigürasyon",
+                    "updated": 1654394703940,
+                    "style": "Title"
+                }
+            ]
+        }
+    ]
+}

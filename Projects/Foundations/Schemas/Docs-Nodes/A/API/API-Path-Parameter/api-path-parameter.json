@@ -1,0 +1,214 @@
+{
+    "type": "API Path Parameter",
+    "definition": {
+        "text": "A path parameter defines the unique path to your endpoint. \nFor a full description of how to identify a path parameter see the API Path Parameters page.",
+        "updated": 1622774607176,
+        "translations": [
+            {
+                "language": "RU",
+                "text": "API Path Parameter определяет уникальный путь к вашей конечной точке.\nПолное описание параметров смотрите на странице API Path Parameters.",
+                "updated": 1638627806353
+            },
+            {
+                "language": "TR",
+                "text": "Yol parametresi, uç noktanıza giden benzersiz yolu tanımlar. \nBir yol parametresinin nasıl tanımlanacağına ilişkin tam açıklama için API Yol Parametreleri sayfasına bakın.",
+                "updated": 1654391294315
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Text",
+            "text": "A path parameter can be a fixed string of text defined at an API Path Parameter node, or it can be dynamically replaced by the API Fetcher Bot for a value generated at runtime.",
+            "updated": 1622772709866,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Параметр пути может быть фиксированной строкой текста, определенной в узле API Path Parameter, или он может быть динамически заменен ботом API Fetcher Bot, созданного во время выполнения.",
+                    "updated": 1638627892835
+                },
+                {
+                    "language": "TR",
+                    "text": "Bir yol parametresi, bir API Yol Parametresi düğümünde tanımlanan sabit bir metin dizesi olabilir veya çalışma zamanında oluşturulan bir değer için API Getirici Bot tarafından dinamik olarak değiştirilebilir.",
+                    "updated": 1654391300685,
+                    "style": "Text"
+                }
+            ]
+        },
+        {
+            "style": "Title",
+            "text": "API Path Parameter Configuration",
+            "updated": 1622895766034,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Конфигурация API Path Parameter",
+                    "updated": 1638627917117
+                },
+                {
+                    "language": "TR",
+                    "text": "API Yolu Parametre Yapılandırması",
+                    "updated": 1654391306984,
+                    "style": "Title"
+                }
+            ]
+        },
+        {
+            "style": "Subtitle",
+            "text": "Properties",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Свойства",
+                    "updated": 1638627924942
+                },
+                {
+                    "language": "TR",
+                    "text": "Özellikler",
+                    "updated": 1654391312985,
+                    "style": "Subtitle"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "codeName: This property holds the value used to help build the request URL.",
+            "updated": 1622773158340,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "codeName: Это свойство содержит значение, используемое для построения URL-адреса запроса.",
+                    "updated": 1638627941008
+                },
+                {
+                    "language": "TR",
+                    "text": "codeName: Bu özellik, istek URL'sinin oluşturulmasına yardımcı olmak için kullanılan değeri tutar.",
+                    "updated": 1654391318987,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "Important",
+            "text": "Be careful to write the exact string specified in the API documentation. Extra spaces, or capital letters will break the URL and cause it to return an error.",
+            "updated": 1622773133088,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Будьте внимательны, чтобы написать точную строку, указанную в документации API. Лишние пробелы или заглавные буквы нарушат URL-адрес и вызовут возврат ошибки.",
+                    "updated": 1638627956428
+                },
+                {
+                    "language": "TR",
+                    "text": "API belgelerinde belirtilen dizeyi tam olarak yazmaya dikkat edin. Ekstra boşluklar veya büyük harfler URL'yi bozacak ve hata döndürmesine neden olacaktır.",
+                    "updated": 1654391326025,
+                    "style": "Important"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "isString: Define if the path parameter is a string or not.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "isString: Определите, является ли параметр пути строкой или нет.",
+                    "updated": 1638628000984
+                },
+                {
+                    "language": "TR",
+                    "text": "isString: Yol parametresinin bir dize olup olmadığını tanımlar.",
+                    "updated": 1654391332286,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "isOptional: Define if this path parameter is optional or not.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "isOptional: Определите, является ли этот параметр пути необязательным или нет.",
+                    "updated": 1638628017695
+                },
+                {
+                    "language": "TR",
+                    "text": "isOptional: Bu yol parametresinin isteğe bağlı olup olmadığını tanımlar.",
+                    "updated": 1654391337565,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "description: Define a basic description of what this path parameter accomplishes. ",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "description: Определите базовое описание того, что выполняет этот параметр пути.",
+                    "updated": 1638628045416
+                },
+                {
+                    "language": "TR",
+                    "text": "Açıklama: Bu yol parametresinin ne yaptığına dair temel bir açıklama tanımlayın.",
+                    "updated": 1654391343597,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "replaceBy: [Optional] This property allows you to instruct the API Fetcher Bot to set a value to this parameter replacing the current default and using contextual information available only at runtime.",
+            "updated": 1622863592804,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "replaceBy: [Необязательно] Это свойство позволяет указать боту API Fetcher Bot установить значение этого параметра, заменяя текущее значение по умолчанию и используя контекстную информацию, доступную только во время выполнения.",
+                    "updated": 1638628112234
+                },
+                {
+                    "language": "TR",
+                    "text": "replaceBy: [İsteğe bağlı] Bu özellik, API Fetcher Bot'a bu parametreye geçerli varsayılanın yerine bir değer ayarlaması ve yalnızca çalışma zamanında kullanılabilen bağlamsal bilgileri kullanması talimatını vermenizi sağlar.",
+                    "updated": 1654391349013,
+                    "style": "List"
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": "Here is an example of an API Path Parameter config:",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Вот пример конфигурации параметра пути API:",
+                    "updated": 1638628129062
+                },
+                {
+                    "language": "TR",
+                    "text": "İşte bir API Yolu Parametresi yapılandırması örneği:",
+                    "updated": 1654391354978,
+                    "style": "Text"
+                }
+            ]
+        },
+        {
+            "style": "Json",
+            "text": "{\n    \"codeName\": \"currentBaseAsset\",\n    \"isString\": true,\n    \"isOptional\": false,\n    \"description\": \"Get statistics for the current base asset\",\n    \"replaceBy\": \"@BaseAssetNameLowercase\"\n}",
+            "updated": 1622774822924
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Concept->replaceBy Config Property->How To Use It",
+            "updated": 1622477440806,
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Foundations->Concept->replaceBy Config Property->Nasıl Kullanılır",
+                    "updated": 1654391360994,
+                    "style": "Include"
+                }
+            ]
+        }
+    ]
+}

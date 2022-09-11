@@ -1,0 +1,96 @@
+{
+    "type": "Close Order",
+    "definition": {
+        "text": "Counts the periods since the last time an order was closed.",
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Подсчитывает периоды с момента последнего закрытия ордера.",
+                "updated": 1638646772025
+            },
+            {
+                "language": "TR",
+                "text": "Bir siparişin en son kapatıldığından beri geçen süreyi sayar.",
+                "updated": 1652798147757
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content"
+        },
+        {
+            "style": "Text",
+            "text": "Right click and Edit to enter edit mode and change this text.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Щелкните правой кнопкой мыши и выберите Edit, чтобы войти в режим редактирования и изменить этот текст.",
+                    "updated": 1638646782055
+                },
+                {
+                    "language": "TR",
+                    "text": "Düzenleme moduna girmek ve bu metni değiştirmek için sağ tıklayın ve Düzenle.",
+                    "updated": 1652798157028
+                }
+            ]
+        },
+        {
+            "style": "Block",
+            "text": "Configuring",
+            "updated": 1609873831169
+        },
+        {
+            "style": "Title",
+            "text": "Close Order Configuration",
+            "updated": 1609925804187,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Конфигурация Close Order",
+                    "updated": 1638646797169
+                },
+                {
+                    "language": "TR",
+                    "text": "Close Order Yapılandırması",
+                    "updated": 1652798171211
+                }
+            ]
+        },
+        {
+            "style": "Subtitle",
+            "text": "Properties",
+            "updated": 1609873980538,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Сыойства",
+                    "updated": 1638646804916
+                },
+                {
+                    "language": "TR",
+                    "text": "Özellikleri",
+                    "updated": 1652798181005
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "initialValue allows resetting the initial state of the node to an arbitrary value.",
+            "updated": 1609875415147,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "initialValue позволяет сбросить начальное состояние узла на произвольное значение.",
+                    "updated": 1638646814239
+                },
+                {
+                    "language": "TR",
+                    "text": "initialValue, düğümün başlangıç ​​durumunun keyfi bir değere sıfırlanmasına izin verir.",
+                    "updated": 1652798189404
+                }
+            ]
+        }
+    ]
+}

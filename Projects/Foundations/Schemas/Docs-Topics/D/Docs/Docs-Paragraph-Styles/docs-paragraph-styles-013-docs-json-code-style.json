@@ -1,0 +1,73 @@
+{
+    "topic": "Docs Paragraph Styles",
+    "pageNumber": 13,
+    "type": "Docs JSON Code Style",
+    "definition": {
+        "text": "Use this style to format JSON code, such as the one in configs.",
+        "translations": [
+            {
+                "language": "DE",
+                "text": "Verwenden Sie diesen Stil, um JSON-Code zu formatieren, wie z. B. den Code in den configs.",
+                "updated": 1633955480601
+            },
+            {
+                "language": "RU",
+                "text": "Используйте этот стиль для форматирования кода JSON, например, в конфигурациях.",
+                "updated": 1638534175573
+            },
+            {
+                "language": "TR",
+                "text": "Yapılandırmalardaki gibi JSON kodunu biçimlendirmek için bu stili kullanın.",
+                "updated": 1652385405650
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Text",
+            "text": "Line breaks in this style are not generating new paragraphs.",
+            "translations": [
+                {
+                    "language": "DE",
+                    "text": "Zeilenumbrüche in diesem Stil erzeugen keine neuen Absätze.",
+                    "updated": 1633955498897
+                },
+                {
+                    "language": "RU",
+                    "text": "Разрывы строк в этом стиле не создают новые абзацы.",
+                    "updated": 1638534201355
+                },
+                {
+                    "language": "TR",
+                    "text": "Bu stildeki satır sonları yeni paragraflar oluşturmaz.",
+                    "updated": 1652385426887
+                }
+            ]
+        },
+        {
+            "style": "Title",
+            "text": "Example:",
+            "translations": [
+                {
+                    "language": "DE",
+                    "text": "Beispiel:",
+                    "updated": 1633955508936
+                },
+                {
+                    "language": "RU",
+                    "text": "Пример:",
+                    "updated": 1638534210572
+                },
+                {
+                    "language": "TR",
+                    "text": "Misal:",
+                    "updated": 1652385436716
+                }
+            ]
+        },
+        {
+            "style": "Json",
+            "text": "{\n    property: value\n}"
+        }
+    ]
+}

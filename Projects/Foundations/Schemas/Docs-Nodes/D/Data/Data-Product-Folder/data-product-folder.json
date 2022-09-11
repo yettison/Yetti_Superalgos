@@ -1,0 +1,41 @@
+{
+    "type": "Data Product Folder",
+    "definition": {
+        "text": "A data product folder node is an organizational device used to map the arrangement of product definition folders as may exist in the bot definition of the corresponding data or trading mine.",
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Узел Data Product Folder - это организационное устройство, используемое для сопоставления расположения папок определений продуктов, которое может существовать в определении бота соответствующих данных или Trading Mine.",
+                "updated": 1638731337275
+            },
+            {
+                "language": "TR",
+                "text": "Bir veri ürün klasörü düğümü, ilgili veri veya ticaret madeninin bot tanımında mevcut olabilecek ürün tanımı klasörlerinin düzenini eşlemek için kullanılan bir organizasyonel cihazdır.",
+                "updated": 1654391724446
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content"
+        },
+        {
+            "style": "Text",
+            "text": "The use of the data product folder node is optional, as data products may also exist outside of data product folders.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Использование узла папки продуктов данных необязательно, поскольку продукты данных могут также существовать вне папок продуктов данных.",
+                    "updated": 1638731372351
+                },
+                {
+                    "language": "TR",
+                    "text": "Veri ürünleri, veri ürünü klasörlerinin dışında da bulunabileceğinden, veri ürünü klasörü düğümünün kullanımı isteğe bağlıdır.",
+                    "updated": 1654391730341,
+                    "style": "Text"
+                }
+            ]
+        }
+    ]
+}

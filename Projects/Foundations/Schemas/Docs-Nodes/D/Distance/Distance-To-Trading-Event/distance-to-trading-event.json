@@ -1,0 +1,41 @@
+{
+    "type": "Distance To Trading Event",
+    "definition": {
+        "text": "Distance to trading event features counters indicating how many periods (candles) have passed since the last occurrence of certain events, in the context of the episode.",
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Distance To Trading Event содержит счетчики, показывающие, сколько периодов (свечей) прошло с момента последнего наступления определенных событий в контексте эпизода.",
+                "updated": 1638732349826
+            },
+            {
+                "language": "TR",
+                "text": "Alım satım olayına olan mesafe, bölüm bağlamında belirli olayların son meydana gelişinden bu yana kaç dönem (mum) geçtiğini gösteren sayaçlar içerir.",
+                "updated": 1654391966835
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content"
+        },
+        {
+            "style": "Text",
+            "text": "The information may be used from within strategies, for example, to leave a cool-down period in-between positions, to separate orders in specific intervals, or to achieve any particular logic that may require counting how much time has passed since the last time a specific event was triggered.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Информация может быть использована внутри стратегий, например, для того, чтобы оставить период охлаждения между позициями, для разделения ордеров через определенные интервалы или для достижения какой-либо конкретной логики, которая может потребовать подсчета времени, прошедшего с момента последнего срабатывания определенного события.",
+                    "updated": 1638732567345
+                },
+                {
+                    "language": "TR",
+                    "text": "Bu bilgiler, örneğin pozisyonlar arasında bir bekleme süresi bırakmak, emirleri belirli aralıklarla ayırmak veya belirli bir olayın en son tetiklenmesinden bu yana ne kadar zaman geçtiğini saymayı gerektirebilecek herhangi bir özel mantığa ulaşmak için stratejiler içinde kullanılabilir.",
+                    "updated": 1654391972703,
+                    "style": "Text"
+                }
+            ]
+        }
+    ]
+}

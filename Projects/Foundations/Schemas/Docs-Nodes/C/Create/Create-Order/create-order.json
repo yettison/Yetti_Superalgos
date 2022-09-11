@@ -1,0 +1,89 @@
+{
+    "type": "Create Order",
+    "definition": {
+        "text": "Counts the periods since the last time an order was created.",
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Подсчитывает периоды с момента последнего создания заказа.",
+                "updated": 1638648073841
+            },
+            {
+                "language": "TR",
+                "text": "Bir siparişin en son oluşturulduğu zamandan bu yana geçen süreyi sayar.",
+                "updated": 1652798680985
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Text",
+            "text": "Right click and Edit to enter edit mode and change this text. ENTER to write new paragraphs. ESC to exit edit mode.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Щелкните правой кнопкой мыши и выберите Edit, чтобы войти в режим редактирования и изменить этот текст. ENTER, чтобы написать новые абзацы. ESC для выхода из режима редактирования.",
+                    "updated": 1638648083348
+                },
+                {
+                    "language": "TR",
+                    "text": "Düzenleme moduna girmek ve bu metni değiştirmek için sağ tıklayın ve Düzenle. Yeni paragraflar yazmak için ENTER'a basın. Düzenleme modundan çıkmak için ESC.",
+                    "updated": 1652798692540
+                }
+            ]
+        },
+        {
+            "style": "Block",
+            "text": "Configuring"
+        },
+        {
+            "style": "Title",
+            "text": "Create Order Configuration",
+            "updated": 1609925746618,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Конфигурация Create Order",
+                    "updated": 1638648096602
+                },
+                {
+                    "language": "TR",
+                    "text": "Create Order Yapılandırması",
+                    "updated": 1652798701020
+                }
+            ]
+        },
+        {
+            "style": "Subtitle",
+            "text": "Properties",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Свойства",
+                    "updated": 1638648104324
+                },
+                {
+                    "language": "TR",
+                    "text": "Özellikleri",
+                    "updated": 1652798706858
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "initialValue allows resetting the initial state of the node to an arbitrary value.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "initialValue позволяет сбросить начальное состояние узла на произвольное значение.",
+                    "updated": 1638648113852
+                },
+                {
+                    "language": "TR",
+                    "text": "initialValue, düğümün başlangıç ​​durumunun keyfi bir değere sıfırlanmasına izin verir.",
+                    "updated": 1652798715249
+                }
+            ]
+        }
+    ]
+}

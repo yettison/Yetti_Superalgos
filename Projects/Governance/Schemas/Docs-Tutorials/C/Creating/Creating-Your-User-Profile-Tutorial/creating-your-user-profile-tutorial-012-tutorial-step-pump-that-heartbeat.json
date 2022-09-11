@@ -1,0 +1,75 @@
+{
+    "tutorial": "Creating Your User Profile Tutorial",
+    "pageNumber": 12,
+    "type": "Tutorial Step - Pump that Heartbeat!",
+    "definition": {
+        "text": "Let’s configure the Profile Constructor to build your profile! Click Configure on the menu and enter your GitHub username!",
+        "updated": 1660585607977,
+        "icon": {
+            "name": "configuration",
+            "project": "Governance"
+        },
+        "translations": [
+            {
+                "language": "ES",
+                "text": "Ahora configuremos el Profile Constructor para que luego podamos construir el perfil.",
+                "updated": 1630887647502,
+                "style": "Definition"
+            },
+            {
+                "language": "TR",
+                "text": "Şimdi Profil Oluşturucuyu ( Profile Constructor ) yapılandıralım, profil oluşturabilmek için önce bunu yapmalıyız.",
+                "updated": 1637242355962
+            },
+            {
+                "language": "RU",
+                "text": "Теперь давайте настроим конструктор профиля Profile Constructor, чтобы позже мы могли создать профиль!",
+                "updated": 1639047103215
+            },
+            {
+                "language": "DE",
+                "text": "Lassen Sie uns nun den Profile Constructor konfigurieren, damit wir später das Profil erstellen können!",
+                "updated": 1640073101123
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Json",
+            "text": "{\n\"githubUsername\": \"My-Awesome-Username\"\n\"mnemonic\": \"\"\n}",
+            "updated": 1629706380660
+        },
+        {
+            "style": "Success",
+            "text": "If you want to link an existing address, type its twelve-word mnemonic in the mnemonic property. Leave it blank to generate a new address! The info will not leave your computer, will not be saved to disk, and you will delete it before we finish.",
+            "updated": 1660585744897,
+            "translations": [
+                {
+                    "language": "ES",
+                    "text": "Escribe tu mnemónico de doce palabras en la propiedad mnemotécnica. ¡Deja la propiedad en blanco para generar una nueva dirección! Eliminarás esta información confidencial más adelante, no saldrá de tu computadora y no se guardará en el disco.",
+                    "updated": 1632012849405,
+                    "style": "Text"
+                },
+                {
+                    "language": "TR",
+                    "text": "Mevcut bir adresi bağlamak istiyorsanız, on iki kelimelik anımsatıcı özelliğini mnemonic kısmına yazın. Yeni bir adres oluşturmak için özelliği boş bırakın! Bu hassas bilgiyi daha sonra sileceğiz endişelenmeyin.Bu, bilgisayarınızdan başka bir yerde kullanılmayacak ve diske kaydedilmeyecektir.",
+                    "updated": 1637242473343
+                },
+                {
+                    "language": "RU",
+                    "text": "Если вы хотите связать существующий адрес, введите его мнемонику из двенадцати слов в свойстве mnemonic. Оставьте поле пустым, чтобы сгенерировать новый адрес! Позже вы удалите эту конфиденциальную информацию. Информация не уйдет с вашего компьютера и не будет сохранена на диске.",
+                    "updated": 1639047208191
+                },
+                {
+                    "language": "DE",
+                    "text": "Wenn Sie eine bestehende Adresse verknüpfen möchten, geben Sie die zwölf Wörter der Mnemonik in die Eigenschaft mnemonic ein. Lassen Sie die Eigenschaft leer, um eine neue Adresse zu erzeugen! Sie werden diese sensiblen Daten später löschen. Die Daten verlassen Ihren Computer nicht und werden nicht auf der Festplatte gespeichert.",
+                    "updated": 1640073154326
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": ""
+        }
+    ]
+}

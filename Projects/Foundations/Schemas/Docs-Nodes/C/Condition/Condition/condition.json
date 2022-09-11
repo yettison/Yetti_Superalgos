@@ -1,0 +1,216 @@
+{
+    "type": "Condition",
+    "definition": {
+        "text": "Conditions are rules within a situation. When all conditions under a situation validate true, then the situation gets validated as well, and the associated event is triggered.",
+        "translations": [
+            {
+                "language": "ES",
+                "text": "Conditions son reglas dentro de una situación. Cuando todas las condiciones de una situación se validan como verdaderas, la situación también se valida y se activa el evento asociado.",
+                "updated": 1624459710047
+            },
+            {
+                "language": "RU",
+                "text": "Condition - это правила внутри ситуации. Когда все условия в ситуации проверяются на истинность, ситуация также проверяется, и запускается соответствующее событие.",
+                "updated": 1639849525514
+            },
+            {
+                "language": "TR",
+                "text": "Koşullar, bir durum içindeki kurallardır. Bir durum altındaki tüm koşullar doğru olduğunda, durum da doğrulanır ve ilgili olay tetiklenir.",
+                "updated": 1639222523066
+            },
+            {
+                "language": "DE",
+                "text": "Bedingungen (Conditions) sind Regeln innerhalb einer Situation. Wenn alle Bedingungen einer Situation wahr sind, wird die Situation ebenfalls bestätigt und das zugehörige Ereignis wird ausgelöst.",
+                "updated": 1641636654543
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content"
+        },
+        {
+            "style": "Text",
+            "text": "Therefore, conditions are used to mathematically describe what needs to happen with the market for a certain action to be taken.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Таким образом, условия используются для математического описания того, что должно произойти с рынком для выполнения определенного действия.",
+                    "updated": 1638647845891
+                },
+                {
+                    "language": "DE",
+                    "text": "Daher werden Bedingungen verwendet, um mathematisch zu beschreiben, was auf dem Markt geschehen muss, damit eine bestimmte Aktion durchgeführt werden kann.",
+                    "updated": 1641636595695
+                },
+                {
+                    "language": "TR",
+                    "text": "Bu nedenle, belirli bir eylemin gerçekleştirilmesi için piyasada ne olması gerektiğini matematiksel olarak tanımlayacağınız yer burasıdır.",
+                    "updated": 1656054466989
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": "For example:",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Например:",
+                    "updated": 1638647858497
+                },
+                {
+                    "language": "DE",
+                    "text": "Zum Beispiel:",
+                    "updated": 1641636604669
+                }
+            ]
+        },
+        {
+            "style": "Subtitle",
+            "text": "Situation 1",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Ситуация 1",
+                    "updated": 1638647869436
+                },
+                {
+                    "language": "TR",
+                    "text": "1. Durum",
+                    "updated": 1656054479641
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "Condition A: chart.at01hs.candle.close > chart.at01hs.bollingerBand.MovingAverage",
+            "updated": 1610211782596,
+            "translations": [
+                {
+                    "language": "DE",
+                    "text": "Bedingung A: chart.at01hs.candle.close > chart.at01hs.bollingerBand.MovingAverage",
+                    "updated": 1641636671025
+                },
+                {
+                    "language": "RU",
+                    "text": "Состояние A: chart.at01hs.candle.close > chart.at01hs.bollingerBand.MovingAverage",
+                    "updated": 1647435232859
+                },
+                {
+                    "language": "TR",
+                    "text": "Koşul A: chart.at01hs.candle.close > chart.at01hs.bollingerBand.MovingAverage",
+                    "updated": 1656054485886
+                }
+            ]
+        },
+        {
+            "style": "Note",
+            "text": "This means that the latest candle at the 1 hour chart closed above the Bollinger Bands moving average.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Это означает, что последняя свеча на часовом графике закрылась выше скользящей средней полосы Боллинджера.",
+                    "updated": 1638647890361
+                },
+                {
+                    "language": "DE",
+                    "text": "Dies bedeutet, dass die letzte Kerze auf dem 1-Stunden-Chart oberhalb des gleitenden Durchschnitts der Bollinger-Bänder geschlossen hat.",
+                    "updated": 1641636786807
+                },
+                {
+                    "language": "TR",
+                    "text": "Bu, 1 saatlik grafikteki en son mumun Bollinger Bantları hareketli ortalamasının üzerinde kapandığı anlamına gelir.",
+                    "updated": 1656054509919
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "Condition B: chart.at01hs.candle.previous.max > chart.at01hs.bollingerBand.previous.MovingAverage",
+            "updated": 1610211804682,
+            "translations": [
+                {
+                    "language": "DE",
+                    "text": "Bedingung B: chart.at01hs.candle.previous.max > chart.at01hs.bollingerBand.previous.MovingAverage",
+                    "updated": 1641636717473
+                },
+                {
+                    "language": "RU",
+                    "text": "Состояние B: chart.at01hs.candle.previous.max > chart.at01hs.bollingerBand.previous.MovingAverage",
+                    "updated": 1647435240249
+                },
+                {
+                    "language": "TR",
+                    "text": "Koşul B: chart.at01hs.candle.previous.max > chart.at01hs.bollingerBand.previous.MovingAverage",
+                    "updated": 1656054518434
+                }
+            ]
+        },
+        {
+            "style": "Note",
+            "text": "This means that the maximum value of the candle before the last one, was higher than the Bollinger Bands moving average.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Это означает, что максимальное значение свечи перед последней было выше скользящей средней полосы Боллинджера.",
+                    "updated": 1638647906181
+                },
+                {
+                    "language": "DE",
+                    "text": "Das bedeutet, dass der Höchstwert der vorletzten Kerze über dem gleitenden Durchschnitt der Bollinger-Bänder lag.",
+                    "updated": 1641636773781
+                },
+                {
+                    "language": "TR",
+                    "text": "Bu, son mumdan önceki mumun maksimum değerinin Bollinger Bantları hareketli ortalamasından daha yüksek olduğu anlamına gelir.",
+                    "updated": 1656054534590
+                }
+            ]
+        },
+        {
+            "style": "Text",
+            "text": "In the example above, conditions A and B are comparison statements that may evaluate either true or false. In the case both would evaluate true then Situation 1 would be true as well.",
+            "updated": 1609595293131,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "В приведенном выше примере условия A и B представляют собой операторы сравнения, которые могут оценивать как true, так и false. В случае, если оба будут оценивать как true, то ситуация 1 также будет верной.",
+                    "updated": 1647435071578
+                },
+                {
+                    "language": "DE",
+                    "text": "Im obigen Beispiel sind die Bedingungen A und B Vergleichsaussagen, die entweder als true oder false bewertet werden können. Wenn beide wahr werden, wird auch Situation 1 wahr.",
+                    "updated": 1641636898853
+                },
+                {
+                    "language": "TR",
+                    "text": "Yukarıdaki örnekte, A ve B koşulları doğru (true) ya da yanlış (false) olarak değerlendirilebilen karşılaştırma ifadeleridir. Her ikisinin de doğru olarak değerlendirilmesi durumunda Durum 1 de doğru olacaktır.",
+                    "updated": 1656054569574
+                }
+            ]
+        },
+        {
+            "style": "Note",
+            "text": "To learn how to write conditions, start with the Syntax Overview.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Чтобы узнать, как писать условия, начните с обзора Syntax Overview.",
+                    "updated": 1638648036555
+                },
+                {
+                    "language": "DE",
+                    "text": "Um zu lernen, wie man Bedingungen schreibt, beginnen Sie mit der Syntax Overview.",
+                    "updated": 1641636947172
+                },
+                {
+                    "language": "TR",
+                    "text": "Koşulların nasıl yazılacağını öğrenmek için Sözdizimine Genel Bakış (Syntax Overview) konusuna bakabilirsiniz.",
+                    "updated": 1656054602953
+                }
+            ]
+        }
+    ]
+}

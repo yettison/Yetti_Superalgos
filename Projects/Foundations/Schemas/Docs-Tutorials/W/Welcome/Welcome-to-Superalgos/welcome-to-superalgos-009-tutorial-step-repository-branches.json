@@ -1,0 +1,146 @@
+{
+    "tutorial": "Welcome to Superalgos!",
+    "pageNumber": "9",
+    "type": "Tutorial Step - Repository Branches",
+    "definition": {
+        "text": "The Superalgos repository features two main branches: master and develop.",
+        "updated": 1636912658939,
+        "icon": {
+            "name": "github",
+            "project": "Foundations"
+        },
+        "translations": [
+            {
+                "language": "IT",
+                "text": "La repository di Superalgos ha tree branches principali: master, develop e quella che cerchiamo noi, plugins-docs.",
+                "updated": 1619633110033,
+                "style": "Definition"
+            },
+            {
+                "language": "FR",
+                "text": "L'entrepôt Superalgos comporte trois sections principales : master, develop, et celle que nous recherchons, plugins-docs.",
+                "updated": 1623952696128,
+                "style": "Definition"
+            },
+            {
+                "language": "ES",
+                "text": "El repositorio de Superalgos presenta tres ramas principales: master, develop, y el que estamos buscando, plugins-docs.",
+                "updated": 1628121680964,
+                "style": "Definition"
+            },
+            {
+                "language": "DE",
+                "text": "Das Superalgos-Repository hat zwei Hauptzweige: master und develop.",
+                "updated": 1638832363730,
+                "style": "Definition"
+            },
+            {
+                "language": "RU",
+                "text": "Репозиторий Superalgos имеет две основные ветви: master и develop.",
+                "updated": 1641802450083
+            },
+            {
+                "language": "TR",
+                "text": "Superalgos deposu iki ana dala sahiptir: Master ve Develop.",
+                "updated": 1639942169332
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "List",
+            "text": "Master Branch: features the stable version of the software. Never submit contributions to this branch!",
+            "updated": 1649176347588,
+            "translations": [
+                {
+                    "language": "IT",
+                    "text": "Master Branch: ospita l'ultima versione stabile del software. Non mandare mai contributi a questo branch!",
+                    "updated": 1619633296240,
+                    "style": "List"
+                },
+                {
+                    "language": "FR",
+                    "text": "Branche Master: Features la version stable du logiciel. Ne soumettez jamais de contributions à cette branche !",
+                    "updated": 1623952911737,
+                    "style": "List"
+                },
+                {
+                    "language": "ES",
+                    "text": "Master Branch: Es la versión estable del software. ¡Nunca envíes contribuciones a esta rama!",
+                    "updated": 1628121827428,
+                    "style": "List"
+                },
+                {
+                    "language": "DE",
+                    "text": "Master Branch: Enthält die stabile Version der Software. Reichen Sie niemals Beiträge für diesen Zweig ein!",
+                    "updated": 1634821032083,
+                    "style": "List"
+                },
+                {
+                    "language": "RU",
+                    "text": "Master Branch: Представляет собой стабильную версию программного обеспечения. Никогда не вносите вклад в эту ветвь!",
+                    "updated": 1641802631503
+                },
+                {
+                    "language": "TR",
+                    "text": "Master Branch: Yazılımın kararlı sürümünü içerir. Bu şubeye asla katkı göndermeyin!",
+                    "updated": 1639942204622
+                }
+            ]
+        },
+        {
+            "style": "List",
+            "text": "Develop Branch: features the version currently in development. Submit contributions of code affecting the codebase, translations, improvements in the Docs, tutorials, and plugins such as data mines, trading systems, and so on!",
+            "updated": 1649176354254,
+            "translations": [
+                {
+                    "language": "IT",
+                    "text": "Develop Branch: contiene la versione attualmente in sviluppo. Manda qui i contributi riguardanti la codebase.",
+                    "updated": 1619633304194,
+                    "style": "List"
+                },
+                {
+                    "language": "FR",
+                    "text": "Branche Develop : Features la version en cours de développement., pour soumettre des contributions de code affectant la base de code.",
+                    "updated": 1623953015534,
+                    "style": "List"
+                },
+                {
+                    "language": "ES",
+                    "text": "Develop Branch: Presenta la versión actualmente en desarrollo. Envía contribuciones de código que afecten al código base.",
+                    "updated": 1628121811043,
+                    "style": "List"
+                },
+                {
+                    "language": "DE",
+                    "text": "Develop Branch: Enthält die Version, die sich derzeit in der Entwicklung befindet. Reichen Sie Beiträge ein, die die Codebasis, Übersetzungen,Verbesserungen der Docs, Tutorials, plugins sowie Data-Mines, trading systems und so weiter betreffen.",
+                    "updated": 1638831914823,
+                    "style": "List"
+                },
+                {
+                    "language": "RU",
+                    "text": "Develop Branch: Представляет версию, находящуюся в разработке. Вносите свой вклад в код, затрагивающий кодовую базу, переводы, улучшения в документации, учебники и плагины, такие как источники данных, торговые системы и так далее!",
+                    "updated": 1641802871638
+                },
+                {
+                    "language": "TR",
+                    "text": "Develop Branch: Şu anda geliştirilmekte olan sürümü içerir. Kod tabanını, çevirileri, Dokümanlardaki iyileştirmeleri, öğreticileri ve veri madenleri, ticaret sistemleri vb. gibi eklentileri etkileyen katkılarınızı bu dala gönderin!",
+                    "updated": 1639942297409
+                }
+            ]
+        },
+        {
+            "style": "Warning",
+            "text": "Ignore the instructions to switch branches of the next few steps if you are not using the Contributors installation. Just click Next to continue.",
+            "updated": 1649176508369,
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Contributors kurulumunu kullanmıyorsanız, sonraki birkaç adımdaki dal değiştirme talimatlarını dikkate almayın. Devam etmek için İleri'ye tıklayın.",
+                    "updated": 1654394226195,
+                    "style": "Warning"
+                }
+            ]
+        }
+    ]
+}

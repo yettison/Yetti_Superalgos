@@ -1,0 +1,168 @@
+{
+    "topic": "User Profile",
+    "pageNumber": 11,
+    "type": "The Claims Program",
+    "definition": {
+        "text": "Tell us what you've done for the project and how we should reward you!",
+        "updated": 1630495910859,
+        "translations": [
+            {
+                "language": "ES",
+                "text": "Díganos que ha hecho por el proyecto y como deberíamos recompensarlo!",
+                "updated": 1636281513982
+            },
+            {
+                "language": "TR",
+                "text": "Özet: Proje için ne yaptığınızı ve sizi nasıl ödüllendirmemiz gerektiğini bize anlatın!",
+                "updated": 1646303492815
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Include",
+            "text": "Governance->Node->Claims Program->Definition",
+            "updated": 1624734390960
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Node->Claims Program->Content"
+        },
+        {
+            "style": "Title",
+            "text": "Three Types of Claim Folders",
+            "updated": 1630496493305,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Три типа Claim Folders",
+                    "updated": 1639133107079
+                },
+                {
+                    "language": "TR",
+                    "text": "Üç Tür Talep Dosyası",
+                    "updated": 1646303523734
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Concept->Claims Folder->Content",
+            "updated": 1630496432492
+        },
+        {
+            "style": "Subtitle",
+            "text": "Asset Claims Folder",
+            "updated": 1630496355821,
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Varlık Talepleri Klasörü",
+                    "updated": 1646303551025
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Node->Asset Claims Folder->Definition"
+        },
+        {
+            "style": "Subtitle",
+            "text": "Feature Claims Folder",
+            "updated": 1630496368526,
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Özellik Talepleri Klasörü",
+                    "updated": 1646303569401
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Node->Feature Claims Folder->Definition"
+        },
+        {
+            "style": "Subtitle",
+            "text": "Position Claims Folder",
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Pozisyon Talepleri Klasörü",
+                    "updated": 1646303587260
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Node->Position Claims Folder->Definition"
+        },
+        {
+            "style": "Title",
+            "text": "Three Types of Contribution Claims",
+            "updated": 1630496650088,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Три типа Contribution Claims",
+                    "updated": 1639133414363
+                },
+                {
+                    "language": "TR",
+                    "text": "Üç Tür Katkı Talebi",
+                    "updated": 1646303616071
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Concept->Reusable Governance Snippets->Claims Content",
+            "updated": 1630496784756
+        },
+        {
+            "style": "Subtitle",
+            "text": "Asset Contribution Claim",
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Varlık Katkı Talebi",
+                    "updated": 1646303638711
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Node->Asset Contribution Claim->Definition"
+        },
+        {
+            "style": "Subtitle",
+            "text": "Feature Contribution Claim",
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Özellik Katkı Talebi",
+                    "updated": 1646303653368
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Node->Feature Contribution Claim->Definition"
+        },
+        {
+            "style": "Subtitle",
+            "text": "Position Contribution Claim",
+            "translations": [
+                {
+                    "language": "TR",
+                    "text": "Pozisyon Katkısı Talebi",
+                    "updated": 1646303664306
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Governance->Node->Position Contribution Claim->Definition"
+        }
+    ]
+}
