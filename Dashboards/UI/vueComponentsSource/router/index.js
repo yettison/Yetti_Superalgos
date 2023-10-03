@@ -30,8 +30,8 @@ const routes = [
     path: '/AlgoTrading',
     name: 'AlgoTrading',
     component: AlgoTradingView
-  }
-  
+  },
+    
 ]
 
 const router = createRouter({
