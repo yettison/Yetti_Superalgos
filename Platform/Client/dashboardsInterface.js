@@ -143,12 +143,18 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
             socketClient.send(message)
             
             //sendExample()
-            //sendGlobals()
+            sendGlobals()
             // Resend every 10 minutes
-            //setInterval(sendGlobals, 6000)
+            setInterval(sendGlobals, 6000)
 
-            sendGovernance()
-            setInterval(sendGovernance, 6000)
+            //sendGovernance()
+            //sendEventServer()
+            //setInterval(sendEventServer, 6000)
+            
+            //sendTaskManager()
+            //setInterval(sendTaskManager, 6000)
+            //sendAlgoTrading()
+            //setInterval(sendAlgoTrading, 6000)
         });
 
         socketClient.on('close', function (close) {
@@ -168,11 +174,20 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
         // This function packs and then sends the Global objects to the inspector
         packedSA = packGlobalObj('SA', SA)
         packedPL = packGlobalObj('PL', PL)
+        //packedTS = packGlobalObj('TS', TS)
 
         //let parsed = JSON.parse(data)
         //SA.logger.info('this is the parsed object', parsed)
         let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Globals|*|' + packedSA + '|*|' + packedPL
         socketClient.send(messageToSend)
+
+        SA.logger.info('')
+        SA.logger.info('from sendGlobals "SA" to Dashboard APP:' , JSON.parse(packedSA))
+        SA.logger.info('')
+        SA.logger.info('from sendGlobals "PL" to Dashboard APP:' , JSON.parse(packedPL))
+        //SA.logger.info('')
+        //SA.logger.info('from sendGlobals "TS" to Dashboard APP:' , JSON.parse(packedTS))
+        //SA.logger.info('')
 
         // todo: handle global TS object 
         // note: Access event handlers PL.servers.EVENT_SERVER.eventHandlers
@@ -180,23 +195,34 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
         function packGlobalObj (name, object) {
             // This function copies a global object over to a simple JS Object and then is stringified to JSON in order to be sent over websocket
             let packedGlobal = {}
-            packedGlobal[name] = recursivelyCopy(object)
+            packedGlobal[name] = recursivelyCopy(object, [])
 
             return JSON.stringify(packedGlobal)
 
-            function recursivelyCopy (object) {
+            function recursivelyCopy (object, visitedObjects) {
                 let objectCopy = {}
+
+                if (object === null || object === undefined) {
+                    return object
+                }
         
+                if (visitedObjects.includes(object)) {
+                    return { hasCircularReference: true}
+                }
+
+                visitedObjects.push(object)
+
+
                 if (typeof object === 'object') {
                     // Break down various object types and copy them all to a simple javascript object
                     if (object instanceof Array) {
                         object.forEach( function (value, index) {
-                            objectCopy[index] = recursivelyCopy(value)
+                            objectCopy[index] = recursivelyCopy(value, visitedObjects.slice())
 
                         })
                     } else if (object instanceof Map) {
                         object.forEach( function (value, key) {
-                            objectCopy[key] = recursivelyCopy(value)
+                            objectCopy[key] = recursivelyCopy(value, visitedObjects.slice())
 
                         })
                     } else if (object instanceof Object) {
@@ -209,7 +235,7 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                                 }
                                 objectCopy[element] = dependencies
                             } else {
-                                objectCopy[element] = recursivelyCopy(object[element])
+                                objectCopy[element] = recursivelyCopy(object[element], visitedObjects.slice())
                             }
                         }
                     } 
@@ -245,6 +271,37 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
         SA.logger.info('from UserInfo 1 to Dashboard APP:' , userInfo1)
         SA.logger.info('from UserInfo 2 to Dashboard APP:' , userInfo2)
 
+    }
+    function sendAlgoTrading() {
+        
+        let botInfo1 = {
+                            BotStatus: "Running",
+                            BotSession: "ID of the Running Session",
+                            BotData: "more data"
+                        }
+
+        let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|AlgoTrading-RawData|*|' + '|*|' + JSON.stringify(botInfo1)
+        socketClient.send(messageToSend)
+
+        SA.logger.info('from AlgoTrading to Dashboard APP:' , botInfo1)
+    }
+    function sendEventServer() {
+        
+        let eventInfo = PL.servers.EVENT_SERVER.eventHandlers
+
+        let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|EventServer|*|' + '|*|' + JSON.stringify(eventInfo)
+        socketClient.send(messageToSend)
+
+        SA.logger.info('from EventServer to Dashboard APP:' , eventInfo)
+    }   
+    function sendTaskManager() {
+        
+        let taskInfo = PL.servers.TASK_MANAGER_SERVER
+
+        let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|TaskManager|*|' + '|*|' + JSON.stringify(taskInfo)
+        socketClient.send(messageToSend)
+
+        SA.logger.info('from TaskManager to Dashboard APP:' , taskInfo)
     }
     function sendExample() {
         let oneObjToSend = { 

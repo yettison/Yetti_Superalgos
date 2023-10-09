@@ -4,6 +4,8 @@ import DevelopersView from '../views/DevelopersView.vue'
 import BitcoinFactoryView from '../views/BitcoinFactoryView.vue'
 import GovernanceView from '../views/GovernanceView.vue'
 import AlgoTradingView from '../views/AlgoTradingView.vue'
+import EventServerView from '../views/EventServerView.vue'
+import TaskManagerView from '../views/TaskManagerView.vue'
 
 const routes = [
   {
@@ -31,7 +33,16 @@ const routes = [
     name: 'AlgoTrading',
     component: AlgoTradingView
   },
-    
+  {
+    path: '/EventServer',
+    name: 'EventServer',
+    component: EventServerView
+  },
+  {
+    path: '/TaskManager',
+    name: 'TaskManager',
+    component: TaskManagerView
+  }    
 ]
 
 const router = createRouter({
