@@ -69,7 +69,7 @@
         "asPlugin": "Pasang sebagai Plugin",
         "missingAssets": "Pasang Missing Assets",
         "missingClaims": "Pasang Missing Claims",
-        "apiResponseFieldRefs": "Pasang Referensi API Response Field",
+        "apiResponseFieldRefs": "Pasang API Response Field Reference",
         "marketPair": "Pasang Pair (Market)",
         "market": "Pasang Market",
         "product": "Pasang Product"
@@ -82,7 +82,7 @@
         "managed": {
             "stop": "Hentikan Managed Session",
             "run": "Jalankan Managed Session",
-            "reference": "Referensi Managed Session"
+            "reference": "Managed Session Reference"
         }
     },
     "check": {
