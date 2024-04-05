@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Konunun adına atıfta bulunur. Aynı Dokümanlar Konu Adına sahip sayfalar, aynı konuya aittir.",
                 "updated": 1646208374982
+            },
+            {
+                "language": "PT",
+                "text": "Refere-se ao nome do tópico. Páginas com o mesmo Nome do Tópico dos Documentos (Docs Topic Name) pertencem ao mesmo tópico.",
+                "updated": 1712249557487
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Konuların kendi başlarına sayfalar olmadığına dikkat edin. Bunun yerine Dokümanlar Konu Adı, Dokümanlar Sayfasının bir özelliğidir.",
                     "updated": 1646208392350
+                },
+                {
+                    "language": "PT",
+                    "text": "Note que os tópicos não são páginas em si mesmos. Em vez disso, o Nome do Tópico dos Documentos (Docs Topic Name) é uma propriedade de uma Página de Documentos (Docs Page).",
+                    "updated": 1712249619778
                 }
             ]
         },
@@ -65,6 +75,11 @@
                     "language": "DE",
                     "text": "Mit anderen Worten, es gibt keine Seite, die ein Thema beschreibt. Stattdessen wird der Name des Docs-Themas verwendet, um eine Reihe von verwandten Seiten unter einem bestimmten Thema zu gruppieren.",
                     "updated": 1689415959882
+                },
+                {
+                    "language": "PT",
+                    "text": "Noutras palavras, não há uma página descrevendo um tópico. Em vez disso, o Nome do Tópico dos Documentos (Docs Topic Name) é usado para agrupar um conjunto de páginas relacionadas sob um determinado tópico.",
+                    "updated": 1712249681879
                 }
             ]
         }

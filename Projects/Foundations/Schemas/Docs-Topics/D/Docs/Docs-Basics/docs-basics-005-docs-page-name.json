@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Dokümanlar Sayfa Adı, yalnızca en üstte ana başlık olarak görüntülenen bir sayfanın görünen adı değil, aynı zamanda bir Proje (Project) içindeki bir sayfanın benzersiz tanımlayıcısıdır.",
                 "updated": 1646208148114
+            },
+            {
+                "language": "PT",
+                "text": "O Nome da Página dos Documentos (Docs Page Name) não é apenas o nome visível de uma página exibido como o título principal no topo, mas também o identificador único de uma página dentro de um Projeto (Project).",
+                "updated": 1712249744614
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Sayfa adı her zaman sayfanın ana başlığı olarak gösterilir ve aynı ada sahip iki sayfa olamaz.",
                     "updated": 1646208175568
+                },
+                {
+                    "language": "PT",
+                    "text": "O nome da página é sempre apresentado como o título principal da página e nenhuma páginas pode ter o mesmo nome.",
+                    "updated": 1712249794767
                 }
             ]
         },
@@ -65,6 +75,11 @@
                     "language": "TR",
                     "text": "Bir sayfaya isim verirken yukarıdakileri hatırlamak önemlidir. Bir sayfanın adı olarak her zaman açıklayıcı bir ad kullanmalısınız.",
                     "updated": 1646208203734
+                },
+                {
+                    "language": "PT",
+                    "text": "É importante lembrar o supra citado sempre que for atribuir o nome a uma página.  Deve-se sempre usar um nome descritivo e não ambíguo como o nome de uma página.",
+                    "updated": 1712249905255
                 }
             ]
         },
@@ -91,6 +106,11 @@
                     "language": "TR",
                     "text": "Bu noktada sayfanın adı Docs arayüzünden değiştirilemez. Sayfanın adını değiştirmek için ilgili dosyayı manuel olarak değiştirmeniz, tür alanını düzenlemeniz ve sayfanın adını dosya adına uygun şekilde eşleştirmeniz gerekir.",
                     "updated": 1646208242345
+                },
+                {
+                    "language": "PT",
+                    "text": "Assim, o nome da página não pode ser alterado a partir da interface dos Documentos. Para alterar o nome da página, é necessário modificar manualmente o arquivo correspondente, editando o campo de tipo e mapeando adequadamente o nome da página no nome do arquivo.",
+                    "updated": 1712249971413
                 }
             ]
         },

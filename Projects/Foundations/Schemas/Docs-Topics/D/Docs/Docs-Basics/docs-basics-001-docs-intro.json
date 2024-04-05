@@ -27,6 +27,11 @@
                 "language": "TR",
                 "text": "Dokümanlar, Foundation Project içinde bir Alan'dır. Kullanıcıların düğümler, kavramlar, konular, öğreticiler, incelemeler ve kitaplarla ilgili bilgileri aramasına olanak tanır.",
                 "updated": 1646205526218
+            },
+            {
+                "language": "PT",
+                "text": "Os Documentos são um Espaço dentro do Projeto Estrutural (Foundations Project). Eles permitem aos utilizadores procurar informações relativas a nós, conceitos, tópicos, tutoriais, revisões e livros.",
+                "updated": 1712251636558
             }
         ]
     },
@@ -58,6 +63,11 @@
                     "text": "Superalgos'a entegre edilen her proje, projenin belgelerini oluşturan kendi sayfa koleksiyonuna sahip olabilir.",
                     "updated": 1654393315572,
                     "style": "Text"
+                },
+                {
+                    "language": "PT",
+                    "text": "Cada projeto integrado no Superalgos pode ter sua própria coleção de páginas, constituindo a documentação do projeto.",
+                    "updated": 1712251679633
                 }
             ]
         }

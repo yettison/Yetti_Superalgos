@@ -33,6 +33,11 @@
                 "language": "TR",
                 "text": "Dokümanlar yedi sayfa kategorisinde toplanmıştır: Düğüm ( Node ), Kavram ( Concept ), Konu ( Topic ), Eğitim ( Tutorial ), İnceleme ( Review ), Kitap ( Book ) ve Çalışma Alanı (Workspace). Her kategori, Dokümanlar Arama Sonuçlarında bir sekme ile gösterilir.",
                 "updated": 1646206476988
+            },
+            {
+                "language": "PT",
+                "text": "Os Documentos possuem sete categorias de páginas: Nó (Node) , Conceito, Tópico, Tutorial, Revisão, Livro e Área de Trabalho (Workspace). Cada categoria é representada por uma aba nos Resultados da Pesquisa dos Documentos (Docs Search Results).",
+                "updated": 1712250242831
             }
         ]
     },
@@ -67,6 +72,11 @@
                     "language": "TR",
                     "text": "Node Sayfa Kategorisi",
                     "updated": 1646206605663
+                },
+                {
+                    "language": "PT",
+                    "text": "Categoria da Página do Nó",
+                    "updated": 1712250283187
                 }
             ]
         },
@@ -95,6 +105,11 @@
                     "language": "TR",
                     "text": "Bir Proje (Project) bağlamında tanımlanan her Düğüm (Node), Düğümün ne olduğunu ve nasıl kullanıldığını açıklayan bir Dokümanlar Düğüm Sayfası (Node Page) içerir. Bu, düğüm menüsündeki yardım düğmesine tıklandığında açılan sayfadır.",
                     "updated": 1646206596115
+                },
+                {
+                    "language": "PT",
+                    "text": "Cada Nó (Node) definido no contexto de um Projeto (Project) possui uma Página de Nó dos Documentos (Docs Node Page) que explica o que é o Nó (Node) e como ele é usado. Esta é a página que é aberta ao clicar no botão de ajuda no menu do Nó (Node).",
+                    "updated": 1712250431822
                 }
             ]
         },
@@ -123,6 +138,11 @@
                     "language": "TR",
                     "text": "Concept Sayfa Kategorisi",
                     "updated": 1646206621244
+                },
+                {
+                    "language": "PT",
+                    "text": "Categoria de Página de Conceito",
+                    "updated": 1712250463589
                 }
             ]
         },
@@ -151,6 +171,11 @@
                     "language": "TR",
                     "text": "Concept, bir hiyerarşide düğümler olarak temsil edilmeyen kavramlar veya fikirlerdir. Concept kategorisindeki sayfalar, tek bir sayfada açıklanabilecek kavram veya fikirlerdir. Yani kavramlar, tek bir sayfada ayrıntılı olarak ele alınabilecek kavramlardır.",
                     "updated": 1646206698209
+                },
+                {
+                    "language": "PT",
+                    "text": "Os conceitos são noções ou ideias que não são representadas como Nós (Node's) numa hierarquia. As páginas na categoria de conceitos abordam noções ou ideias que podem ser explicadas numa única página. Ou seja, conceitos são noções que podem ser abordadas exaustivamente numa única página.",
+                    "updated": 1712250514905
                 }
             ]
         },
@@ -179,6 +204,11 @@
                     "language": "TR",
                     "text": "Topic Sayfa Kategorisi",
                     "updated": 1646206712587
+                },
+                {
+                    "language": "PT",
+                    "text": "Categoria da Página do Tópico",
+                    "updated": 1712250552387
                 }
             ]
         },
@@ -207,6 +237,11 @@
                     "language": "TR",
                     "text": "Topics, doğru bir şekilde ele alınması için birden fazla sayfa gerektiren çok yönlü, derin kavramlardır. Bir sıra halinde düzenlenmiş, birbiriyle yakından ilişkili kavramlar kümesidir. Kendi başına bir sayfa değildir,bir sayfa koleksiyonudur.",
                     "updated": 1646206838305
+                },
+                {
+                    "language": "PT",
+                    "text": "Os tópicos são conceitos multifacetados e profundos que exigem mais de uma página para serem abordados corretamente. Os tópicos são conjuntos de conceitos intimamente relacionados, organizados numa sequência. No entanto, um tópico não é uma página em si mesmo. Em vez disso, é uma coleção de páginas.",
+                    "updated": 1712250595405
                 }
             ]
         },
@@ -235,6 +270,11 @@
                     "language": "TR",
                     "text": "Tutorial Sayfa Kategorisi",
                     "updated": 1646206849201
+                },
+                {
+                    "language": "PT",
+                    "text": "Categoria da Página de um Tutorial",
+                    "updated": 1712250640085
                 }
             ]
         },
@@ -263,6 +303,11 @@
                     "language": "TR",
                     "text": "Bir  Öğretici hiyerarşisi (Tutorial Hierarchy), Öğretici Konusu (Tutorial Topic) ve Öğretici Adım düğümleri (Tutorial Step Node) dahil olmak üzere farklı düğüm türlerini düzenleyebilir. Hiyerarşideki her düğüm, bilgi aldığı Dokümanlar'daki bir Eğitim Adımı Sayfasına işaret eder. Dokümanlar bağlamında, bir öğreticideki sayfalar, tıpkı konularda olduğu gibi bir sırayla ilerler.",
                     "updated": 1646207561365
+                },
+                {
+                    "language": "PT",
+                    "text": "Uma hierarquia de Tutorial pode organizar diferentes tipos de nós, incluindo nós de Tópico de Tutorial (Tutorial Topic) e nós de Tutorial Passo a Passo (Tutorial Step). Cada nó na hierarquia aponta para uma Página de Tutorial Passo a Passo (Tutorial Step) nos Documentos, da qual ele extrai informações. No contexto dos Documentos, as páginas em um tutorial são organizadas em uma sequência, assim como nos tópicos.",
+                    "updated": 1712250797684
                 }
             ]
         },
@@ -291,6 +336,11 @@
                     "language": "TR",
                     "text": "Reviews Sayfa Kategorisi",
                     "updated": 1646207577294
+                },
+                {
+                    "language": "PT",
+                    "text": "Categoria de Página de Avaliações",
+                    "updated": 1712250874701
                 }
             ]
         },
@@ -319,6 +369,11 @@
                     "language": "TR",
                     "text": "Reviews , Superalgos'un belirli bileşenleri veya diğer projelerle ilgili deneyimlerini açıklayan, kullanıcı tarafından oluşturulan içeriktir.",
                     "updated": 1646207607985
+                },
+                {
+                    "language": "PT",
+                    "text": "As avaliações (Reviews) são conteúdos gerados pelos utilizadores que descrevem a sua experiência com certos componentes do Superalgos ou de outros projetos.",
+                    "updated": 1712250928652
                 }
             ]
         },
@@ -347,6 +402,11 @@
                     "language": "TR",
                     "text": "Books Sayfa Kategorisi",
                     "updated": 1646207619336
+                },
+                {
+                    "language": "PT",
+                    "text": "Categoria da Página de Livros",
+                    "updated": 1712251049208
                 }
             ]
         },
@@ -375,6 +435,11 @@
                     "language": "TR",
                     "text": "Kitap başlı başına bir sayfadır. Sayfa, her biri kitapta bir bölüm oluşturan konuların bir listesini içerir.",
                     "updated": 1646207641102
+                },
+                {
+                    "language": "PT",
+                    "text": "Um livro é uma página em si mesma. A página apresenta uma lista de tópicos, cada um constituindo um capítulo no livro.",
+                    "updated": 1712251111380
                 }
             ]
         },
@@ -392,6 +457,11 @@
                     "language": "TR",
                     "text": "Workspace Sayfa Kategorisi",
                     "updated": 1646207657370
+                },
+                {
+                    "language": "PT",
+                    "text": "Categoria da Página da Área de Trabalho (Workspace) ",
+                    "updated": 1712251301076
                 }
             ]
         },
@@ -409,6 +479,11 @@
                     "language": "TR",
                     "text": "Workspace sekmesi aslında bir dokümanlar sayfası değildir, çalışma alanlarından içerik görüntüler. Anahtar kelime ile çalışma alanlarında arama yapma imkanı verir. Anahtar kelimeyle ilgili tüm düğümleri gösterir. Arama çubuğunda bir anahtar kelimeyle (ör. \"market\") bir sorgu yapın ve Çalışma Alanı Kategorisine bakın.",
                     "updated": 1646207756219
+                },
+                {
+                    "language": "PT",
+                    "text": "O separador \"Área de Trabalho (Workspace)” na verdade não exibe uma página de documentos, mas sim conteúdo das Áreas de Trabalho (Workspace). É uma possibilidade de pesquisar nas áreas de trabalho com uma palavra-chave. Ele mostra todos os Nós (Node's) que estão relacionados com a palavra-chave. Faça uma busca na barra de pesquisa com uma palavra-chave que deseja (por exemplo, \"mercado\") e dê uma olhada na Categoria da Área de Trabalho (Workspace).",
+                    "updated": 1712251259017
                 }
             ]
         },
