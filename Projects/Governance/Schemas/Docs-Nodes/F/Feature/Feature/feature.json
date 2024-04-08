@@ -13,6 +13,11 @@
                 "language": "TR",
                 "text": "Özellik, yazılımın belirli bir kullanım durumunun gerektirdiği görevleri yerine getirme kapasitesidir. Kullanıcıların Weight Votes'ı hangilerinin en değerli olduğunu ifade edecek şekilde yönlendirebilmeleri için özellikleri tanımlıyoruz. Kullanıcılar, hem bakım hem de geliştirme açısından hangi özelliklerin teşvik edileceğine bu şekilde karar verebilir.",
                 "updated": 1654394833174
+            },
+            {
+                "language": "DE",
+                "text": "Ein Feature ist die Fähigkeit der Software, Aufgaben zu erfüllen, die für einen bestimmten Anwendungsfall erforderlich sind. Wir beschreiben die Funktionen, damit die Benutzer die Gewichtung der Stimmen (Weight Votes) lenken können, um auszudrücken, welche von ihnen am wertvollsten sind. Auf diese Weise können die Benutzer entscheiden, welche Funktionen sowohl im Hinblick auf die Wartung als auch auf die Entwicklung gefördert werden sollen.",
+                "updated": 1712605123692
             }
         ]
     },
@@ -36,6 +41,11 @@
                     "text": "Söz konusu özelliğin iyileştirilmesini, geliştirilmesini ve bakımını teşvik etmek için tek tek Özellik düğümlerine Ağırlık Oyları verebilirsiniz.",
                     "updated": 1654394839046,
                     "style": "Text"
+                },
+                {
+                    "language": "DE",
+                    "text": "Sie können Gewichtungsstimmen (Weight Votes) für einzelne Funktionsknoten abgeben, um Anreize für die Verbesserung, Entwicklung und Wartung der betreffenden Funktion zu schaffen.",
+                    "updated": 1712605138891
                 }
             ]
         },
@@ -54,6 +64,11 @@
                     "text": "Bir özelliğin geliştirilmesinde veya bakımında yer alıyorsanız, bir Özellik Katkısı Talebinde bulunabilir ve çalışmalarınız için ödüllendirilebilmeniz için Özellik Talebi Oy düğümleriyle talebinizi desteklemeleri için Topluluğu bir araya getirebilirsiniz.",
                     "updated": 1654394845658,
                     "style": "Callout"
+                },
+                {
+                    "language": "DE",
+                    "text": "Wenn Sie an der Entwicklung oder Wartung eines Features beteiligt sind, können Sie einen Feature-Beitragsanspruch (Feature Contribution Claim) stellen und die Community dazu auffordern, Ihren Anspruch mit Feature-Claim-Abstimmungsknoten (Feature Claim Vote nodes) zu unterstützen, damit Sie für Ihre Arbeit belohnt werden können.",
+                    "updated": 1712605152026
                 }
             ]
         },
@@ -75,6 +90,11 @@
                     "text": "Konfigürasyon",
                     "updated": 1654394851851,
                     "style": "Title"
+                },
+                {
+                    "language": "DE",
+                    "text": "Konfiguration",
+                    "updated": 1712605159714
                 }
             ]
         }
