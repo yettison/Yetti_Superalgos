@@ -16,8 +16,8 @@
             },
             {
                 "language": "DE",
-                "text": "Dieser Knoten speichert einen Verweis auf den Social Trading Bot, der von seiner übergeordneten Trading Bot Instance zum Senden oder Empfangen von Handelssignalen (Trading Signals) im Superalgos Peer-to-Peer-Netzwerk verwendet wird.",
-                "updated": 1712604767452
+                "text": "Dieser Knoten speichert einen Verweis auf den Social Trading Bot, der von seiner übergeordneten Trading Bot Instance zum Senden oder Empfangen von Handelssignalen (Trading Signals) im Superalgos Peer-to-Peer-Netzwerk verwendet wird. ",
+                "updated": 1713211484557
             }
         ]
     },
