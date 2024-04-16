@@ -189,8 +189,8 @@
                 },
                 {
                     "language": "PT",
-                    "text": "Por enquanto, o Superalgos não tem qualquer forma de segurança. Assim, deve utilizar o sistema apenas no contexto de uma Rede Local (Local Area Network) restrita. Se optar por executar o Cliente na nuvem, sugerimos que implemente a sua própria segurança.",
-                    "updated": 1712262257823
+                    "text": "Por enquanto, o Superalgos não tem qualquer forma de segurança. Assim, deve utilizar o sistema apenas no contexto de uma Rede Local (Local Area Network) restrita. Se optar por executar o Cliente na nuvem, sugerimos que implemente a sua própria segurança. ",
+                    "updated": 1713260883455
                 }
             ]
         }

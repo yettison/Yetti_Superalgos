@@ -61,8 +61,8 @@
             },
             {
                 "language": "PT",
-                "text": "Não vou entrar em todos os detalhes à medida que avançamos, mas se precisar de mais informações sobre um Nó (Node), o botão de ajuda (ponto de interrogação) no menu leva-o diretamente à documentação relativa.",
-                "updated": 1712345912078
+                "text": "Não vou entrar em todos os detalhes à medida que avançamos, mas se precisar de mais informações sobre um Nó (Node), o botão de ajuda (ponto de interrogação) no menu leva-o diretamente à documentação relativa. ",
+                "updated": 1713261076576
             }
         ]
     },
@@ -103,7 +103,7 @@
                 },
                 {
                     "language": "TR",
-                    "text": "Bir düğümün dokümantasyonu aşağıdaki bölümlerden bir veya daha fazlasını içerebilir:",
+                    "text": "Bir düğümün dokümantasyonu aşağıdaki bölümlerden bir veya daha fazlas��nı içerebilir:",
                     "updated": 1636012836829
                 },
                 {

@@ -111,7 +111,7 @@
                 },
                 {
                     "language": "RU",
-                    "text": "Если Вы получаете доступ к Client с удаленного устройства, то необходимо отрегулировать конфигурацию узел LAN Network Node перед тем, как Вы продолжите.",
+                    "text": "Если Вы получаете доступ к Client с удаленного устройс��ва, то необходимо отрегулировать конфигурацию узел LAN Network Node перед тем, как Вы продолжите.",
                     "updated": 1641803204715
                 },
                 {
@@ -379,8 +379,8 @@
                 },
                 {
                     "language": "PT",
-                    "text": "Agora feche o editor. Se a sua configuração estiver correta, a mensagem de erro deverá de desaparecer rapidamente!",
-                    "updated": 1712263354090
+                    "text": "Agora feche o editor. Se a sua configuração estiver correta, a mensagem de erro deverá de desaparecer rapidamente! ",
+                    "updated": 1713260904940
                 }
             ]
         }

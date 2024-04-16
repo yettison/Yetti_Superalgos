@@ -60,8 +60,8 @@
             },
             {
                 "language": "PT",
-                "text": "A essência numa operação de mineração de dados (Data Mines) são as tarefas que executam os bots. Uma Tarefa (Task) controla um bot, e um Gestor de Tarefas (Task Manager) pode controlar várias tarefas.",
-                "updated": 1712349129134
+                "text": "A essência numa operação de mineração de dados (Data Mines) são as tarefas que executam os bots. Uma Tarefa (Task) controla um bot, e um Gestor de Tarefas (Task Manager) pode controlar várias tarefas. ",
+                "updated": 1713261123355
             }
         ]
     },
