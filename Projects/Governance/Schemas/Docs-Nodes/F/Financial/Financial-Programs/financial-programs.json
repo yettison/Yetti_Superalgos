@@ -13,6 +13,11 @@
                 "language": "TR",
                 "text": "Staking Programını (Staking Program) ve Delegasyon Programını (Delegation Program) oluşturmak için bu düğümü kullanın.",
                 "updated": 1645183659194
+            },
+            {
+                "language": "DE",
+                "text": "Verwenden Sie diesen Knoten, um das Einsatzprogramm (Staking Program) und das Delegationsprogramm (Delegation Program) zu starten. ",
+                "updated": 1713211755979
             }
         ]
     },
@@ -35,6 +40,11 @@
                     "language": "TR",
                     "text": "Token Gücünün bu programlara nasıl aktığı (Token Power Flows) hakkında daha fazla bilgi edinin!",
                     "updated": 1645183691004
+                },
+                {
+                    "language": "DE",
+                    "text": "Erfahren Sie mehr darüber, wie Token Power in diese Programme fließt (Token Power Flows)!",
+                    "updated": 1712605475049
                 }
             ]
         },
@@ -55,6 +65,11 @@
                     "language": "TR",
                     "text": "Yapılandırma",
                     "updated": 1645183698212
+                },
+                {
+                    "language": "DE",
+                    "text": "Konfiguration",
+                    "updated": 1712605483761
                 }
             ]
         }
