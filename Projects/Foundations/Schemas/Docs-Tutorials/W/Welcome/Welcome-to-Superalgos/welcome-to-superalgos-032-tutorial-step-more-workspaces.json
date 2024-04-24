@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "Dostarczane z systemem Native Workspaces mają czarne tło w zakładce Workspaces, która znajduje się po lewej stronie.",
                 "updated": 1675002653309
+            },
+            {
+                "language": "PT",
+                "text": "É verdade! Pode trabalhar com tantos quantos quiser e manter todo o seu trabalho em perfeita ordem! ",
+                "updated": 1713261094479
             }
         ],
         "updated": 1687633417015
@@ -115,6 +120,11 @@
                     "language": "PL",
                     "text": "Workspaces zapisuje wszystkie informacje dotyczące struktur danych, które znajdują się w przestrzeni roboczej.",
                     "updated": 1675002678853
+                },
+                {
+                    "language": "PT",
+                    "text": "As Áreas de Trabalho (Workspace) guardam todas as informações relativas às estruturas de dados que estão incluídas na Área de Trabalho (Workspace).",
+                    "updated": 1712347048142
                 }
             ]
         },
@@ -159,13 +169,25 @@
                     "language": "PL",
                     "text": "Utwórzmy kopię tego Native Workspace i uczyńmy go Twoim własnym! Wykorzystaj następującą kombinację klawiszy: Ctrl + Shift + Key-S",
                     "updated": 1675002723308
+                },
+                {
+                    "language": "PT",
+                    "text": "Vamos fazer uma cópia desta Área de Trabalho Nativa (Native Workspace) e torná-la sua! Use a seguinte combinação de teclas no seu teclado: Ctrl + Shift + Key-S",
+                    "updated": 1712347210731
                 }
             ]
         },
         {
             "style": "Text",
             "text": "Remember, replace Ctrl with Cmd in MacOS!",
-            "updated": 1687633634278
+            "updated": 1687633634278,
+            "translations": [
+                {
+                    "language": "PT",
+                    "text": "Lembre-se, se usa o MacOS, deve usar a tecla Cmd em vez do Ctrl !",
+                    "updated": 1712347301588
+                }
+            ]
         },
         {
             "style": "Success",
@@ -219,6 +241,11 @@
                     "language": "PL",
                     "text": "Teraz otwórz zakładkę Workspaces po lewej stronie, przewiń do dołu i znajdź jedyny obszar roboczy z fioletowym tłem! To jest twój obszar roboczy! Ale nie musisz na niego klikać!",
                     "updated": 1675002751094
+                },
+                {
+                    "language": "PT",
+                    "text": "Agora verifique na secção User workspaces \"Areas de Trabalho do Utilizador) no menu superior! Essa é a sua cópia da Área de Trabalho (Workspace)!",
+                    "updated": 1712347656515
                 }
             ],
             "updated": 1687633746735

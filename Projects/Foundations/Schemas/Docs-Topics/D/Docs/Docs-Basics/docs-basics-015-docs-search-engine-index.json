@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Dokümanlar Arama Motoru ( Docs Search Engine ) tüm Dokümanlar Sayfalarının tüm ifadelerini ve geçerli Çalışma Alanının ( Workspace ) tüm düğümlerinin adını, türünü, yapılandırmasını ve kodunu içeren bir bellek içi dizin oluşturur.",
                 "updated": 1652646892310
+            },
+            {
+                "language": "PT",
+                "text": "O Motor de Busca de Documentos (Docs Search Engine) constrói um índice em memória que contém todas as frases de todas as Páginas de Documentos, além do nome, tipo, configuração e código de todos os Nós (Node) da Área de Trabalho (Workspace) atual.",
+                "updated": 1712247755214
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Bu dizin, kullanıcı arabirimi başlatıldığında oluşturulur ve kullanıcı docs.reindex komutunu çalıştırdığında veya yeni bir Çalışma Alanı ( Workspace ) yüklediğinde yeniden oluşturulur.",
                     "updated": 1652647023889
+                },
+                {
+                    "language": "PT",
+                    "text": "Este índice é construído quando a interface do utilizador (UI) é lançada e reconstruído quando o utilizador executa o comando docs.reindex ou carrega uma nova Área de Trabalho (Workspace).",
+                    "updated": 1712247902461
                 }
             ]
         }

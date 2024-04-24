@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "Dzięki mnie błyskawicznie opanujesz poruszanie się i przeglądanie Charting Space... Zajmijmy się najpierw suwakiem!",
                 "updated": 1675080307858
+            },
+            {
+                "language": "PT",
+                "text": "Vou dar-lhe toda a formação sobre como se movimentar e navegar pela Interface dos Gráficos (Charting Space) brevemente... Mas primeiro, vamos lidar com o separador deslizante! ",
+                "updated": 1713261165321
             }
         ]
     },
@@ -113,6 +118,11 @@
                     "language": "PL",
                     "text": "Kliknij go i przeciągnij w dół, aby zamknąć Design Space i otworzyć Charting Space. Teraz przeciągnij go w górę aby uzyskać efekt odwrotny. Aby zrobić to za pomocą klawiatury, naciśnij Ctrl + Shift + ↓. Spróbuj także ↑ ← <key>→</key>!",
                     "updated": 1675080473831
+                },
+                {
+                    "language": "PT",
+                    "text": "Com o botão esquerdo do seu rato pressionado, arraste o separador para baixo para fechar o Interface de Design (Design Space) e abrir o Interface dos Gráficos (Charting Space). Fazendo o oposto irá reverter o interface que é apresentado. Pode também usar o teclado para alternar entre as interfaces, da seguinte forma: pressione Ctrl + Shift + ↓. Tente ↑ ← → também!",
+                    "updated": 1712852380511
                 }
             ]
         },
@@ -168,6 +178,11 @@
                     "language": "PL",
                     "text": "O ile nie potrzebujesz, aby obie przestrzenie były częściowo otwarte, zawsze warto całkowicie zamknąć jedną z nich, żeby oszczędzić zasoby obliczeniowe Twojej maszyny.",
                     "updated": 1675080539832
+                },
+                {
+                    "language": "PT",
+                    "text": "A não ser que seja necessário, ter ambos os espaços estejam abertos em simultâneo, é aconselhável fechar completamente um deles, assim poupa recursos de processamento do seu dispositivo.",
+                    "updated": 1712852634335
                 }
             ]
         }

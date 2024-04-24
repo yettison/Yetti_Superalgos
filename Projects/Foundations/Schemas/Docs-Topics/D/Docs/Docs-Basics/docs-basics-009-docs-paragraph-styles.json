@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Dokümanlar Sayfasındaki ( Docs Page ) her paragrafa bir stil atanır. Varsayılan ve en sık kullanılan stil Dokümanlar Metin Stili ( Docs Text Style ) dir. ",
                 "updated": 1652645662717
+            },
+            {
+                "language": "PT",
+                "text": "Cada parágrafo numa Página de Documentos (Docs Page) é atribuído a um estilo. O estilo padrão e mais comumente utilizado é o Estilo do Texto nos Documentos (Docs Text Style).",
+                "updated": 1712249192487
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Stiller, Dokümanlar Paragraf Stilleri konusunda ele alınmıştır.",
                     "updated": 1652645690591
+                },
+                {
+                    "language": "PT",
+                    "text": "Os estilos são abordados no tópico Estilos de Parágrafo dos Documentos (Docs Paragraph Styles).",
+                    "updated": 1712249232463
                 }
             ]
         }

@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Tak, możesz używać także swojej klawiatury! Pokochasz to podczas długich podróży przez Design Space!",
                 "updated": 1674945988243
+            },
+            {
+                "language": "PT",
+                "text": "Sim! É possível usar também o teclado! Vai adorar esta funcionalidade para longas viagens na Interface de Design (Design Space)! ",
+                "updated": 1713261018856
             }
         ],
         "updated": 1660143683418
@@ -119,6 +124,11 @@
                     "language": "PL",
                     "text": "Zwykli ludzie mogą używać klawisza Ctrl oraz klawiszy strzałek: ← → ↑ ↓",
                     "updated": 1674946014612
+                },
+                {
+                    "language": "PT",
+                    "text": "De uma forma genérica pode usar a tecla Ctrl em combinação com as setas: ← → ↑ ↓",
+                    "updated": 1712340886594
                 }
             ]
         },
@@ -177,6 +187,11 @@
                     "language": "PL",
                     "text": "Zauważ, że trzymanie wciśniętych klawiszy sprawia, że latasz!",
                     "updated": 1674946023224
+                },
+                {
+                    "language": "PT",
+                    "text": "Ao manter as teclas pressionadas vai voar!",
+                    "updated": 1712340994330
                 }
             ]
         },
@@ -235,6 +250,11 @@
                     "language": "PL",
                     "text": "Oczywiście fanboje i dziewczyny Maca muszą zamienić Ctrl na Cmd.",
                     "updated": 1674946050304
+                },
+                {
+                    "language": "PT",
+                    "text": "É claro que os fãs da Apple / MacOS devem substituir Ctrl por Cmd.",
+                    "updated": 1712341061183
                 }
             ]
         }

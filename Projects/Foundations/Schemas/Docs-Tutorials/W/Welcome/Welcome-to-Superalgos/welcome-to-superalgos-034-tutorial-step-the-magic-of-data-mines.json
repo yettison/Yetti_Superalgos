@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "W obrębie każdego rynku operacje są organizowane przez Data Mine. Superalgos dostarcza kilka otwarto źródłowych Data Mine, z których każda posiada wiele wskaźników.",
                 "updated": 1675003056562
+            },
+            {
+                "language": "PT",
+                "text": "Dentro de cada mercado, a operação é organizada por Mineração de Dados (Data Mine). O Superalgos vem com várias minas de dados de código aberto, cada uma com vários indicadores.",
+                "updated": 1712348469849
             }
         ]
     },
@@ -113,6 +118,11 @@
                     "language": "PL",
                     "text": "Pomyśl o Data Mine jako o wtyczkach, które programiści mogą tworzyć w celu rozszerzenia możliwości analizy danych w systemie. Indicator Bot może przetwarzać dane, dostarczane przez inne wskaźniki, dodając tym samym wartość i tworząc głębsze i bogatsze analizy.",
                     "updated": 1675003127693
+                },
+                {
+                    "language": "PT",
+                    "text": "Pense nas Minas de Dados/Informação (Data Mines) como plugins que os programadores podem criar para ampliar a capacidade de análise dos dados do sistema. Um Bot de Indicadores (Indicator Bot) pode processar os dados produzidos por outros indicadores, adicionando valor e produzindo análises mais aprofundadas e ricas.",
+                    "updated": 1712348634544
                 }
             ]
         },
@@ -168,6 +178,11 @@
                     "language": "PL",
                     "text": "Jeśli masz podstawową wiedzę o JavaScript, możesz również tworzyć wskaźniki! Jeśli stworzysz Data Mine, zarobisz tokeny Superalgos SA!",
                     "updated": 1675003159080
+                },
+                {
+                    "language": "PT",
+                    "text": "Se tiver conhecimentos básicos de JavaScript, também pode criar os seus indicadores! Se contribuir com uma Mineração de Dados (Data Mines), ganhará Tokens da Superalgos SA! ",
+                    "updated": 1713261112847
                 }
             ],
             "updated": 1622196189467

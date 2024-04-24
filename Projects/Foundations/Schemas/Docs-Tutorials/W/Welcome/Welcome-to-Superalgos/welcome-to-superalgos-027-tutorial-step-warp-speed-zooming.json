@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Jest jeszcze jedno narzędzie, które może Ci się przydać do manipulowania czasoprzestrzenią! Natywna funkcja powiększania w przeglądarce!",
                 "updated": 1674946267417
+            },
+            {
+                "language": "PT",
+                "text": "Existe uma outra ferramenta que poderá ser útil para navegar o espaço-tempo! É a função de zoom do browser! ",
+                "updated": 1713261046286
             }
         ]
     },
@@ -118,6 +123,11 @@
                     "language": "PL",
                     "text": "Czasami możesz chcieć zobaczyć większe fragmenty Design Space niż pozwala na to Twój ekran.",
                     "updated": 1674946291003
+                },
+                {
+                    "language": "PT",
+                    "text": "Por vezes, poderá sentir necessidade de visualizar as secções numa dimensão maior na Interface de Design (Design Space) daquilo que o seu ecrã lhe permite.",
+                    "updated": 1712341763637
                 }
             ]
         },
@@ -176,6 +186,11 @@
                     "language": "PL",
                     "text": "Naciśnij Ctrl i przewiń kółko myszy w Windows lub <key>⌘</key> i - lub + w Mac.",
                     "updated": 1674946330296
+                },
+                {
+                    "language": "PT",
+                    "text": "Pressione no seu teclado a tecla Ctrl em combinação com roda do rato, para cima ou para baixo, no Windows ou Cmd em combinação com as teclas - ou + no Mac.",
+                    "updated": 1712341871374
                 }
             ]
         },
@@ -238,6 +253,11 @@
                     "language": "PL",
                     "text": "Chrome wskazuje poziom powiększenia w prawym górnym rogu. Podczas powiększania lub pomniejszania Design Space zostaje wyśrodkowana na ekranie. Użyj mapy Design Space, aby wrócić do miejsca, w którym byłeś.",
                     "updated": 1674946386082
+                },
+                {
+                    "language": "PT",
+                    "text": "O Chrome mostra o nível de zoom no canto superior direito. Ao ampliar ou reduzir o zoom, a Interface de Design (Design Space) fica centrada no ecrã. Utilize o mapa do Interface de Design (Design Space) para voltar ao local onde estava.",
+                    "updated": 1712342187510
                 }
             ]
         }

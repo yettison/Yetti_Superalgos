@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Chcę Ci coś pokazać podczas gdy dane są gromadzone. Nauczę Cię chodzić... za dwie sekundy.",
                 "updated": 1674945809755
+            },
+            {
+                "language": "PT",
+                "text": "Quero mostrar algo enquanto a operação de mineração de dados (Data Mines) avança. Vou ensina-lo a andar... em dois segundos!",
+                "updated": 1712340357769
             }
         ]
     },
@@ -117,6 +122,11 @@
                     "language": "PL",
                     "text": "Wystarczy kliknąć na węzeł i przeciągnąć myszką!",
                     "updated": 1674945928842
+                },
+                {
+                    "language": "PT",
+                    "text": "Simplesmente carregue no botão do rato e arraste!",
+                    "updated": 1712340465260
                 }
             ]
         },
@@ -175,6 +185,11 @@
                     "language": "PL",
                     "text": "Proste, prawda? Świetnie! Jednak Design Space to ogromne miejsce i nie chciałabym, żebyś nabawił się zapalenia ścięgien przeciągając węzły w ten sposób.",
                     "updated": 1674945919279
+                },
+                {
+                    "language": "PT",
+                    "text": "Fácil, não é? Ótimo! Todavia, a Interface de Design (Design Space) é um lugar enorme e eu não quero que desenvolva uma tendinite a andar a arrastar-te por aí assim.",
+                    "updated": 1712340572603
                 }
             ]
         },
@@ -232,6 +247,11 @@
                     "language": "PL",
                     "text": "W kolejnych krokach nauczę Cię jeszcze kilku sztuczek.",
                     "updated": 1674945938298
+                },
+                {
+                    "language": "PT",
+                    "text": "Nos próximos passos vai aprender mais alguns truques. ",
+                    "updated": 1713261009454
                 }
             ]
         }

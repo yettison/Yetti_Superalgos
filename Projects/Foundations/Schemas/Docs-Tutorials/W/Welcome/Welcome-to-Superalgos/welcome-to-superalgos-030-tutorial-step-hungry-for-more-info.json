@@ -58,6 +58,11 @@
                 "language": "PL",
                 "text": "Nie będę się zagłębiał w każdy szczegół, ale jeśli potrzebujesz więcej informacji na temat danego węzła, przycisk pomocy w menu przeniesie Cię prosto do jego dokumentacji.",
                 "updated": 1675002229519
+            },
+            {
+                "language": "PT",
+                "text": "Não vou entrar em todos os detalhes à medida que avançamos, mas se precisar de mais informações sobre um Nó (Node), o botão de ajuda (ponto de interrogação) no menu leva-o diretamente à documentação relativa. ",
+                "updated": 1713261076576
             }
         ]
     },
@@ -98,7 +103,7 @@
                 },
                 {
                     "language": "TR",
-                    "text": "Bir düğümün dokümantasyonu aşağıdaki bölümlerden bir veya daha fazlasını içerebilir:",
+                    "text": "Bir düğümün dokümantasyonu aşağıdaki bölümlerden bir veya daha fazlas��nı içerebilir:",
                     "updated": 1636012836829
                 },
                 {
@@ -115,6 +120,11 @@
                     "language": "PL",
                     "text": "Dokumentacja węzła może zawierać jedną lub więcej z poniższych sekcji:",
                     "updated": 1675002251227
+                },
+                {
+                    "language": "PT",
+                    "text": "A documentação de um nó pode incluir um ou mais dos seguintes segmentos:",
+                    "updated": 1712346049783
                 }
             ]
         },
@@ -171,6 +181,11 @@
                     "language": "PL",
                     "text": "Definition: opisuje czym jest lub co robi węzeł.",
                     "updated": 1675002266449
+                },
+                {
+                    "language": "PT",
+                    "text": "Definition: descreve o que o nó é ou faz.",
+                    "updated": 1712345948879
                 }
             ]
         },
@@ -227,6 +242,11 @@
                     "language": "PL",
                     "text": "Content: opisuje sposób działania węzła.",
                     "updated": 1675002274300
+                },
+                {
+                    "language": "PT",
+                    "text": "Content: decreve como um nó funciona",
+                    "updated": 1712346071777
                 }
             ]
         },
@@ -284,6 +304,11 @@
                     "language": "PL",
                     "text": "Configuration: szczegóły dotyczące konfiguracji.",
                     "updated": 1675002319653
+                },
+                {
+                    "language": "PT",
+                    "text": "Configuration: alguns nós podem ter disponível a configuração",
+                    "updated": 1712346108383
                 }
             ]
         },
@@ -341,6 +366,11 @@
                     "language": "PL",
                     "text": "Technical: reszta informacji ma zwykle charakter techniczny, skierowane do programistów.",
                     "updated": 1675002369064
+                },
+                {
+                    "language": "PT",
+                    "text": "Technical: o restante das informações geralmente é de natureza técnica, orientada para programadores.",
+                    "updated": 1712346369296
                 }
             ]
         },
@@ -397,6 +427,11 @@
                     "language": "PL",
                     "text": "Kliknij przycisk pomocy na węźle Data Tasks!",
                     "updated": 1675002393309
+                },
+                {
+                    "language": "PT",
+                    "text": "Clique no botão de ajuda (help) no nó Tarefas dos Dados (Data Tasks)!",
+                    "updated": 1712346420116
                 }
             ]
         }

@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "Nie zamierzamy jeszcze uruchamiać Live Trading Session, więc nie ma sensu dalej gromadzić danych.",
                 "updated": 1675079188205
+            },
+            {
+                "language": "PT",
+                "text": "Ainda não vamos realizar uma Sessão de Negociação ao Vivo (Live Trading Session), por isso, não há razão para manter a nossa mineração de dados a correr. ",
+                "updated": 1713261139767
             }
         ],
         "updated": 1640265234059
@@ -115,6 +120,11 @@
                     "language": "PL",
                     "text": "Istnieją dwa główne powody do uruchomienia Data Tasks:",
                     "updated": 1675079251499
+                },
+                {
+                    "language": "PT",
+                    "text": "Existem principalmente duas situações em que é necessário executar as Tarefas dos Dados (Data Tasks):",
+                    "updated": 1712350840740
                 }
             ]
         },
@@ -171,6 +181,11 @@
                     "language": "PL",
                     "text": "Przetwarzanie danych historycznych: Możesz chcieć przeanalizować dane ze zdefiniowanego zakresu z dowolnego Market aby uruchomić Backtesting Session, lub do przeanalizować nowe wskaźniki.",
                     "updated": 1675079403379
+                },
+                {
+                    "language": "PT",
+                    "text": "To process historic data: Pode querer processar um intervalo de datas de qualquer mercado dado para correr uma Sessão de Teste Retroativo (Backtesting Session), ou para processar novos indicadores.",
+                    "updated": 1712350992602
                 }
             ]
         },
@@ -227,6 +242,11 @@
                     "language": "PL",
                     "text": "Aby uruchomić sesję na żywo: Sesje na żywo różnych typów, np. Paper Trading Session, Forward Testing Session, i Live Trading Session, wszystkie potrzebują bieżących danych.",
                     "updated": 1675079461580
+                },
+                {
+                    "language": "PT",
+                    "text": "To run a live session: Diferentes tipos de sessões ao vivo, como Sessão de Negociação Simulada (Paper Trading Session), Sessão de Teste em Tempo Real (Forward Testing Session) e Sessão de Negociação ao Vivo (Live Trading Session), todas esta sessões precisam de um feed de mercado ao vivo.",
+                    "updated": 1712351436965
                 }
             ]
         },
@@ -282,13 +302,25 @@
                     "language": "PL",
                     "text": "Gdy wszystkie procesy są aktualne, wybierz \"Stop All Tasks\" w węźle Market Data Tasks. Zauważ, że możemy zatrzymać zadania z innego węzła niż ten, którego użyliśmy do ich uruchomienia!",
                     "updated": 1675079511248
+                },
+                {
+                    "language": "PT",
+                    "text": "Quando todos os processos estiverem atualizados, selecione “Stop All Tasks\" (Parar Todas as Tarefas) no nó Tarefas de Dados do Mercado (Market Data Tasks).",
+                    "updated": 1712351430372
                 }
             ],
             "updated": 1687634721689
         },
         {
             "style": "Text",
-            "text": "Notice you are stopping the tasks from a different node!"
+            "text": "Notice you are stopping the tasks from a different node!",
+            "translations": [
+                {
+                    "language": "PT",
+                    "text": "Veja que está a parar as tarefas a partir de um nó diferente!",
+                    "updated": 1712351634842
+                }
+            ]
         }
     ]
 }

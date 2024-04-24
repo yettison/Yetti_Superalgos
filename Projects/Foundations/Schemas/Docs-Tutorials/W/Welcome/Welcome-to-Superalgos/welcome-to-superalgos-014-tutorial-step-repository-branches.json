@@ -53,6 +53,11 @@
                 "language": "PL",
                 "text": "Repozytorium Superalgos posiada dwie główne gałęzie: master i develop.",
                 "updated": 1674835421245
+            },
+            {
+                "language": "PT",
+                "text": "O repositório do Superalgos tem duas principais ramificações: master e develop.",
+                "updated": 1712262308779
             }
         ]
     },
@@ -105,6 +110,11 @@
                     "language": "PL",
                     "text": "Gałąź Master: zawiera stabilną wersję oprogramowania. Nigdy nie wysyłaj swoich zmian do tej gałęzi!",
                     "updated": 1674835463118
+                },
+                {
+                    "language": "PT",
+                    "text": "Master branch: apresenta a versão estável do software. Nunca submeta as suas contribuições para esta ramificação!",
+                    "updated": 1712262407935
                 }
             ]
         },
@@ -156,6 +166,11 @@
                     "language": "PL",
                     "text": "Gałąź Develop: zawiera wersję, która jest obecnie rozwijana. Możesz do niej wysyłać zmiany kodu, tłumaczenia, poprawki w Dokumentach, samouczki i wtyczki takie jak Data Mine, Trading System i tak dalej!",
                     "updated": 1674835607292
+                },
+                {
+                    "language": "PT",
+                    "text": "Develop branch: apresenta a versão atualmente em desenvolvimento. Submeta contribuições de código que afetem a base de código, traduções, melhorias nos Documentos, tutoriais e plugins como minas de dados Minas de Dados/Informação (Data Mines), sistemas de negociação, etc.! ",
+                    "updated": 1713260892121
                 }
             ]
         },
@@ -189,6 +204,11 @@
                     "language": "PL",
                     "text": "Zignoruj instrukcje dotyczące przełączania gałęzi w następnych kilku krokach, jeśli nie używasz instalacji Contributors. Po prostu kliknij Next, aby kontynuować.",
                     "updated": 1674835625254
+                },
+                {
+                    "language": "PT",
+                    "text": "Ignore as instruções para mudar de ramificações nos próximos passos se não estiver a utilizar a instalação de Contribuição. Basta clicar em \"Seguinte\" para continuar.",
+                    "updated": 1712262714143
                 }
             ]
         }

@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Bir Proje ( Project ) bağlamında tanımlanan her Düğüm ( Node ) Düğümün ( Node ) ne olduğunu ve nasıl kullanıldığını açıklayan bir tanım sayfası olarak da adlandırılan bir Dokümanlar Notu Sayfasına sahiptir.",
                 "updated": 1652645853756
+            },
+            {
+                "language": "PT",
+                "text": "Cada Nó (Node) definido no contexto de um Projeto possui uma Página de Nó de Documentos (Docs Node Page), também referida como página de definição, explicando o que é o Nó (Node) e como é utilizado.",
+                "updated": 1712248790547
             }
         ]
     },
@@ -59,6 +64,11 @@
                     "language": "TR",
                     "text": "Dokümanlar Düğüm Sayfası özellikleri:",
                     "updated": 1652645911552
+                },
+                {
+                    "language": "PT",
+                    "text": "Uma Página de Nó de Documentos (Docs Node Page) contêm:",
+                    "updated": 1712248863008
                 }
             ]
         },
@@ -81,6 +91,11 @@
                     "language": "TR",
                     "text": "Definition: Düğümün ne olduğu ve hiyerarşide neyi temsil ettiğinin kısa bir açıklaması. Tanım, düğüm simgesinin solunda görüntülenir.",
                     "updated": 1652645947083
+                },
+                {
+                    "language": "PT",
+                    "text": "Definition: uma breve descrição do que o Nó (Node) é e do que representa na hierarquia. A definição é exibida à esquerda do ícone do Nó (Node).",
+                    "updated": 1712248918049
                 }
             ]
         },
@@ -103,6 +118,11 @@
                     "language": "TR",
                     "text": "Content: Düğümün nasıl kullanıldığı, işlemleri nasıl etkilediği veya diğer düğümlerle nasıl ilişkili olduğu açısından düğüme ilişkin tüm bilgiler.",
                     "updated": 1652645973184
+                },
+                {
+                    "language": "PT",
+                    "text": "Content: toda a informação relativa ao Nó (Node) em termos de como o Nó (Node) é utilizado, como afeta as operações ou como se relaciona com outros Nós (Node's). ",
+                    "updated": 1712248974265
                 }
             ]
         },
@@ -122,8 +142,13 @@
                 },
                 {
                     "language": "TR",
-                    "text": "Configuration: Düğümün yapılandırma dosyasının öğelerini açıklayan bölüm.",
+                    "text": "Configuration: Düğümün yapılandırma dosyas��nın öğelerini açıklayan bölüm.",
                     "updated": 1652645996124
+                },
+                {
+                    "language": "PT",
+                    "text": "Configuration: uma secção descrevendo os elementos do ficheiro de configuração do Nó (Node).",
+                    "updated": 1712249018819
                 }
             ]
         },

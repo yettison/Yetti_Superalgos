@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "W tym momencie pewnie przepełniam Twoją pamięć! Ale nie martw się... możesz wrócić do każdego poprzedniego kroku!",
                 "updated": 1674946582185
+            },
+            {
+                "language": "PT",
+                "text": "A esta altura, eu provavelmente estou a sobrecarregar o seu hipocampo! Mas não se preocupe... pode voltar a consultar qualquer passo anterior quando quiser! ",
+                "updated": 1713261068592
             }
         ]
     },
@@ -117,6 +122,11 @@
                     "language": "PL",
                     "text": "Jeśli kiedykolwiek będziesz potrzebował sobie coś przypomnieć, możesz powtórzyć dowolny temat lub krok samouczka.",
                     "updated": 1674946653733
+                },
+                {
+                    "language": "PT",
+                    "text": "Se precisar de rever qualquer um destes tópicos, poderá reproduzir novamente o Tutorial sobre os Tópicos (Tutorial Topic) ou Passos (Tutorial Step).",
+                    "updated": 1712345009558
                 }
             ],
             "updated": 1636910771339
@@ -154,6 +164,11 @@
                     "language": "PL",
                     "text": "Możesz mnie znaleźć w lewym dolnym rogu Design Space, przejrzeć hierarchię tematów i kroków, a następnie kliknąć Play w dowolnym z nich. Tematy są ułożone zgodnie z ruchem wskazówek zegara, począwszy od prawej strony głównego węzła Tutorial.",
                     "updated": 1674946715183
+                },
+                {
+                    "language": "PT",
+                    "text": "Pode sempre encontrar-me no canto inferior esquerdo da Interface de Design (Design Space), navegar pela hierarquia dos tópicos e passos e clicar, em qualquer um deles, Reproduzir (Play). Os tópicos estão organizados na direção dos ponteiros do relógio, começando do lado direito do Nó (Node) principal do Tutorial.",
+                    "updated": 1712345448603
                 }
             ]
         },
@@ -212,6 +227,11 @@
                     "language": "PL",
                     "text": "Znajdź krok \"Need a Quick Reminder?\" poniżej, w temacie \"Tutorials & Help\". Następnie kliknij Stop i uruchom ponownie klikając Play na temat wspomnianego kroku samouczka!",
                     "updated": 1674946873796
+                },
+                {
+                    "language": "PT",
+                    "text": "\"Precisa de rever alguma informação?\" Encontre este passo sob o tópico \"Tutoriais e Ajuda (Tutorials & Help)\" em baixo. De seguida, clique em Parar (Stop) e reinicie clicando em Reproduzir (Play) no referido Passo do Tutorial (Tutorial Step)!",
+                    "updated": 1712345748419
                 }
             ]
         }

@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Kavramlar, hiyerarşide düğüm olarak temsil edilmeyen kavramlar veya fikirlerdir. Kavram kategorisindeki sayfalar, tek bir sayfada açıklanabilecek kavramları veya fikirleri kapsar. Yani, kavramlar tek bir sayfada kapsamlı bir şekilde ele alınabilecek kavramlardır.",
                 "updated": 1652646187285
+            },
+            {
+                "language": "PT",
+                "text": "Os conceitos são noções ou ideias que não são representadas como Nós (Node’s) numa hierarquia. As páginas na categoria dos conceitos abordam noções ou ideias que podem ser explicadas numa única página. Ou seja, os conceitos são noções que podem ser abordadas exaustivamente numa única página.",
+                "updated": 1712248574530
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Bir kavramın sayfası bağımsızdır.",
                     "updated": 1652646217858
+                },
+                {
+                    "language": "PT",
+                    "text": "A página de um conceito é independente.",
+                    "updated": 1712248605922
                 }
             ]
         }

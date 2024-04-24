@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Zanim przejdziemy do rzeczy, pozwól, że powiem Ci kilka rzeczy o tym, jak działają nasze samouczki.",
                 "updated": 1674946410562
+            },
+            {
+                "language": "PT",
+                "text": "Antes de voltarmos ao trabalho, deixe-me contar-lhe algumas coisas sobre como nós – os tutoriais - funcionamos. ",
+                "updated": 1713261058892
             }
         ]
     },
@@ -118,6 +123,11 @@
                     "language": "PL",
                     "text": "Krótko mówiąc, to ty jesteś szefem!",
                     "updated": 1674946415872
+                },
+                {
+                    "language": "PT",
+                    "text": "Em resumo, você é o chefe!",
+                    "updated": 1712344376932
                 }
             ]
         },
@@ -175,6 +185,11 @@
                     "language": "PL",
                     "text": "W dowolnym momencie możesz zatrzymać samouczek i pominąć kroki lub całe tematy. Gdy będziesz gotowy do wznowienia lekcji, znajdź samouczek w dolnej części Design Space. Wybierz Resume z menu, aby zacząć od miejsca, w którym skończyłeś, lub od pierwszego kroku, który pominąłeś. Wybierz Play, aby zacząć od początku!",
                     "updated": 1674946491704
+                },
+                {
+                    "language": "PT",
+                    "text": "Poderá interromper um tutorial, saltar passos — ou tópicos inteiros — em qualquer momento. Quando estiver pronto para retomar a lição, encontre-nos na secção inferior do espaço de design. Selecione \"Continuar\" no menu para começar onde parou, ou no primeiro passo que saltou. Selecione \"Reproduzir\" para começar desde o principio!",
+                    "updated": 1712344488209
                 }
             ]
         },
@@ -232,6 +247,11 @@
                     "language": "PL",
                     "text": "Spróbujmy! Kliknij przycisk Stop poniżej, a gdy już zniknę, otwórz moje menu i wybierz opcję Resume.",
                     "updated": 1674946521014
+                },
+                {
+                    "language": "PT",
+                    "text": "Vamos experimentar! Clique no botão “Parar (Stop)” abaixo e, assim que eu desaparecer, abra novamente o menu e selecione \"Continuar (Resume)\".",
+                    "updated": 1712344604423
                 }
             ]
         }

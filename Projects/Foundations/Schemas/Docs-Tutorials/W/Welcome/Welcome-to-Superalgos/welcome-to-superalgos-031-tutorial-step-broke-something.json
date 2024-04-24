@@ -58,6 +58,11 @@
                 "language": "PL",
                 "text": "Jeśli kiedykolwiek coś zepsujesz - np. usuniesz węzeł lub zmienisz konfigurację - i nie wiesz, jak sobie poradzić...",
                 "updated": 1675002427227
+            },
+            {
+                "language": "PT",
+                "text": "Se alguma vez cometer um erro — como apagar um nó ou alterar uma configuração — e não souber como resolver a situação... ",
+                "updated": 1713261086913
             }
         ]
     },
@@ -115,6 +120,11 @@
                     "language": "PL",
                     "text": "...możesz łatwo zacząć od oryginalnej przestrzeni roboczej Getting Started Tutorials Native Workspace lub przestrzeni roboczej Partner Exchange, której używasz!",
                     "updated": 1675002477574
+                },
+                {
+                    "language": "PT",
+                    "text": "... pode facilmente começar de novo com o tutorial original de Introdução ao Ambiente Nativo (Getting Started Tutorials Native Workspace) ou a Área de Trabalho (Workspace) da Parceria (Partner Exchange) que estiver a utilizar!",
+                    "updated": 1712346639713
                 }
             ],
             "updated": 1640358082476
@@ -172,6 +182,11 @@
                     "language": "PL",
                     "text": "W takim przypadku wystarczy otworzyć zakładkę, która jest po lewej stronie, przewinąć, znaleźć obszar roboczy i kliknąć go! Oryginalny Native Workspace załaduje się i samouczek pojawi się ponownie!",
                     "updated": 1675002567922
+                },
+                {
+                    "language": "PT",
+                    "text": "Veja o menu Área de Trabalho (Workspace) no canto superior esquerdo. Encontre o espaço de trabalho dos Tutoriais de Introdução (Getting Started Tutorials workspace) em:",
+                    "updated": 1712346821637
                 }
             ],
             "updated": 1687633039510

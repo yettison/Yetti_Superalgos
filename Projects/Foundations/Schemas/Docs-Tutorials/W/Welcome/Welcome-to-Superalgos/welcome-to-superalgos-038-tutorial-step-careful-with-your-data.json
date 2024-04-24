@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "Zatrzymanie wszystkich zadań może potrwać do jednej minuty. Nigdy nie należy zamykać systemu przed zatrzymaniem wszystkich zadań.",
                 "updated": 1675079550858
+            },
+            {
+                "language": "PT",
+                "text": "Pode demorar até um minuto até que todas as tarefas parem. Verifique a aplicação no terminal para ver as tarefas a pararem! ",
+                "updated": 1713261148337
             }
         ],
         "updated": 1687635431014
@@ -113,6 +118,11 @@
                     "language": "PL",
                     "text": "Aby poprawnie zamknąć Superalgos wykonaj następujące kroki:",
                     "updated": 1675079646894
+                },
+                {
+                    "language": "PT",
+                    "text": "A forma correcta de fechar o Superegos é a seguinte:",
+                    "updated": 1712351747494
                 }
             ]
         },
@@ -168,6 +178,11 @@
                     "language": "PL",
                     "text": "Zatrzymaj wszystkie zadania i daj sobie kilka minut.",
                     "updated": 1675079623369
+                },
+                {
+                    "language": "PT",
+                    "text": "Pare todas as tarefas e aguarde alguns minutos.",
+                    "updated": 1712351796165
                 }
             ]
         },
@@ -223,6 +238,11 @@
                     "language": "PL",
                     "text": "Po zakończeniu wszystkich zadań możesz zamknąć konsolę lub zatrzymać proces za pomocą Ctrl + Key-C.",
                     "updated": 1675079665014
+                },
+                {
+                    "language": "PT",
+                    "text": "Quando todas as tarefas estiverem terminadas, pode fechar a aplicação do terminal ou parar o processo com Ctrl + Key-C.",
+                    "updated": 1712351906826
                 }
             ]
         },
@@ -277,6 +297,11 @@
                     "language": "PL",
                     "text": "W każdej chwili możesz zamknąć przeglądarkę i pozostawić zadania przetwarzane w tle.",
                     "updated": 1675079679541
+                },
+                {
+                    "language": "PT",
+                    "text": "Pode agora fechar o browser a qualquer momento e, se for o caso, deixar as tarefas em execução em segundo plano.",
+                    "updated": 1712352107005
                 }
             ]
         },
@@ -332,6 +357,11 @@
                     "language": "PL",
                     "text": "Zamknięcie Client przed zakończeniem zadań może spowodować uszkodzenie danych!",
                     "updated": 1675079688903
+                },
+                {
+                    "language": "PT",
+                    "text": "Fechar o Cliente (Client) antes das tarefas pararem pode fazer com que os seus dados fiquem corrompidos! Se isso acontecer, terá de eliminar os ficheiros corrompidos e processar novamente os indicadores.",
+                    "updated": 1712352166699
                 }
             ]
         }

@@ -60,6 +60,11 @@
                 "language": "PL",
                 "text": "Wejdź do menu węzła Data Tasks i znajdź w prawym górnym rogu przycisk \"Run all project data tasks\"....",
                 "updated": 1674934900511
+            },
+            {
+                "language": "PT",
+                "text": "No menu do nó Tarefas dos Dados (Data Tasks) irá encontrar a opção \"Executar todas as tarefas de dados do projeto (Run all project data tasks)\" no canto superior direito…",
+                "updated": 1712265696767
             }
         ]
     },
@@ -119,6 +124,11 @@
                     "language": "PL",
                     "text": "Kliknij przycisk \"Run all project data tasks\"! Potwierdź żądanie, klikając przycisk po raz drugi.",
                     "updated": 1674934944272
+                },
+                {
+                    "language": "PT",
+                    "text": "Carregue no botão \"Executar todas as tarefas de dados do projeto (Run all project data tasks)! Confirme o pedido pressionando no botão uma segunda vez. ",
+                    "updated": 1713260951462
                 }
             ]
         },
@@ -176,6 +186,11 @@
                     "language": "PL",
                     "text": "Po około 30 sekundach pod węzłem Data Tasks powinno pojawić się powiadomienie wskazujące, że 1 z 1 węzłów Exchange Data Tasks jest uruchomiony.",
                     "updated": 1674935045252
+                },
+                {
+                    "language": "PT",
+                    "text": "Dentro de sensivelmente 30 segundos, deverá de ver uma notificação de estado abaixo do nó Tarefas dos Dados (Data Tasks) indicando que 1 de 1 tarefa do nó de Tarefas dos Dados da Correctora está a ser executada.",
+                    "updated": 1712309654486
                 }
             ],
             "updated": 1622190035816
@@ -234,6 +249,11 @@
                     "language": "PL",
                     "text": "Konsola aplikacji powinna pokazać coś podobnego do filmu w następnym kroku.",
                     "updated": 1674935099830
+                },
+                {
+                    "language": "PT",
+                    "text": "Deverá ser ver algo de semelhante ao vídeo na sua consola no terminal.",
+                    "updated": 1712266042946
                 }
             ]
         }

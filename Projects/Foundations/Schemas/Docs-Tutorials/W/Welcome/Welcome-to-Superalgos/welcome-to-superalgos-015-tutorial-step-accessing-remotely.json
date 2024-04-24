@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Jeżeli łączysz się do Client z tego samego komputera, możesz kliknąć Next i pominąć ten krok!",
                 "updated": 1674835718728
+            },
+            {
+                "language": "PT",
+                "text": "Se estiver a aceder ao Cliente (Client) a partir da mesma máquina, pode clicar em \"Seguinte\" e saltar este passo agora!",
+                "updated": 1712262777706
             }
         ]
     },
@@ -106,7 +111,7 @@
                 },
                 {
                     "language": "RU",
-                    "text": "Если Вы получаете доступ к Client с удаленного устройства, то необходимо отрегулировать конфигурацию узел LAN Network Node перед тем, как Вы продолжите.",
+                    "text": "Если Вы получаете доступ к Client с удаленного устройс��ва, то необходимо отрегулировать конфигурацию узел LAN Network Node перед тем, как Вы продолжите.",
                     "updated": 1641803204715
                 },
                 {
@@ -118,6 +123,11 @@
                     "language": "PL",
                     "text": "Jeżeli łączysz się do Client z innego komputera, musisz dostosować konfigurację LAN Network Node.",
                     "updated": 1674835808698
+                },
+                {
+                    "language": "PT",
+                    "text": "Se estiver a aceder ao Cliente (Client) a partir de uma máquina remota, deve ajustar a configuração do Nó de Rede LAN (LAN Network Node). ",
+                    "updated": 1712262840032
                 }
             ]
         },
@@ -182,6 +192,11 @@
                     "language": "PL",
                     "text": "Kliknij Configure w prawym górnym rogu menu LAN Network Node.",
                     "updated": 1674835836809
+                },
+                {
+                    "language": "PT",
+                    "text": "Clique em \"Configurar (Configure)\" no canto superior direito do menu do Nó de Rede LAN(LAN Network Node).",
+                    "updated": 1712262918679
                 }
             ]
         },
@@ -240,6 +255,11 @@
                     "language": "PL",
                     "text": "Zmień parametr host na adres IP maszyny, na której działa backend.",
                     "updated": 1674835881448
+                },
+                {
+                    "language": "PT",
+                    "text": "Altere o parâmetro \"host\" para o endereço IP da máquina onde o backend está a ser executado.",
+                    "updated": 1712263160211
                 }
             ]
         },
@@ -283,6 +303,11 @@
                     "language": "PL",
                     "text": "Jeśli używasz reverse proxy, dodaj ten parametr...",
                     "updated": 1674835894303
+                },
+                {
+                    "language": "PT",
+                    "text": "Se estiver a utilizar um servidor reverse proxy, adicione este parâmetro...",
+                    "updated": 1712263256028
                 }
             ]
         },
@@ -351,6 +376,11 @@
                     "language": "PL",
                     "text": "Teraz zamknij edytor. Jeśli konfiguracja jest poprawna, komunikat o błędzie powinien za chwilę zniknąć!",
                     "updated": 1674835922922
+                },
+                {
+                    "language": "PT",
+                    "text": "Agora feche o editor. Se a sua configuração estiver correta, a mensagem de erro deverá de desaparecer rapidamente! ",
+                    "updated": 1713260904940
                 }
             ]
         }

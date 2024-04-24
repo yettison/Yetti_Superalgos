@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "Rdzeniem operacji gromadzenia danych są zadania uruchamiające boty. Jeden Task kontroluje jednego bota, a Task Manager może kontrolować wiele Task.",
                 "updated": 1675077682248
+            },
+            {
+                "language": "PT",
+                "text": "A essência numa operação de mineração de dados (Data Mines) são as tarefas que executam os bots. Uma Tarefa (Task) controla um bot, e um Gestor de Tarefas (Task Manager) pode controlar várias tarefas. ",
+                "updated": 1713261123355
             }
         ]
     },
@@ -114,6 +119,11 @@
                     "language": "PL",
                     "text": "Do tej pory poznałeś już sześć różnych sposobów, które możesz wykorzystać do sterowania każdym botem w operacji gromadzenia danych. Na najwyższym poziomie węzeł Task Manager kontroluje wszystkie boty gromadzące dane w węźle LAN Network.",
                     "updated": 1675077844989
+                },
+                {
+                    "language": "PT",
+                    "text": "Podemos ver que já aprendeu sobre seis dispositivos diferentes que pode utilizar para controlar cada bot na sua operação de mineração de dados (Data Mines). No nível mais alto, o nó Tarefas dos Dados (Data Tasks) controla todos os bots de mineração de dados no nó da Rede LAN (LAN Network Node).",
+                    "updated": 1712349268392
                 }
             ]
         },
@@ -169,6 +179,11 @@
                     "language": "PL",
                     "text": "O węzłach sieci porozmawiamy za chwilę...",
                     "updated": 1675077872636
+                },
+                {
+                    "language": "PT",
+                    "text": "Iremos falar brevemente nos nós da rede ….",
+                    "updated": 1712349333878
                 }
             ]
         },
@@ -225,6 +240,11 @@
                     "language": "PL",
                     "text": "Na najniższym poziomie, pojedynczy Task kontroluje pojedynczego bota. Węzły pomiędzy nimi to węzły pomocnicze, które porządkują operacje i umożliwiają kontrolę nad poszczególnymi sekcjami.",
                     "updated": 1675077999743
+                },
+                {
+                    "language": "PT",
+                    "text": "No nível mais baixo, uma Tarefa (Task) individual controla um único bot. Os nós intermediários são nós de organização que ajudam a manter a operação organizada e permitem um controle detalhado sobre as diferentes seções.",
+                    "updated": 1712349564147
                 }
             ]
         }

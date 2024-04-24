@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Özet: Her konu veya eğitim sayfasının sıralı bir sayfa numarası vardır. Sayfa numarası, ilgili içindekiler tablosunu oluşturmak için kullanılır.",
                 "updated": 1646207885083
+            },
+            {
+                "language": "PT",
+                "text": "Cada página de tópico ou tutorial possui um número de página sequencial. O número da página é usado para construir o índice correspondente.",
+                "updated": 1712250023171
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Bu noktada, sayfa numarası Dokümanlar arayüzünden değiştirilemez. Sayfa numarasını değiştirmek için ilgili dosyayı manuel olarak değiştirmeniz, sayfa numarası alanını düzenlemeniz ve sayfanın sayfa numarasını dosya adına uygun şekilde eşleştirmeniz gerekir.",
                     "updated": 1646207911597
+                },
+                {
+                    "language": "PT",
+                    "text": "Assim, o número da página não pode ser alterado a partir da interface dos Documentos. Para alterar o número da página, é necessário modificar manualmente o arquivo correspondente, editando o campo de número da página e mapeando adequadamente o número da página no nome do arquivo.",
+                    "updated": 1712250102998
                 }
             ]
         },
@@ -64,6 +74,11 @@
                     "language": "TR",
                     "text": "The Docs Repaginate Command komutu, geniş sayfa koleksiyonlarının sayfa numaralarının düzenlenmesine yardımcı olur.",
                     "updated": 1646207966808
+                },
+                {
+                    "language": "PT",
+                    "text": "O comando Repaginar dos Documentos (Docs Repaginate Command ) ajuda a organizar os números de página de grandes coleções de páginas.",
+                    "updated": 1712250161266
                 }
             ]
         }

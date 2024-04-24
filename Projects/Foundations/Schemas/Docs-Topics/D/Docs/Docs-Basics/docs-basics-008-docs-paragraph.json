@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Paragraf, Dokümanların en küçük bilgi birimidir. Bir Dokümanlar Sayfası paragraflardan oluşur.",
                 "updated": 1646209217034
+            },
+            {
+                "language": "PT",
+                "text": "Um parágrafo é a menor unidade de informação gerida pelos Docs. De certa forma, uma Página de Documentos (Docs Page) é composta por parágrafos.",
+                "updated": 1712249308235
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Paragraf stili, Dokümanlar Paragraf Stilleri (Docs Paragraph Styles)sayfasında açıklandığı gibi olabilir.",
                     "updated": 1646209272482
+                },
+                {
+                    "language": "PT",
+                    "text": "Um parágrafo pode ter um estilo, como explicado na página Estilos de Parágrafo dos Documentos (Docs Paragraph Styles).",
+                    "updated": 1712249350085
                 }
             ]
         }

@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "Podobnie jak Design Space, Charting Space charakteryzuje się ogromną przestrzenią, gdzie możesz dodwawać wykresy... tak wiele, że jedynym ograniczeniem jest moc obliczeniowa Twojego sprzętu!",
                 "updated": 1675080895079
+            },
+            {
+                "language": "PT",
+                "text": "Tal como a Interface de Design (Design Space), a Interface dos Gráficos (Charting Space) apresenta uma enorme área onde podes configurar muitos gráficos... tantos quantos o poder de processamento o teu hardware conseguir lidar! ",
+                "updated": 1713261175891
             }
         ]
     },
@@ -114,6 +119,11 @@
                     "language": "PL",
                     "text": "Jako ułatwienie dla nowych użytkowników, w tym obszarze roboczym znajdują się tylko dwa wykresy. Zaawansowani użytkownicy monitorują wykresy z wielu giełd i wielu rynków.",
                     "updated": 1675080993731
+                },
+                {
+                    "language": "PT",
+                    "text": "Para ser simples para os novatos, haverá apenas dois gráficos neste espaço nos tutoriais de iniciação. Já os utilizadores avançados monitorizam gráficos de múltiplas correctoras e mercados.",
+                    "updated": 1712853114405
                 }
             ]
         },
@@ -169,6 +179,11 @@
                     "language": "PL",
                     "text": "Aby poruszać się po Viewport, kliknij i przeciągnij na pustym obszarze za pomocą myszy. Kombinacja klawiszy to Shift plus klawisze strzałek ↑ ← → ↓",
                     "updated": 1675081022765
+                },
+                {
+                    "language": "PT",
+                    "text": "Para se mover pela interface, clique e arraste pela área em branco usando o seu rato. Em alternativa pode usar o teclado. Esta é a combinação de teclas: Shift em simultâneo com qualquer umas destas teclas ↑ ← → ↓.",
+                    "updated": 1712853776158
                 }
             ],
             "updated": 1622198195729
