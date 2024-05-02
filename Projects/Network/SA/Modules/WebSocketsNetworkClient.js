@@ -95,7 +95,7 @@ exports.newNetworkModulesWebSocketsNetworkClient = function newNetworkModulesWeb
                     }
 
                     clearTimeout(socket.pingTimeout)
-                    if (thisObject.socketNetworkClients.isConnected === true) {
+                    if (thisObject.socketNetworkClients !== undefined && thisObject.socketNetworkClients.isConnected === true) {
                         SA.logger.info('')
                         SA.logger.info('Websockets Client Disconnected from Network Node via Web Sockets ............. Disconnected from ' + connectionInfo())
                         SA.logger.info('')
