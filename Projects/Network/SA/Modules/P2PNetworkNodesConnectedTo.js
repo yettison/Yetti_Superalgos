@@ -50,16 +50,9 @@ exports.newNetworkModulesP2PNetworkNodesConnectedTo = function newNetworkModules
             // logPeers()
             if (thisObject.peers.length >= maxOutgoingPeers) {
                 checkConnectedPeers()
-                if(thisObject.peers.length >= maxOutgoingPeers) {
-                    const itemsToPrune = thisObject.peers.splice(0, maxOutgoingPeers)
-                    for(let i = 0; i < itemsToPrune.length; i++) {
-                        itemsToPrune[i].webSocketsClient.finalize()
-                    }
-                }
                 intervalIdConnectToPeers = setTimeout(connectToPeers, RECONNECT_DELAY)
                 return
             }
-            let processedPeers = []
             for (let i = 0; i < p2pNetwork.p2pNodesToConnect.length; i++) {
                 if (thisObject.peers.length >= maxOutgoingPeers) {
                     SA.logger.info('breaking from loop due to max peers being met')
@@ -83,7 +76,7 @@ exports.newNetworkModulesP2PNetworkNodesConnectedTo = function newNetworkModules
                 }
 
                 peer.webSocketsClient = SA.projects.network.modules.webSocketsNetworkClient.newNetworkModulesWebSocketsNetworkClient()
-                const task = peer.webSocketsClient.initialize(
+                await peer.webSocketsClient.initialize(
                     callerRole,
                     p2pNetworkClientIdentity,
                     peer.p2pNetworkNode,
@@ -92,10 +85,9 @@ exports.newNetworkModulesP2PNetworkNodesConnectedTo = function newNetworkModules
                 )
                     .then(addPeer)
                     .catch(onError)
-                processedPeers.push(task)
-                // automatically add to the peer group then remove if connection is unsuccessful
-                thisObject.peers.push(peer)
+                              
                 function addPeer() {
+                    thisObject.peers.push(peer)
                     SA.logger.info('added peer ' + peerInfo(peer))
                     // logPeers()
                     // console.log('this is our connected network peers', thisObject.peers)
@@ -127,8 +119,6 @@ exports.newNetworkModulesP2PNetworkNodesConnectedTo = function newNetworkModules
                     }
                 }
             }
-
-            await Promise.all(processedPeers)
 
             function isPeerConnected(peer) {
                 return findPeerIndex(peer) > -1
