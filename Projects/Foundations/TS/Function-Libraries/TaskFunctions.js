@@ -4,6 +4,7 @@ exports.newFoundationsFunctionLibrariesTaskFunctions = function () {
         taskHearBeat: taskHearBeat,
         taskError: taskError,
         getBotModuleByName: getBotModuleByName,
+        getTaskType: getTaskType
     }
 
     return thisObject
@@ -60,5 +61,13 @@ exports.newFoundationsFunctionLibrariesTaskFunctions = function () {
                 }
             }
         }
+    }
+
+    function getTaskType() {
+        /* Returns the type of the currently running task */
+        let taskType
+        if (TS.projects.foundations.globals.taskConstants.TASK_NODE.bot?.type === 'Trading Bot Instance') { taskType = 'Trading' }
+        else if (TS.projects.foundations.globals.taskConstants.TASK_NODE.bot?.type === 'Sensor Bot Instance') { taskType = 'Data' }
+        return taskType
     }
 }
