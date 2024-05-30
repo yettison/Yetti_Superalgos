@@ -79,7 +79,7 @@ exports.newTradingSignalsModulesIncomingCandleSignals = function () {
             keysByCandle.set(candleKey, keys)
 
             /* If this is a Trading Task, provide information about received trading signals (not candle/trading system signals) on console */
-            if (taskType === 'Trading' && tradingSignalMessage?.tradingSignal?.signalDefinition?.type !== undefined && tradingSignalMessage?.tradingSignal?.signalDefinition?.type !== 'Trading System Signal') {
+            if (taskType === 'Trading' && tradingSignalMessage.tradingSignal.signalDefinition?.type !== undefined && tradingSignalMessage.tradingSignal.signalDefinition?.type !== 'Trading System Signal') {
                 SA.logger.info("Trading Signal received | Type: " + tradingSignalMessage.tradingSignal.signalDefinition.type + " | Label: " + getSignalLabel(tradingSignalMessage.tradingSignal.signalDefinition.id))
             }
             
