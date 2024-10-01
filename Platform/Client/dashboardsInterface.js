@@ -388,105 +388,102 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
         }
     }        
     
-    /*
-    async function sendGovernance() {
-        let test = {
-                                User1: {name: 'UserName', wallet: 'User BlockchainWallet', SAbalance: 123456789, TokenPower: 987654321},
-                                User2: {name: 'UserName', wallet: 'User BlockchainWallet', SAbalance: 'User Token Balance', TokenPower: 'User Token Power'},
-                                User3: {name: 'UserName', wallet: 'User BlockchainWallet', SAbalance: 'User Token Balance', TokenPower: 'User Token Power'},
+    // async function sendGovernance() {
+    //     let test = {
+    //                             User1: {name: 'UserName', wallet: 'User BlockchainWallet', SAbalance: 123456789, TokenPower: 987654321},
+    //                             User2: {name: 'UserName', wallet: 'User BlockchainWallet', SAbalance: 'User Token Balance', TokenPower: 'User Token Power'},
+    //                             User3: {name: 'UserName', wallet: 'User BlockchainWallet', SAbalance: 'User Token Balance', TokenPower: 'User Token Power'},
 
-                            }
+    //                         }
         
-        let userInfo1 = Array.from(SA.projects.network.globals.memory.maps.USER_PROFILES_BY_ID)
-        let userInfo2 = await SA.projects.network.modules.AppBootstrapingProcess.extractInfoFromUserProfiles(userProfile)
+    //     let userInfo1 = Array.from(SA.projects.network.globals.memory.maps.USER_PROFILES_BY_ID)
+    //     let userInfo2 = await SA.projects.network.modules.AppBootstrapingProcess.extractInfoFromUserProfiles(userProfile)
 
-        userInfo2
+    //     userInfo2
 
-       // let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Governance-UserInfo|*|'/* + JSON.stringify(test) */+ '|*|' + JSON.stringify(userInfo1) + '|*|' + JSON.stringify(userInfo2)
-        //socketClient.send(messageToSend)
+    //    // let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Governance-UserInfo|*|'/* + JSON.stringify(test) */+ '|*|' + JSON.stringify(userInfo1) + '|*|' + JSON.stringify(userInfo2)
+    //     //socketClient.send(messageToSend)
 
-        //SA.logger.info('from UserInfo to Dashboard APP:' , test)
-        //SA.logger.info('from UserInfo 1 to Dashboard APP:' , userInfo1)
-        //SA.logger.info('from UserInfo 2 to Dashboard APP:' , userInfo2)
+    //     //SA.logger.info('from UserInfo to Dashboard APP:' , test)
+    //     //SA.logger.info('from UserInfo 1 to Dashboard APP:' , userInfo1)
+    //     //SA.logger.info('from UserInfo 2 to Dashboard APP:' , userInfo2)
 
-    //}  
-    
-    /*
+    // }  
 
-    function sendGlobals() {
-        // This function packs and then sends the Global objects to the inspector
-        packedSA = packGlobalObj('SA', SA)
-        packedPL = packGlobalObj('PL', PL)
+    // function sendGlobals() {
+    //     // This function packs and then sends the Global objects to the inspector
+    //     packedSA = packGlobalObj('SA', SA)
+    //     packedPL = packGlobalObj('PL', PL)
 
-        //let parsed = JSON.parse(data)
-        //SA.logger.info('this is the parsed object', parsed)
-        let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Globals|*|' + packedSA + '|*|' + packedPL
-        socketClient.send(messageToSend)
+    //     //let parsed = JSON.parse(data)
+    //     //SA.logger.info('this is the parsed object', parsed)
+    //     let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Globals|*|' + packedSA + '|*|' + packedPL
+    //     socketClient.send(messageToSend)
 
-        // todo: handle global TS object 
-        // note: Access event handlers PL.servers.EVENT_SERVER.eventHandlers
+    //     // todo: handle global TS object 
+    //     // note: Access event handlers PL.servers.EVENT_SERVER.eventHandlers
 
-        function packGlobalObj (name, object) {
-            // This function copies a global object over to a simple JS Object and then is stringified to JSON in order to be sent over websocket
-            let packedGlobal = {}
-            packedGlobal[name] = recursivelyCopy(object)
+    //     function packGlobalObj (name, object) {
+    //         // This function copies a global object over to a simple JS Object and then is stringified to JSON in order to be sent over websocket
+    //         let packedGlobal = {}
+    //         packedGlobal[name] = recursivelyCopy(object)
 
-            return JSON.stringify(packedGlobal)
+    //         return JSON.stringify(packedGlobal)
 
-            function recursivelyCopy (object) {
-                let objectCopy = {}
+    //         function recursivelyCopy (object) {
+    //             let objectCopy = {}
         
-                if (typeof object === 'object') {
-                    // Break down various object types and copy them all to a simple javascript object
-                    if (object instanceof Array) {
-                        object.forEach( function (value, index) {
-                            objectCopy[index] = recursivelyCopy(value)
+    //             if (typeof object === 'object') {
+    //                 // Break down various object types and copy them all to a simple javascript object
+    //                 if (object instanceof Array) {
+    //                     object.forEach( function (value, index) {
+    //                         objectCopy[index] = recursivelyCopy(value)
 
-                        })
-                    } else if (object instanceof Map) {
-                        object.forEach( function (value, key) {
-                            objectCopy[key] = recursivelyCopy(value)
+    //                     })
+    //                 } else if (object instanceof Map) {
+    //                     object.forEach( function (value, key) {
+    //                         objectCopy[key] = recursivelyCopy(value)
 
-                        })
-                    } else if (object instanceof Object) {
-                        for (let element in object ) {
-                            if (element === 'nodeModules') {
-                                //Only copies name of each dependency
-                                let dependencies = []
-                                for (let module in object[element] ) {
-                                    dependencies.push(module)
-                                }
-                                objectCopy[element] = dependencies
-                            } else {
-                                objectCopy[element] = recursivelyCopy(object[element])
-                            }
-                        }
-                    } 
-                } else if (typeof object === 'function') {
-                    objectCopy = object.constructor.name
+    //                     })
+    //                 } else if (object instanceof Object) {
+    //                     for (let element in object ) {
+    //                         if (element === 'nodeModules') {
+    //                             //Only copies name of each dependency
+    //                             let dependencies = []
+    //                             for (let module in object[element] ) {
+    //                                 dependencies.push(module)
+    //                             }
+    //                             objectCopy[element] = dependencies
+    //                         } else {
+    //                             objectCopy[element] = recursivelyCopy(object[element])
+    //                         }
+    //                     }
+    //                 } 
+    //             } else if (typeof object === 'function') {
+    //                 objectCopy = object.constructor.name
 
-                } else {
-                    // All other variables are directly assigned to objectCopy
-                    objectCopy = object
+    //             } else {
+    //                 // All other variables are directly assigned to objectCopy
+    //                 objectCopy = object
 
-                } 
-                return objectCopy
-            }
-        }
-    }
-    function sendExample() {
-        let oneObjToSend = { 
-                                example1: 'string data', 
-                                example2: 79456, 
-                                example3: { nestedObj1: 'more string data', nestedObj2: 9097789 }
-                            }
+    //             } 
+    //             return objectCopy
+    //         }
+    //     }
+    // }
+    // function sendExample() {
+    //     let oneObjToSend = { 
+    //                             example1: 'string data', 
+    //                             example2: 79456, 
+    //                             example3: { nestedObj1: 'more string data', nestedObj2: 9097789 }
+    //                         }
 
-        let twoObjToSend = {
-                                exampleArray1: [ "data string", "more Data", "hold on one more" ],
-                                exampleArray2: [ 34, 645, 2354, 58655 ]
-                            }
+    //     let twoObjToSend = {
+    //                             exampleArray1: [ "data string", "more Data", "hold on one more" ],
+    //                             exampleArray2: [ 34, 645, 2354, 58655 ]
+    //                         }
 
-        let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Example|*|' + JSON.stringify(oneObjToSend) + '|*|' + JSON.stringify(twoObjToSend)
-        socketClient.send(messageToSend)
-    }*/
+    //     let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Example|*|' + JSON.stringify(oneObjToSend) + '|*|' + JSON.stringify(twoObjToSend)
+    //     socketClient.send(messageToSend)
+    // }
 }

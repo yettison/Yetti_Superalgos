@@ -127,7 +127,7 @@
 <script>
 import dashboardIcon from "../assets/dashboard.png";
 import Tabs from "../components/Tabs.vue";
-import ExpandableTree from "../components/expandableTree.vue";
+//import ExpandableTree from "../components/expandableTree.vue";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Chart as ChartJS, registerables } from 'chart.js';
 import 'chartjs-adapter-date-fns';
