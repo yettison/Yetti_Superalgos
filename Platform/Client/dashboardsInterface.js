@@ -170,7 +170,6 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
 
     async function sendSimulationData() {
         const fs = require('fs').promises;
-        const path = require('path');
     
         const basePath = path.join(global.env.PATH_TO_DATA_STORAGE, 'Project', 'Algorithmic-Trading', 'Trading-Mine', 'Masters', 'Low-Frequency');
     
@@ -222,9 +221,11 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
     
                     const hitRatioBase = tradingEpisode.episodeBaseAsset?.hitRatio?.value || 0;
                     const hitRatioQuoted = tradingEpisode.episodeQuotedAsset?.hitRatio?.value || 0;
-    
-                    const hitsBase = tradingEpisode.episodeBaseAsset?.hits?.value || 0;
-                    const failsBase = tradingEpisode.episodeBaseAsset?.fails?.value || 0;
+
+                    if (tradingEpisode.episodeQuotedAsset) {
+                        const hitsQuoted = tradingEpisode.episodeQuotedAsset.hits?.value || 0;
+                        const failsQuoted = tradingEpisode.episodeQuotedAsset.fails?.value || 0;
+                    }
     
                     const hitsQuoted = tradingEpisode.episodeQuotedAsset?.hits?.value || 0;
                     const failsQuoted = tradingEpisode.episodeQuotedAsset?.fails?.value || 0;
