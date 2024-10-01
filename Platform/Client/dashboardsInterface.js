@@ -208,44 +208,44 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                     const initialBalanceBase = tradingEpisode.episodeBaseAsset?.beginBalance?.value || 0;
                     const endBalanceBase = tradingEpisode.episodeBaseAsset?.endBalance?.value || 0;
                     const balanceBase = tradingEpisode.episodeBaseAsset?.balance?.value || 0;
-    
+                
                     const initialBalanceQuoted = tradingEpisode.episodeQuotedAsset?.beginBalance?.value || 0;
                     const endBalanceQuoted = tradingEpisode.episodeQuotedAsset?.endBalance?.value || 0;
                     const balanceQuoted = tradingEpisode.episodeQuotedAsset?.balance?.value || 0;
-    
+                
                     const profitLossQuoted = tradingEpisode.episodeQuotedAsset?.profitLoss?.value || 0;
                     const profitLossBase = tradingEpisode.episodeBaseAsset?.profitLoss?.value || 0;
-    
+                
                     const ROIQuoted = tradingEpisode.episodeQuotedAsset?.ROI?.value || 0;
                     const ROIBase = tradingEpisode.episodeBaseAsset?.ROI?.value || 0;
-    
+                
                     const hitRatioBase = tradingEpisode.episodeBaseAsset?.hitRatio?.value || 0;
                     const hitRatioQuoted = tradingEpisode.episodeQuotedAsset?.hitRatio?.value || 0;
-
-                    if (tradingEpisode.episodeQuotedAsset) {
-                        const hitsQuoted = tradingEpisode.episodeQuotedAsset.hits?.value || 0;
-                        const failsQuoted = tradingEpisode.episodeQuotedAsset.fails?.value || 0;
-                    }
-    
+                
+                    // Ensure episodeBaseAsset exists before accessing hits and fails
+                    const hitsBase = tradingEpisode.episodeBaseAsset?.hits?.value || 0;
+                    const failsBase = tradingEpisode.episodeBaseAsset?.fails?.value || 0;
+                
+                    // Ensure episodeQuotedAsset exists before accessing hits and fails
                     const hitsQuoted = tradingEpisode.episodeQuotedAsset?.hits?.value || 0;
                     const failsQuoted = tradingEpisode.episodeQuotedAsset?.fails?.value || 0;
-    
+                
                     const beginRate = tradingEpisode.beginRate?.value || 0;
                     const endRate = tradingEpisode.endRate?.value || 0;
-    
+                
                     let lastExecution = jsonData.lastExecution
                         ? jsonData.lastExecution.slice(0, -1)
                         : jsonData.lastFile
                             ? jsonData.lastFile.slice(0, -1)
                             : "N/A";
-    
+                
                     let filteredData = {
                         lastExecution: lastExecution,
                         beginDate: new Date(tradingEpisode.begin?.value || 0).toISOString().slice(0, -1),
                         endDate: new Date(tradingEpisode.end?.value || 0).toISOString().slice(0, -1),
-    
+                
                         // Base Asset
-                        episodeBaseAsset: tradingEpisode.episodeBaseAsset.value,
+                        episodeBaseAsset: tradingEpisode.episodeBaseAsset?.value || 'Unknown',
                         initialBalanceBase: initialBalanceBase,
                         endBalanceBase: endBalanceBase,
                         balanceBase: balanceBase,
@@ -254,9 +254,9 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                         hitRatioBase: hitRatioBase,
                         hitsBase: hitsBase,
                         failsBase: failsBase,
-    
+                
                         // Quoted Asset
-                        episodeQuotedAsset: tradingEpisode.episodeQuotedAsset.value,
+                        episodeQuotedAsset: tradingEpisode.episodeQuotedAsset?.value || 'Unknown',
                         initialBalanceQuoted: initialBalanceQuoted,
                         endBalanceQuoted: endBalanceQuoted,
                         balanceQuoted: balanceQuoted,
@@ -265,18 +265,18 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                         hitRatioQuoted: hitRatioQuoted,
                         hitsQuoted: hitsQuoted,
                         failsQuoted: failsQuoted,
-    
+                
                         // Rates
                         beginRate: beginRate,
                         endRate: endRate,
-    
+                
                         reportPath,  // Report path
                     };
-    
-                    let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|SimulationResult|*|' + JSON.stringify(filteredData);
+                
+                    let messageToSend = `${new Date().toISOString()}|*|Platform|*|Data|*|SimulationResult|*|${JSON.stringify(filteredData)}`;
                     socketClient.send(messageToSend);
-                    //SA.logger.info(`Simulation data sent from SA to Dashboard for ${messageToSend}`);
-                }
+                    SA.logger.info(`Simulation data sent from SA to Dashboard for ${messageToSend}`);
+                }                
             }
         } catch (error) {
             console.error('Error processing simulation data:', error);
