@@ -312,6 +312,11 @@ The expandable tree is a recurive component that will add copies of itself until
 
 </details>
 
+# First usage implementations Alpha 1.1
+
+Governance Dashboard: This Dashboard is not working at the moment. It will be available when global UI object are available from the Dashboards UI.
+
+Algorithmic Trading Dashboard: This Dashboards will show your trading bots and candles data directly from the Storage Path. 
 
 # Roadmap to Alpha 2
 The push for alpha 2 will be making data available to the Dashboards app. This work will primarily take place within the Platform app’s Dashboards client. Filtering and managing reported data will come in subsequent versions. What follows is a board roadmap toward the Alpha 2 version:

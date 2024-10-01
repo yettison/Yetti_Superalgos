@@ -6,7 +6,8 @@
         </div>
         <div class="col-6 mt-4 text-center">
           <h2><strong>Welcome to the Superalgos Governance Dashboard!</strong></h2>
-          <h5>Manage your SA tokens and control the distribution program from one place!</h5>
+          <h5>(Under Construction ...)</h5>
+                  <!-- Manage your SA tokens and control the distribution program from one place! -->
         </div>
       </div>
       <div class="row col-12 justify-content-end">

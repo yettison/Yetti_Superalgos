@@ -31,6 +31,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    open: true
+    open: true,
+    historyApiFallback: true
   }
 };
