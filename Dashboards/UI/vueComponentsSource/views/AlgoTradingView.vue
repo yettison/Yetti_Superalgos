@@ -139,7 +139,7 @@ export default defineComponent({
   props: ["incomingData", "timestamp"],
   components: {
     Tabs,
-    ExpandableTree,
+    //ExpandableTree,
   },
   data() {
     return {
@@ -233,13 +233,13 @@ export default defineComponent({
 
     selectedReport(newReport) {
       if (newReport) {
-        this.updatePerformanceChart(newReport);
+        this.updatePerformanceChart();
       }
     },
 
     selectedCandleData(newCandleData) {
       if (newCandleData) {
-        this.updateCandleChart(newCandleData);
+        this.updateCandleChart();
       }
     },
 

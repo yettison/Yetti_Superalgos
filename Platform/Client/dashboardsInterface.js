@@ -275,7 +275,7 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                 
                     let messageToSend = `${new Date().toISOString()}|*|Platform|*|Data|*|SimulationResult|*|${JSON.stringify(filteredData)}`;
                     socketClient.send(messageToSend);
-                    SA.logger.info(`Simulation data sent from SA to Dashboard for ${messageToSend}`);
+                    //SA.logger.info(`Simulation data sent from SA to Dashboard for ${messageToSend}`);
                 }                
             }
         } catch (error) {
@@ -350,7 +350,7 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                     continue;
                 }
     
-                const { exchange, assetPair, beginDate, endDate } = pathData;
+                const { exchange, assetPair} = pathData;
                 const key = `${exchange} | ${assetPair}`;
     
                 const candleData = {
@@ -387,7 +387,8 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
             SA.logger.error('Error processing candle data:', error);
         }
     }        
-                        
+    
+    /*
     async function sendGovernance() {
         let test = {
                                 User1: {name: 'UserName', wallet: 'User BlockchainWallet', SAbalance: 123456789, TokenPower: 987654321},
@@ -401,14 +402,17 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
 
         userInfo2
 
-        let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Governance-UserInfo|*|'/* + JSON.stringify(test) */+ '|*|' + JSON.stringify(userInfo1) + '|*|' + JSON.stringify(userInfo2)
-        socketClient.send(messageToSend)
+       // let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Governance-UserInfo|*|'/* + JSON.stringify(test) */+ '|*|' + JSON.stringify(userInfo1) + '|*|' + JSON.stringify(userInfo2)
+        //socketClient.send(messageToSend)
 
         //SA.logger.info('from UserInfo to Dashboard APP:' , test)
-        SA.logger.info('from UserInfo 1 to Dashboard APP:' , userInfo1)
-        SA.logger.info('from UserInfo 2 to Dashboard APP:' , userInfo2)
+        //SA.logger.info('from UserInfo 1 to Dashboard APP:' , userInfo1)
+        //SA.logger.info('from UserInfo 2 to Dashboard APP:' , userInfo2)
 
-    }    
+    //}  
+    
+    /*
+
     function sendGlobals() {
         // This function packs and then sends the Global objects to the inspector
         packedSA = packGlobalObj('SA', SA)
@@ -484,5 +488,5 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
 
         let messageToSend = (new Date()).toISOString() + '|*|Platform|*|Data|*|Example|*|' + JSON.stringify(oneObjToSend) + '|*|' + JSON.stringify(twoObjToSend)
         socketClient.send(messageToSend)
-    }
+    }*/
 }
