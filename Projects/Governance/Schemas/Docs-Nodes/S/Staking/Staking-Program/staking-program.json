@@ -18,6 +18,11 @@
                 "language": "TR",
                 "text": "Stake programı, (Staking Program) Superalgos Topluluğunun jeton sahiplerine jeton tuttukları için ödül verilmesine izin verir. Token tutmak, Topluluğun herhangi bir noktada teşvik etmeye karar verebileceği değerli bir katkı olabilir.",
                 "updated": 1645183947945
+            },
+            {
+                "language": "DE",
+                "text": "Das Staking-Programm ermöglicht es der Superalgos Community, Token-Inhaber für das Halten von Token zu entschädigen. Das Halten von Token kann ein wertvoller Beitrag sein, für den die Gemeinschaft (Community) jederzeit einen Anreiz schaffen kann. ",
+                "updated": 1713211498516
             }
         ]
     },
@@ -45,6 +50,11 @@
                     "language": "TR",
                     "text": "Bu çok basit bir programdır çünkü akıllı sözleşmeler veya Yönetim Adresinizden para transferleri gibi aktiviteleri içermez.",
                     "updated": 1645183980734
+                },
+                {
+                    "language": "DE",
+                    "text": "Dies ist ein sehr einfaches Programm, da es keine intelligenten Verträge oder Überweisungen von Ihrer Governance Address beinhaltet.",
+                    "updated": 1712604823619
                 }
             ]
         },
@@ -67,6 +77,11 @@
                     "language": "TR",
                     "text": "Başka amaçlarla kullanmadığınız Token Power ile Stake Programına katılabilirsiniz. Yapmanız gereken tek şey, programı Finansal Programlar (Financial Programs) düğümünden oluşturmak ve ona bir miktar Token Gücünün akmasına izin vermek.",
                     "updated": 1645184117819
+                },
+                {
+                    "language": "DE",
+                    "text": "Sie können am Staking-Programm mit der Token Power teilnehmen, die Sie nicht für andere Zwecke verwendet haben. Alles, was Sie tun müssen, ist, das Programm innerhalb des Knotens \"Financial Programs\" zu starten und etwas Token Power in das Programm fließen zu lassen.",
+                    "updated": 1712604834387
                 }
             ]
         },
@@ -88,6 +103,11 @@
                     "language": "TR",
                     "text": "Yönetişim Programları (Governance Programs) düğümü altındaki Superalgos Havuzları (Superalgos Pools) hiyerarşisinde tanımlanan Stake Ödül Havuzundan (Staking Rewards Pool), programa yönlendirdiğiniz Stake Gücü (Staking Power)ile orantılı olarak jetonlar alacaksınız.",
                     "updated": 1645184331346
+                },
+                {
+                    "language": "DE",
+                    "text": "Sie erhalten Token aus dem Einsatz-Belohnungs-Pool (Staking Rewards Pool), der in der Superalgos Pool -Hierarchie unter dem Knoten \"Governance Programs\" definiert ist, proportional zu der Einsatzstärke (Staking Power), die Sie dem Programm zuweisen.",
+                    "updated": 1712604844818
                 }
             ]
         },
@@ -137,6 +157,11 @@
                     "language": "TR",
                     "text": "Stake etmenin daha fazla token biriktirmenin en iyi yolu olmayabileceğine dikkat edin. Topluluk Oluşturma Programları (Community Building Programs) gibi bazı diğer programlar, Jeton Bonusları (Tokens Bonus)  aracılığıyla daha iyi bir finansal fırsat sunabilir! Diğer programlardaki Bonus Havuzu (Bonus Pool) teşviklerinin ne kadar büyük olduğunu kontrol etmek ve bunları Stake Ödül Havuzu (Staking Rewards Pool) ile karşılaştırmak isteyebilirsiniz!",
                     "updated": 1645184906366
+                },
+                {
+                    "language": "DE",
+                    "text": "Beachten Sie, dass der Einsatz nicht unbedingt der beste Weg ist, um mehr Token zu sammeln. Einige andere Programme, wie z. B. die Community Building Programs, bieten möglicherweise bessere finanzielle Möglichkeiten durch ihren Tokens Bonus! Prüfen Sie, wie groß die Bonus Pool Anreize in anderen Programmen sind und vergleichen Sie diese mit dem Staking Rewards Pool!",
+                    "updated": 1712604867444
                 }
             ]
         },
@@ -157,6 +182,11 @@
                     "language": "TR",
                     "text": "Yapılandırma",
                     "updated": 1645184912752
+                },
+                {
+                    "language": "DE",
+                    "text": "Konfiguration",
+                    "updated": 1712604875627
                 }
             ]
         }

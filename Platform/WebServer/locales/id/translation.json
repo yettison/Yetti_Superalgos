@@ -1,0 +1,885 @@
+{
+    "nav": {
+        "workspaces": {
+            "title": "Ruang Kerja",
+            "user": "Ruang Kerja Pengguna",
+            "native": "Ruang Kerja Native",
+            "collapseNodes": "Sembunyikan Semua Root Node",
+            "undoRedo": "Undo/Redo",
+            "save": "Simpan Workspace"
+        },
+        "contributions": {
+            "title": "Kontribusi",
+            "contribute": "Kontribusikan semua perubahan",
+            "update": "Perbarui Aplikasi",
+            "reset": "Atur Ulang Repositori Lokal"
+        }
+    },
+    "general": {
+        "done": "Selesai",
+        "enabled": "Diaktifkan",
+        "requestSent": "Permintaan Terkirim",
+        "sessionRunning": "Sesi Berjalan",
+        "runRequestSent": "Menjalankan Permintaan ",
+        "stopRequestSent": "Mengirim Permintaan Berhenti",
+        "resumeRequestSent": "Mengirim Permintaan Lanjutan",
+        "sessionCannotBeRun": "Sesi Tidak Dapat Dijalankan",
+        "sessionStopped": "Sesi Berhenti",
+        "sessionCannotBeStopped": "Sesi Tidak Dapat Dihentikan",
+        "sessionCannotBeResumed": "Sesi Tidak Dapat Dilanjutkan",
+        "disableSavingWithWorkspace": "Nonaktifkan Penyimpanan dengan Ruang Kerja",
+        "sendingMessage": "Mengirim Pesan",
+        "messageSent": "Pesan Terkirim",
+        "messageNotDelivered": "Pesan Tidak Terkirim",
+        "disabled": "Nonaktif",
+        "previous": "Sebelumnya",
+        "next": "Berikutnya",
+        "stop": "Berhenti",
+        "stopping": "Menghentikan...",
+        "skip": "Lewati",
+        "play": "Putar",
+        "resume": "Lanjutkan",
+        "run": "Jalankan",
+        "configure": "Konfigurasi",
+        "delete": "Hapus",
+        "edit": "Edit",
+        "debug": "Debug",
+        "debugging": "Debugging",
+        "debugRequestSent": "Permintaan Debug Terkirim",
+        "confirm": {
+            "delete": "Konfirmasi untuk Menghapus",
+            "proceed": "Konfirmasi untuk Melanjutkan",
+            "run": "Konfirmasi untuk Menjalankan",
+            "stop": "Konfirmasi untuk Berhenti",
+            "install": "Konfirmasi untuk Menginstal",
+            "save": "Konfirmasi untuk Menyimpan"
+        },
+        "updateCheck": "Periksa Pembaruan"
+    },
+    "docs": {
+        "space": {
+            "style": "Tambah Style Docs Space",
+            "settings": "Tambah Docs Space Setting",
+            "add": "Tambah Docs Space"
+        }
+    },
+    "install": {
+        "signingAccounts": "Pasang Signing Akun",
+        "missingVotes": "Pasang Missing Votes",
+        "asPlugin": "Pasang sebagai Plugin",
+        "missingAssets": "Pasang Missing Assets",
+        "missingClaims": "Pasang Missing Claims",
+        "apiResponseFieldRefs": "Pasang API Response Field Reference",
+        "marketPair": "Pasang Pair (Market)",
+        "market": "Pasang Market",
+        "product": "Pasang Product"
+    },
+    "uninstall": {
+        "marketPair": "Hapus Pair (Market)",
+        "market": "Hapus Market"
+    },
+    "sessions": {
+        "managed": {
+            "stop": "Hentikan Managed Session",
+            "run": "Jalankan Managed Session",
+            "reference": "Managed Session Reference"
+        }
+    },
+    "check": {
+        "forMissingReferences": "Periksa Missing References"
+    },
+    "fix": {
+        "missingReferences": "Perbaiki Missing References"
+    },
+    "add": {
+        "takePositionSignal": "Tambah Take Position Signal",
+        "triggerOffSignal": "Tambah Trigger Off Signal",
+        "triggerOnSignal": "Tambah Trigger On Signal",
+        "moveToPhaseSignal": "Tambah Move To Phase Signal",
+        "nextPhaseSignal": "Tambah Next Phase Signal",
+        "signalContextFormula": "Tambah Signal Context Formula",
+        "phaseSignal": "Tambah Phase Signal",
+        "closeStageSignal": "Tambah Close Stage Signal",
+        "targetRateSignal": "Tambah Target Rate Signal",
+        "targetSizeInQuotedAssetSignal": "Tambah Target Size Pada Quoted Asset Signal",
+        "targetSizeInBaseAssetSignal": "Tambah Target Size Pada Base Asset Signal",
+        "tradingSystemSignals": "Tambah Trading System Signals",
+        "specifiedProject": "Tambah Specified Project",
+        "desktopApps": "Tambah Desktop Apps",
+        "mobileApps": "Tambah Mobile Apps",
+        "serverApps": "Tambah Server Apps",
+        "taskServerApp": "Tambah Task Server App",
+        "socialTradingServerApp": "Tambah Social Trading Server App",
+        "socialTradingMobileApp": "Tambah Social Trading Mobile App",
+        "socialTradingDesktopApp": "Tambah Social Trading Desktop App",
+        "algoTradersPlatformApp": "Tambah Algo Traders Platform App",
+        "executionEnvironment": "Tambah Execution Environment",
+        "supervisedLearning": "Tambah Supervised Learning",
+        "unsupervisedLearning": "Tambah Unsupervised Learning",
+        "selfLearning": "Tambah Self Learning",
+        "reinforcementLearning": "Tambah Reinforcement Learning",
+        "inputLayer": "Tambah Input Layer",
+        "sequentialLayer": "Tambah Sequential layer",
+        "outputLayer": "Tambah Output Layer",
+        "activationlayers": "Tambah Activation Layers",
+        "basicLayers": "Tambah Basic Layers",
+        "convolutionalLayers": "Tambah Convolutional Layers",
+        "tensor": "Tambah Tensor",
+        "logicRegression": "Tambah Logistic Regression",
+        "artificialNeuralNetwork": "Tambah Artificial Neural Network",
+        "outputLabels": "Tambah Output Labels",
+        "dataLabel": "Tambah Data Label",
+        "optimizerByName": "Tambah Optimizer by Name",
+        "sgdInstance": "Tambah SGD Instance",
+        "momentumInstance": "Tambah Momentum Instance",
+        "adagradInstance": "Tambah Adagrad Instance",
+        "adadeltaInstance": "Tambah Adadelta Instance",
+        "adamInstance": "Tambah Adam Instance",
+        "rmspropInstance": "Tambah Rmsprop Instance",
+        "layersApi": "Tambah Layers API",
+        "coreApi": "Tambah Core API",
+        "compile": "Tambah Compile",
+        "fitDataset": "Tambah Fit Dataset",
+        "dataReporting": "Tambah Data Reporting",
+        "library": "Tambah Library",
+        "sequentialModel": "Tambah Sequential Model",
+        "functionalModel": "Tambah Functional Model",
+        "kernelInitializer": "Tambah Kernel Initializer",
+        "kernelConstraint": "Tambah Kernel Constraint",
+        "kernelRegularizer": "Tambah Kernel Regularizer",
+        "inputFeatures": "Tambah Input Features",
+        "inputShape": "Tambah Input Shape",
+        "batchInputShape": "Tambah Batch Input Shape",
+        "collectionCondition": "Tambah Collection Condition",
+        "dataFeature": "Tambah Data Feature",
+        "datasetArgs": "Tambah Dataset Args",
+        "verbose": "Tambah Verbose",
+        "epochs": "Tambah Epochs",
+        "callbacks": "Tambah Callbacks",
+        "minMaxScaler": "Tambah MinMax Scaler",
+        "standardScaler": "Tambah Standard Scaler",
+        "webglBackend": "Tambah WebGL Backend",
+        "nodejsBackend": "Tambah NodeJS Backend",
+        "wasmBackend": "Tambah WASM Backend",
+        "cpuBackend": "Tambah CPU Backend",
+        "environmentFlags": "Tambah Environment Flags",
+        "debugMode": "Tambah Debug Mode",
+        "productionMode": "Tambah Production Mode",
+        "dimensionalityUnits": "Tambah Dimensionality Units",
+        "activationFunction": "Tambah Activation Function",
+        "kernel": "Tambah Kernel",
+        "bias": "Tambah Bias",
+        "batchSize": "Tambah Batch Size",
+        "dtype": "Tambah Dtype",
+        "trainable": "Tambah Trainable",
+        "weights": "Tambah Weights",
+        "batcheSizePerGradientUpdate": "Tambah Batch Size Per Gradient Update",
+        "shuffle": "Tambah Shuffle",
+        "labelFormula": "Tambah Label Formula",
+        "featureFormula": "Tambah Feature Formula",
+        "featurePreprocessing": "Tambah Feature Preprocessing",
+        "conv1DLayer": "Tambah Conv 1D Layer",
+        "conv2DLayer": "Tambah Conv 2D Layer",
+        "conv2DTransposeLayer": "Tambah Conv 2D Transpose Layer",
+        "conv3DLayer": "Tambah Conv 3D Layer",
+        "cropping2DLayer": "Tambah Cropping 2D Layer",
+        "depthwiseConv2DLayer": "Tambah Depthwise Conv 2D Layer",
+        "separableConv2DLayer": "Tambah Separable Conv 2D Layer",
+        "upSampling2DLayer": "Tambah Up Sampling 2D Layer",
+        "optimizer": "Tambah Optimizer",
+        "lossFunction": "Tambah Loss Function",
+        "metrics": "Tambah Metrics",
+        "biasInitializer": "Tambah Bias Initializer",
+        "biasConstraint": "Tambah Bias Constraint",
+        "biasRegularizer": "Tambah Bias Regularizer",
+        "spatialDropout1DLayer": "Tambah Spatial Dropout 1D Layer",
+        "reshapeLayer": "Tambah Reshape Layer",
+        "repeatVectorLayer": "Tambah Repeat Vector Layer",
+        "permuteLayer": "Tambah Permute Layer",
+        "flattenLayer": "Tambah Flatten Layer",
+        "embeddingLayer": "Tambah Embedding Layer",
+        "dropoutLayer": "Tambah Dropout Layer",
+        "denseLayer": "Tambah Dense Layer",
+        "activationLayer": "Tambah Activation Layer",
+        "model": "Tambah Model",
+        "thresholdedReluLayer": "Tambah Thresholded Relu Layer",
+        "softmaxLayer": "Tambah Softmax Layer",
+        "reluLayer": "Tambah Relu Layer",
+        "preluLayer": "Tambah Prelu Layer",
+        "socialTradingBot": "Tambah Social Trading Bot",
+        "followedBotReference": "Tambah Followed Bot Reference",
+        "socialPersona": "Tambah Social Persona",
+        "timerAccouncement": "Tambah Timer Announcement",
+        "socialBotCommand": "Tambah Social Bot Command",
+        "twitterBot": "Tambah Twitter Bot",
+        "slackBot": "Tambah Slack Bot",
+        "discordBot": "Tambah Discord Bot",
+        "telegramBot": "Tambah Telegram Bot",
+        "announcementCondition": "Tambah Announcement Condition",
+        "announcementFormula": "Tambah Announcement Formula",
+        "portfolioBot": "Tambah Portfolio Bot",
+        "projectPortfolioProducts": "Tambah Project Portfolio Products",
+        "allPortfolioMineProducts": "Tambah Semua Portfolio Mine Products",
+        "portfolioMineProducts": "Tambah Portfolio Mine Products",
+        "dataProduct": "Tambah Data Product",
+        "userDefinedCode": "Tambah User Defined Code",
+        "exchangePortfolioProducts": "Tambah Exchange Portfolio Products",
+        "setEventReference": "Tambah Set Event Reference",
+        "setFormulaReference": "Tambah Set Formula Reference",
+        "code": "Tambah Code",
+        "portfolioEngine": "Tambah Portfolio Engine",
+        "portfolioMine": "Tambah Portfolio Mine",
+        "portfolioSystem": "Tambah Portfolio System",
+        "portfolioSessionReference": "Tambah Portfolio Session Reference",
+        "managedTradingBotAdd Missing Sessions": "Tambah Managed Trading Bot",
+        "managedTradingBotEngine": "Tambah Managed Trading Bot Engine",
+        "eventsManager": "Tambah Events Manager",
+        "formulasManager": "Tambah Formulas Manager",
+        "managedAsset": "Tambah Managed Asset",
+        "setFormulaRules": "Tambah Set Formula Rules",
+        "confirmFormulaRules": "Tambah Confirm Formula Rules",
+        "exchangeManagedAsset": "Tambah Exchange Managed Asset",
+        "confirmEventRules": "Tambah Confirm Event Rules",
+        "setEventRules": "Tambah Set Event Rules",
+        "confirmFormulaReference": "Tambah Confirm Formula Reference",
+        "confirmEventReference": "Tambah Confirm Event Reference",
+        "managedSessions": "Tambah Managed Sessions",
+        "confirmFormula": "Tambah Confirm Formula",
+        "setFormula": "Tambah Set Formula",
+        "confirmEvent": "Tambah Confirm Event",
+        "setEvent": "Tambah Set Event",
+        "superalgosStorage": "Tambah Superalgos Storage",
+        "githubStorage": "Tambah Github Storage",
+        "superalgosStorageContainer": "Tambah Superalgos Storage Container",
+        "githubStorageContainer": "Tambah Github Storage Container",
+        "storageContainerReference": "Tambah Storage Container Reference",
+        "socialGraph": "Tambah Social Graph",
+        "machineLearning": "Tambah Machine Learning",
+        "tradingSignals": "Tambah Trading Signals",
+        "onlineWorkspaces": "Tambah Online Workspaces",
+        "httpNetworkInterface": "Tambah Http Network Interface",
+        "webrtcNetworkInterface": "Tambah Webrtc Network Interface",
+        "websocketsNetworkInterface": "Tambah Websockets Network Interface",
+        "featureWeightVote": "Tambah Feature Weight Vote",
+        "assetWeightVote": "Tambah Asset Weight Vote",
+        "positionWeightVote": "Tambah Position Weight Vote",
+        "poolWeightVote": "Tambah Pool Weight Vote",
+        "userProfileVotesSwitch": "Tambah User Profile Votes Switch",
+        "weightVotesSwitch": "Tambah Weight Votes Switch",
+        "votesSwitch": "Tambah Votes Switch",
+        "claimsProgram": "Tambah Claims Program",
+        "votingProgram": "Tambah Voting Program",
+        "forecastsProviders": "Tambah Forecasts Providers",
+        "userStorage": "Tambah User Storage",
+        "permissionedP2pNetworks": "Tambah Permissioned P2P Networks",
+        "p2pNetwork": "Tambah P2P Network",
+        "p2pNetworkNode": "Tambah P2P Network Node",
+        "p2pNetworkNodes": "Tambah P2P Network Nodes",
+        "permissionGroup": "Tambah Permission Group",
+        "permissionGranted": "Tambah Permission Granted",
+        "permissionedP2PNetwork": "Tambah Permissioned P2P Network",
+        "socialPersonas": "Tambah Social Personas",
+        "userBots": "Tambah User Bots",
+        "userApps": "Tambah User Apps",
+        "tokensMined": "Tambah Tokens Mined",
+        "child": "Tambah Child",
+        "userProfileVote": "Tambah User Profil Vote",
+        "userProfilesVotesSwitch": "Tambah User Profil Votes Switch",
+        "socialTradingBots": "Tambah Social Trading Bots",
+        "tokenPowerSwitch": "Tambah Token Power Switch",
+        "userSupporter": "Tambah User Supporter",
+        "userReferrer": "Tambah User Referrer",
+        "positionClass": "Tambah Position Class",
+        "position": "Tambah Position",
+        "positionContributionClaim": "Tambah Position Contribution Claim",
+        "pool": "Tambah Pool",
+        "poolClass": "Tambah Pool Class",
+        "githubProgram": "Tambah Github Program",
+        "airdropProgram": "Tambah Airdrop Program",
+        "userMentor": "Tambah User Mentor",
+        "liquidityProgram": "Tambah Liquidity Program",
+        "userInfluencer": "Tambah User Influencer",
+        "pools": "Tambah Pools",
+        "assets": "Tambah Assets",
+        "features": "Tambah Features",
+        "positions": "Tambah Positions",
+        "profileConstructor": "Tambah Profil Constructor",
+        "bitcoinFactoryForecasts": "Tambah Bitcoin Factory Forecasts",
+        "delegationProgram": "Tambah Delegation Program",
+        "stakingProgram": "Tambah Staking Program",
+        "featureClass": "Tambah Feature Class",
+        "featureContributionClaim": "Tambah Feature Contribution Claim",
+        "tokenBonus": "Tambah Tokens Bonus",
+        "userDelegate": "Tambah User Delegate",
+        "delegatePowerSwitch": "Tambah Delegate Power Switch",
+        "influencerProgram": "Tambah Influencer Program",
+        "mentorshipProgram": "Tambah Mentorship Program",
+        "supportProgram": "Tambah Support Program",
+        "referralProgram": "Tambah Referral Program",
+        "positionClaimsFolder": "Tambah Position Claims Folder",
+        "featureClaimsFolder": "Tambah Feature Claims Folder",
+        "featureClaimVote": "Tambah Feature Claim Vote",
+        "assetClaimVote": "Tambah Asset Claim Vote",
+        "positionClaimVote": "Tambah Position Claim Vote",
+        "claimVotesSwitch": "Tambah Claim Votes Switch",
+        "computingProgram": "Tambah Computing Program",
+        "testClientInstance": "Tambah Test Client Instance",
+        "forecastClientInstance": "Tambah Forecast Client Instance",
+        "assetClass": "Tambah Asset Class",
+        "assetContributionClaim": "Tambah Asset Contribution Claim",
+        "assetClaimsFolder": "Tambah Asset Claims Folder",
+        "tokensAwarded": "Tambah Tokens Awarded",
+        "userAssets": "Tambah User Assets",
+        "userKeys": "Tambah User Keys",
+        "layerManager": "Tambah Layer Manager",
+        "timeScale": "Tambah Time Scale",
+        "rateScale": "Tambah Rate Scale",
+        "timeFrameScale": "Tambah Time Frame Scale",
+        "timelineChart": "Tambah Timeline Chart",
+        "p2pNetworkClient": "Tambah P2P Network Client",
+        "p2pNetworkReference": "Tambah P2P Network Reference",
+        "p2pNetworkNodeReference": "Tambah P2P Network Node Reference",
+        "networkServices": "Tambah Network Services",
+        "networkInterfaces": "Tambah Network Interfaces",
+        "availableStorage": "Tambah Available Storage",
+        "keyReference": "Tambah Key Reference",
+        "learningBotInstance": "Tambah Learning Bot Instance",
+        "portfolioBotInstance": "Tambah Portfolio Bot Instance",
+        "tradingBotInstance": "Tambah Trading Bot Instance",
+        "studyBotInstance": "Tambah Study Bot Instance",
+        "indicatorBotInstance": "Tambah Indicator Bot Instance",
+        "apiDataFetcherBot": "Tambah API Data Fetcher Bot",
+        "sensorBotInstance": "Tambah Sensor Bot Instance",
+        "botInstance": "Tambah Bot Instance",
+        "textFormula": "Tambah Text Formula",
+        "textPosition": "Tambah Text Position",
+        "textCondition": "Tambah Text Condition",
+        "templateTarget": "Tambah Template Target",
+        "templateStructure": "Tambah Template Structure",
+        "scriptsLibrary": "Tambah Scripts Library",
+        "superAction": "Tambah Super Action",
+        "timeFramesFilter": "Tambah Time Frames Filter",
+        "designSpace": "Tambah Design Space",
+        "chartingSpace": "Tambah Charting Space",
+        "condition": "Tambah Condition",
+        "text": "Tambah Text",
+        "chartPoints": "Tambah Chart Points",
+        "socialTradingBotReference": "Tambah Social Trading Bot Reference",
+        "masterScript": "Tambah Master Script",
+        "fieldReference": "Tambah Field Reference",
+        "recordProperty": "Tambah Record Property",
+        "dashboard": "Tambah Dashboard",
+        "datasetDefinition": "Tambah Dataset Definition",
+        "recordDefinition": "Tambah Record Definition",
+        "allOutputDatasets": "Tambah Semua Output Datasets",
+        "variable": "Tambah Variable",
+        "key": "Tambah Key",
+        "statusDependency": "Tambah Status Dependency",
+        "prediction": "Tambah Prediction",
+        "style": "Tambah Style",
+        "styleCondition": "Tambah Style Condition",
+        "pointFormula": "Tambah Point Formula",
+        "plotterModule": "Tambah Plotter Module",
+        "panelData": "Tambah Panel Data",
+        "plotterPanel": "Tambah Plotter Panel",
+        "shapes": "Tambah Shapes",
+        "moveToPhaseEvent": "Tambah Move To Phase Event",
+        "nextPhaseEvent": "Tambah Next Phase Event",
+        "textStyle": "Tambah Text Style",
+        "outputDataset": "Tambah Output Dataset",
+        "outputDatasetFolder": "Tambah Output Dataset Folder",
+        "network": "Tambah Network",
+        "cryptoEcosystem": "Tambah Crypto Ecosystem",
+        "apis": "Tambah APIs",
+        "apiMap": "Tambah API Map",
+        "periods": "Tambah Periods",
+        "tradingMine": "Tambah Trading Mine",
+        "learningMine": "Tambah Learning Mine",
+        "templateScript": "Tambah Template Script",
+        "javascriptCode": "Tambah Javascript Code",
+        "quotedAsset": "Tambah Quoted Asset",
+        "baseAsset": "Tambah Base Asset",
+        "tradingSessionReference": "Tambah Trading Session Reference",
+        "taskReference": "Tambah Task Reference",
+        "phase": "Tambah Phase",
+        "sessionReference": "Tambah Session Reference",
+        "userDefinedStatistic": "Tambah User Defined Statistic",
+        "userDefinedCounter": "Tambah User Defined Counter",
+        "lanNetworkNode": "Tambah LAN Network Node",
+        "timeFrameFilter": "Tambah Time Frames Filter",
+        "formula": "Tambah Formula",
+        "feature": "Tambah Feature",
+        "asset": "Tambah Asset",
+        "label": "Tambah Label",
+        "userAccount": "Tambah User Account",
+        "indicatorFunction": "Tambah Indicator Function",
+        "taskManager": "Tambah Task Manager",
+        "allTasks": "Tambah Semua Tasks",
+        "botProducts": "Tambah Bot Products",
+        "timeMachine": "Tambah Time Machine",
+        "cryptoExchanges": "Tambah Crypto Exchanges",
+        "executionAlgorithm": "Tambah Execution Algorithm",
+        "viewport": "Tambah Viewport",
+        "spaceStyle": "Tambah Space Style",
+        "spaceSettings": "Tambah Space Settings",
+        "projectDashboards": "Tambah Project Dashboards",
+        "point": "Tambah Point",
+        "announcement": "Tambah Announcement",
+        "situation": "Tambah Situation",
+        "askPortfolioManager": "Tambah Ask Portfolio Manager",
+        "procedureInitialization": "Tambah Procedure Initialization",
+        "procedureLoop": "Tambah Procedure Loop",
+        "layer": "Tambah Layer",
+        "socialBots": "Tambah Social Bots",
+        "sensorBot": "Tambah Sensor Bot",
+        "studyBot": "Tambah Study Bot",
+        "indicatorBot": "Tambah Indicator Bot",
+        "fetcherBot": "Tambah API Data Fetcher Bot",
+        "pluginFilePosition": "Tambah Plugin File Position",
+        "plotter": "Tambah Plotter",
+        "missingChildren": "Tambah Missing Children",
+        "dynamicIndicators": "Tambah Dynamic Indicators",
+        "portfolioManagedSystem": "Tambah Portfolio Managed System",
+        "plugins": "Tambah Plugins",
+        "dataMine": "Tambah Data Mine",
+        "defiWallet": "Tambah DeFi Wallet",
+        "swapPair": "Tambah Swap Pair",
+        "swapPairs": "Tambah Swap Pairs",
+        "token": "Tambah Token",
+        "tokens": "Tambah Tokens",
+        "tokenOutBaseAsset": "Tambah Token Out (Base Asset)",
+        "tokenInQuotedAsset": "Tambah Token In (Quoted Asset)",
+        "ethBalance": "Tambah ETH Balance",
+        "tokenBalance": "Tambah Token Balance",
+        "solidarityCode": "Tambah Solidity Code",
+        "networkClient": "Tambah Network Client",
+        "blockchainScannerBot": "Tambah Blockchain Scanner Bot",
+        "blockchainNetwork": "Tambah Blockchain Network",
+        "blockchain": "Tambah Blockchain",
+        "ethereumToken": "Tambah Ethereum Token",
+        "smartContract": "Tambah Smart Contract",
+        "childReference": "Tambah Client Reference",
+        "walletAccount": "Tambah Wallet Account",
+        "wallet": "Tambah Wallet",
+        "tokenDefinitions": "Tambah Token Definitions",
+        "decentralizedApplication": "Tambah Decentralized Application",
+        "processInstance": "Tambah Process Instance",
+        "apiMapReference": "Tambah API Map Reference",
+        "apiQueryResponses": "Tambah API Query Responses",
+        "apiQueryResponse": "Tambah API Query Response",
+        "apiPathParameters": "Tambah API Path Parameters",
+        "apiPathParameter": "Tambah API Path Parameter",
+        "apiQueryParameters": "Tambah API Query Parameters",
+        "apiQueryParameter": "Tambah API Query Parameter",
+        "apiResponseField": "Tambah API Response Field",
+        "apiResponseSchema": "Tambah API Response Schema",
+        "apiVersion": "Tambah API Version",
+        "apiEndpoint": "Tambah API Endpoint",
+        "githubAPI": "Tambah GitHub API",
+        "web3API": "Tambah Web3 API",
+        "apiAuthorizationKey": "Tambah API Authorization Key",
+        "limitOrder": "Tambah Limit Order",
+        "marketOrder": "Tambah Market Order",
+        "session": {
+            "backTesting": "Tambah Backtesting Session",
+            "backtestingPortfolio": "Tambah Backtesting Portfolio Session",
+            "liveTrading": "Tambah Live Trading Session",
+            "livePortfolio": "Tambah Live Portfolio Session",
+            "paperTrading": "Tambah Paper Trading Session",
+            "forwardTrading": "Tambah Forward Testing Session"
+        },
+        "polygon": {
+            "defaut": "Tambah Polygon",
+            "condition": "Tambah Polygon Condition",
+            "body": "Tambah Polygon Body",
+            "border": "Tambah Polygon Border",
+            "vertex": "Tambah Polygon Vertex"
+        },
+        "execution": {
+            "event": {
+                "started": "Tambah Execution Started Event"
+            }
+        },
+        "project": {
+            "tradingProducts": "Tambah Project Trading Products",
+            "learningProducts": "Tambah Project Learning Products"
+        },
+        "layers": {
+            "folder": "Tambah Layer Folder",
+            "allMine": "Tambah Semua Mine Layers",
+            "bot": "Tambah Bot Layers",
+            "allPanels": "Tambah Semua Layer Panels",
+            "panel": "Tambah Layer Panel",
+            "polygon": "Tambah Layer Polygon",
+            "allPolygons": "Tambah Semua Layer Polygons"
+            
+        },
+        "market": {
+            "default": "Tambah Market",
+            "learningProducts": "Tambah Market Learning Products",
+            "tradingProducts": "Tambah Market Trading Products",
+            "tradingTasks": "Tambah Market Trading Tasks",
+            "learningTasks": "Tambah Market Learning Tasks",
+            "portfolioProducts": "Tambah Market Portfolio Products"
+        },
+        "missing": {
+            "dashboards": "Tambah Missing Dashboards",
+            "stages": "Tambah Missing Stages",
+            "events": "Tambah Missing Events",
+            "sessions": "Tambah Missing Sessions",
+            "markets": "Tambah Missing Markets",
+            "timeMachines": "Tambah Missing Time Machines",
+            "exchanges": "Tambah Missing Exchanges",
+            "apiMaps": "Tambah Missing API Maps",
+            "assets": "Tambah Missing Assets",
+            "dataMines": "Tambah Missing Data Mines",
+            "dataMineTasks": "Tambah Missing Data Mine Tasks",
+            "features": "Tambah Missing Features",
+            "learningEngines": "Tambah Missing Learning Engines",
+            "learningMines": "Tambah Missing Learning Mines",
+            "learningMineTasks": "Tambah Missing Learning Mine Tasks",
+            "learningSystems": "Tambah Missing Learning Systems",
+            "p2pNetworks": "Tambah Missing P2P Networks",
+            "parameters": "Tambah Missing Parameters",
+            "pools": "Tambah Missing Pools",
+            "portfolioEngines": "Tambah Missing Portfolio Engines",
+            "portfolioMines": "Tambah Missing Portfolio Mines",
+            "portfolioSystems": "Tambah Missing Portfolio Systems",
+            "positions": "Tambah Missing Positions",
+            "pluginTypes": "Tambah Missing Plugin Types",
+            "tradingEngines": "Tambah Missing Trading Engines",
+            "tradingMines": "Tambah Missing Trading Mines",
+            "tradingMineTasks": "Tambah Missing Trading Mine Tasks",
+            "tradingSystems": "Tambah Missing Trading Systems",
+            "tutorials": "Tambah Missing Tutorials",
+            "tokens": "Tambah Missing Tokens",
+            "userProfiles": "Tambah Missing User Profiles",
+            "children": "Tambah Missing Children",
+            "projects": "Tambah Missing Projects",
+            "swapPairs": "Tambah Missing Swap Pairs",
+            "items": "Tambah Missing Items",
+            "portfolioMineTasks": "Tambah Missing Portfolio Mine Tasks",
+            "projectPortfolioTasks": "Tambah Missing Project Portfolio Tasks"
+        },
+        "learning": {
+            "session": {
+                "reference": "Tambah Learning Session Reference",
+                "back": "Tambah Back Learning Session",
+                "live": "Tambah Live Learning Session"
+            },
+            "mine": {
+                "default": "Tambah Learning Mine",
+                "products": "Tambah Learning Mine Products",
+                "allProducts": "Tambah Semua Learning Mine Products"
+            },
+            "project": {
+                "tasks": "Tambah Project Learning Tasks"
+            },
+            "system": "Tambah Learning System",
+            "engine": "Tambah Learning Engine",
+            "bot":"Tambah Learning Bot"
+        },
+        "tasks": {
+            "portfolioMine": "Tambah Portfolio Mine Tasks",
+            "serverAppReference": "Tambah Task Server App Reference",
+            "managed": "Tambah Managed Tasks",
+            "default": "Tambah Tasks",
+            "data": "Tambah Data Tasks",
+            "learning": "Tambah Learning Tasks",
+            "learningMine": "Tambah Learning Mine Tasks",
+            "tradingMine": "Tambah Trading Mine Tasks",
+            "testingTrading": "Tambah Testing Trading Tasks",
+            "projectTrading": "Tambah Project Trading Tasks",
+            "productionTrading": "Tambah Production Trading Tasks",
+            "testingPortfolio": "Tambah Testing Portfolio Tasks",
+            "exchangePortfolio": "Tambah Exchange Portfolio Tasks",
+            "productionPortfolio": "Tambah Production Portfolio Tasks",
+            "projectPortfolio": "Tambah Project Portfolio Tasks",
+            "marketPortfolio": "Tambah Market Portfolio Tasks"
+        },
+        "exchange": {
+            "tradingTasks": "Tambah Exchange Trading Tasks",
+            "tradingProducts": "Tambah Exchange Trading Products",
+            "learningTasks": "Tambah Exchange Learning Tasks",
+            "learningProducts": "Tambah Exchange Learning Products",
+            "dataTasks": "Tambah Exchange Data Tasks",
+            "dataProducts": "Tambah Exchange Data Products",
+            "accounts": "Tambah Exchange Accounts",
+            "assets": "Tambah Exchange Assets",
+            "centralized": "Tambah Centralized Exchange",
+            "decentralized": "Tambah Decentralized Exchange",
+            "markets": "Tambah Exchange Markets"
+        },
+        "specified": {
+            "pluginDataMine": "Tambah Specified Plugin Data Mine",
+            "p2pNetwork": "Tambah Specified P2P Network",
+            "userProfile": "Tambah Specified User Profil"
+        },
+        "process": {
+            "definition": "Tambah Process Definition"
+        },
+        "product": {
+            "definition": "Tambah Product Definition",
+            "definitionFolder": "Tambah Product Definition Folder"
+        },
+        "trading": {
+            "bot": "Tambah Trading Bot",
+            "engine": "Tambah Trading Engine",
+            "mine": "Tambah Trading Mine",
+            "mineProducts": "Tambah Trading Mine Products",
+            "allMineProducts": "Tambah Semua Trading Mine Products",
+            "strategy": "Tambah Trading Strategy",
+            "system": "Tambah Trading System"
+        },
+        "signals": {
+            "label": "Tambah Trading Strategy Signals",
+            "closeStage": "Tambah Close Stage Signals",
+            "manageStage": "Tambah Manage Stage Signals",
+            "triggerStage": "Tambah Trigger Stage Signals",
+            "openStage": "Tambah Open Stage Signals",
+            "provider": "Tambah Signals Provider",
+            "providers": "Tambah Signals Providers",
+            "outgoing": "Tambah Outgoing Signals",
+            "incoming": "Tambah Incoming Signals",
+            "available": "Tambah Available Signals",
+            "outgoingReference": "Tambah Outgoing Signal Reference",
+            "incomingReference": "Tambah Incoming Signal Reference",
+            "managedStopLoss": "Tambah Managed Stop Loss Signals",
+            "managedTakeProfit": "Tambah Managed Take Profit Signals"
+        },
+        "data": {
+            "allMineDependencies": "Tambah Semua Data Mine Dependencies",
+            "mineDependencies": "Tambah Data Mine Dependencies",
+            "formula": "Tambah Data Formula",
+            "storage": "Tambah Data Storage",
+            "marketTasks": "Tambah Market Data Tasks",
+            "marketProducts": "Tambah Market Data Products",
+            "dependency": "Tambah Data Dependency",
+            "dependencyFolder": "Tambah Data Dependency Folder",
+            "product": "Tambah Data Product",
+            "productFolder": "Tambah Data Product Folder",
+            "allDependencies": "Tambah Semua Data Dependencies",
+            "botDependencies": "Tambah Bot Data Dependencies",
+            "allProducts": "Tambah Semua Data Products",
+            "projectProducts": "Tambah Project Data Products",
+            "dataMines": "Tambah Data Mines Data",
+            "mineTasks": "Tambah Data Mine Tasks",
+            "tradingMines": "Tambah Trading Mines Data",
+            "portfolioMines": "Tambah Portfolio Mines Data",
+            "learningMines": "Tambah Learning Mines Data",
+            "projectTasks": "Tambah Project Data Tasks",
+            "mineProducts": "Tambah Data Mine Products",
+            "allMineProducts": "Tambah Semua Data Mine Products"
+        },
+        "fetch": {
+            "fromJavascriptCode": "Ambil dari Kode Javascript"
+        },
+        "push": {
+            "toJavascriptCode": "Gabungkan ke Kode Javascript"
+        },
+        "orders": {
+            "limit": {
+                "buy": "Tambah Limit Buy Orders",
+                "sell": "Tambah Limit Sell Orders",
+                "buySignals": "Tambah Limit Buy Order Signals",
+                "sellSignals": "Tambah Limit Sell Order Signals"
+            },
+            "market": {
+                "buy": "Tambah Market Buy Orders",
+                "sell": "Tambah Market Sell Orders",
+                "buySignals": "Tambah Market Buy Order Signals",
+                "sellSignals": "Tambah Market Sell Order Signals"
+            }
+        },
+        "order": {
+            "limit": {
+                "buy": "Tambah Limit Buy Order",
+                "sell": "Tambah Limit Sell Order"
+            },
+            "market": {
+                "buy": "Tambah Market Buy Order",
+                "sell": "Tambah Market Sell Order"
+            },
+            "rate": "Tambah Order Rate",
+            "rateSignal": "Tambah Order Rate Signal",
+            "event": {
+                "create": "Tambah Create Order Event",
+                "cancel": "Tambah Cancel Order Event"
+            },
+            "signal": {
+                "create": "Tambah Create Order Signal",
+                "cancel": "Tambah Cancel Order Signal"
+            }
+        },
+        "simulated": {
+            "events": "Tambah Simulated Events",
+            "partialFill": "Tambah Simulated Partial Fill",
+            "actualRate": "Tambah Simulated Actual Rate",
+            "feesPaid": "Tambah Simulated Fees Paid"
+        },
+        "image": {
+            "condition": "Tambah Image Condition",
+            "formula": "Tambah Image Formula",
+            "position": "Tambah Image Position"
+        },
+        "programs": {
+            "bitcoinFactory": "Tambah Program Bitcoin Factory",
+            "liquidity": "Tambah Program Liquidity",
+            "financial": "Tambah Program Financial",
+            "votesAndClaims": "Tambah Program Votes dan Claims",
+            "communityBuilding": "Tambah Program Community Building",
+            "onboarding": "Tambah Program Onboarding"
+        }
+    },
+    "import": {
+        "existing": {
+            "wallet": {
+                "mnemonic": "Impor Existing Wallet dari Mnemonic",
+                "privateKey": "Impor Existing Wallet dari Private Key"
+            }
+        }
+    },
+    "create": {
+        "newWallet": "Buat Wallet Baru"
+    },
+    "switch": {
+        "to": {
+            "paperTrading": "Alihkan ke Paper Trading",
+            "liveTrading": "Alihkan ke Live Trading",
+            "forwardTesting": "Alihkan ke Forward Testing",
+            "backTesting": "Alihkan ke Backtesting",
+            "livePortfolio": "Alihkan ke Live Portfolio",
+            "backtestingPortfolio": "Alihkan ke Backtesting Portfolio"
+        }
+    },
+    "copy": {
+        "node": {
+            "path": "Salin Node Path",
+            "value": "Salin Node Value",
+            "type": "Salin Node Type"
+        }
+    },
+    "save": {
+        "plugin": "Simpan Plugin",
+        "enableWithWorkspace": "Bolehkan Penyimpanan bersama Ruang Kerja",
+        "pluginFile": "Simpan Plugin File"
+    },
+    "tutorial": {
+        "add": "Tambah Tutorial",
+        "reset": "Atur Ulang Tutorial Progress",
+        "step": {
+            "add": "Tambah Tutorial Step"
+        },
+        "topic": {
+            "add": "Tambah Tutorial Topic"
+        },
+        "confirmation": {
+            "reset": "Konfirmasi Atur Ulang"
+        }
+    },
+    "task": {
+        "all": {
+            "run": "Jalankan Semua Tasks",
+            "stop": "Hentikan Semua Tasks",
+            "exchange": {
+                "data": {
+                    "run": "Jalankan Semua Exchange Data Tasks",
+                    "stop": "Hentikan Semua Exchange Data Tasks"
+                },
+                "learning": {
+                    "run": "Jalankan Semua Exchange Learning Tasks",
+                    "stop": "Hentikan Semua Exchange Learning Tasks"
+                },
+                "portfolio": {
+                    "run": "Jalankan Semua Exchange Portfolio Tasks",
+                    "stop": "Hentikan Semua Exchange Portfolio Tasks"
+                },
+                "trading": {
+                    "run": "Jalankan Semua Exchange Trading Tasks",
+                    "stop": "Hentikan Semua Exchange Trading Tasks"
+                }
+            },
+            "managed": {
+                "run": "Jalankan Semua Managed Tasks",
+                "stop": "Hentikan Semua Managed Tasks"               
+            },
+            "managers": {
+                "run": "Jalankan Semua Task Managers",
+                "stop": "Hentikan Semua Task Managers"               
+            },
+            "project": {
+                "data": {
+                    "run": "Jalankan Semua Project Data Tasks",
+                    "stop": "Hentikan Semua Project Data Tasks"
+                },
+                "learning": {
+                    "run": "Jalankan Semua Project Learning Tasks",
+                    "stop": "Hentikan Semua Project Learning Tasks"
+                },
+                "portfolio": {
+                    "run": "Jalankan Semua Project Portfolio Tasks",
+                    "stop": "Hentikan Semua Project Portfolio Tasks"
+                },
+                "trading": {
+                    "run": "Jalankan Semua Project Trading Tasks",
+                    "stop": "Hentikan Semua Project Trading Tasks"
+                }
+            },
+            "market": {
+                "data": {
+                    "run": "Jalankan Semua Market Data Tasks",
+                    "stop": "Hentikan Semua Market Data Tasks"
+                },
+                "learning": {
+                    "run": "Jalankan Semua Market Learning Tasks",
+                    "stop": "Hentikan Semua Market Learning Tasks"
+                },
+                "portfolio": {
+                    "run": "Jalankan Semua Market Portfolio Tasks",
+                    "stop": "Hentikan Semua Market Portfolio Tasks"
+                },
+                "trading": {
+                    "run": "Jalankan Semua Market Trading Tasks",
+                    "stop": "Hentikan Semua Market Trading Tasks"
+                }
+            },
+            "mine": {
+                "data": {
+                    "run": "Jalankan Semua Data Mine Tasks",
+                    "stop": "Hentikan Semua Data Mine Tasks"
+                },
+                "trading": {
+                    "run": "Jalankan Semua Trading Mine Tasks",
+                    "stop": "Hentikan Semua Trading Mine Tasks"
+                },
+                "learning": {
+                    "run": "Jalankan Semua Learning Mine Tasks",
+                    "stop": "Hentikan Semua Learning Mine Tasks"
+                },
+                "portfolio": {
+                    "run": "Jalankan Semua Portfolio Mine Tasks",
+                    "stop": "Hentikan Semua Portfolio Mine Tasks"
+                }
+            }
+        },
+        "running": "Task Berjalan",
+        "cannotBeRun": "Task Tidak bisa di Jalankan",
+        "stopped": "Task Berhenti",
+        "cannotBeStopped": "Task Tidak bisa dihentikan",
+        "cannotBeDebugged": "Task Tidak bisa di Debug"
+    },
+    "send": {
+        "message": {
+            "telegramTest": "Kirim Telegram Test Message",
+            "slackTest": "Kirim Slack Test Message",
+            "discordTest": "Kirim Discord Test Message",
+            "twitterTest": "Kirim Twitter Test Message",
+            "text": "Kirim Test Message"
+        }
+    },
+    "build": {
+        "profileWithWalletConnect": "Bangun Profil dengan WalletConnect",
+        "profileWithMnemonic": "Bangun Profil dengan Mnemonic",
+        "profileAndNewWallet": "Bangun Profil dan Wallet Baru"
+    }
+}

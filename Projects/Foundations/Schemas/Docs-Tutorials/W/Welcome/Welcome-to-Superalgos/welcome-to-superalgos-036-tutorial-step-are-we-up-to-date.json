@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "W tym momencie wszystkie procesy powinny być już skończone w 100%. Kiedy tak się stanie, określamy operację gromadzenia danych jako \"aktualną\".",
                 "updated": 1675078216101
+            },
+            {
+                "language": "PT",
+                "text": "Se o seu computador e ligação de internet forem rápidas, é provável que todos os processos já estejam a 100%. Quando isso acontece, a operação de mineração de dados está \"atualizada\".",
+                "updated": 1712349653309
             }
         ],
         "updated": 1687634236798
@@ -114,6 +119,11 @@
                     "language": "PL",
                     "text": "Gdy wszystkie operacje są aktualne, boty działają dalej, przetwarzając informacje w czasie rzeczywistym, zaraz po odebraniu ich z giełdy. Oznacza to, że operacja gromadzenia danych działa cały czas, chyba że ją zatrzymasz!",
                     "updated": 1675078854700
+                },
+                {
+                    "language": "PT",
+                    "text": "Quando todos os processos estão atualizados, os bots continuam a correr, processando informações em tempo real à medida que são disponibilizados pela correctora. Ou seja, a operação de mineração de dados (Data Mines) não pára a menos que a pare o processo manualmente!",
+                    "updated": 1712349767131
                 }
             ]
         },
@@ -169,6 +179,11 @@
                     "language": "PL",
                     "text": "Rozejrzyj się i sprawdź, czy wszystkie procesy gotowe 100%.",
                     "updated": 1675078868897
+                },
+                {
+                    "language": "PT",
+                    "text": "Confirme que todos os processos estão a 100%. ",
+                    "updated": 1713261131258
                 }
             ]
         },
@@ -224,6 +239,11 @@
                     "language": "PL",
                     "text": "Aby uruchomić Live Trading Session, potrzebujesz stałego dopływu informacji z giełdy, które są przetwarzane w czasie rzeczywistym, tak aby Trading Bot mógł zastosować reguły zdefiniowane w Twoim Trading System do podejmowania na żywo decyzji handlowych.",
                     "updated": 1675079135158
+                },
+                {
+                    "language": "PT",
+                    "text": "Se as tarefas ainda não estiverem terminadas, vá buscar um café e volte mais tarde! Não vamos continuar até que todas as tarefas estejam a 100%.",
+                    "updated": 1712349889915
                 }
             ],
             "updated": 1687634575655

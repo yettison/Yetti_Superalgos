@@ -60,6 +60,11 @@
                 "language": "PL",
                 "text": "Każdy węzeł posiada menu. Przycisk na dole po lewej stronie rozwija i zwija strukturę węzłów należących do bieżącego węzła.",
                 "updated": 1674834287406
+            },
+            {
+                "language": "PT",
+                "text": "Cada Nó (Node) apresenta um menu. O botão + no canto inferior esquerdo mostra e recolhe a estrutura de Nós (Node's) abaixo do Nó (Node) atual.",
+                "updated": 1712260048946
             }
         ]
     },
@@ -119,6 +124,11 @@
                     "language": "PL",
                     "text": "Śmiało, kliknij przycisk rozwiń!",
                     "updated": 1674834307724
+                },
+                {
+                    "language": "PT",
+                    "text": "Por favor, clique no botão + para mostrar o menu! ",
+                    "updated": 1713260863402
                 }
             ]
         },
@@ -177,6 +187,11 @@
                     "language": "PL",
                     "text": "Węzeł Tutorial ma kilka powiązanych węzłów, a te mają jeszcze kilka innych powiązanych węzłów. Dlatego właśnie jest to hierarchia!",
                     "updated": 1674834366499
+                },
+                {
+                    "language": "PT",
+                    "text": "O nó Tutorial tem vários subnós, e estes, por sua vez, têm ainda mais subnós. É por isso que é uma hierarquia!",
+                    "updated": 1712260261279
                 }
             ]
         },
@@ -235,6 +250,11 @@
                     "language": "PL",
                     "text": "Ustrukturyzowana reprezentacja informacji to sposób, w jaki Superalgos zarządza złożonością stojącą za elastycznymi i skalowalnymi operacjami handlowymi.",
                     "updated": 1674834624383
+                },
+                {
+                    "language": "PT",
+                    "text": "As representações visuais estruturadas da informação estão no cerne de como o Superalgos administra a complexidade que está por trás de operações das negociações flexíveis e escaláveis. Cada Nó (Node) representa um conceito ou peça de informação. Há centenas!",
+                    "updated": 1712260476325
                 }
             ],
             "updated": 1687631139207

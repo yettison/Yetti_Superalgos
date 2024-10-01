@@ -29,6 +29,11 @@
                 "language": "DE",
                 "text": "Der Design Space (Designbereich) ist die visuelle Umgebung, die alle System- und Benutzerdefinitionen enthält. In der Praxis ist dies der schwarze Bereich unter dem Schieberegler, der den Bildschirm horizontal teilt und den Design Space unten vom Charting Space oben trennt. Die Hierarchie besteht aus Nodes, die es dem Benutzer ermöglichen, bestimmte Aspekte des Aussehens, der Atmosphäre und des Verhaltens des Design Space zu steuern.",
                 "updated": 1642890445978
+            },
+            {
+                "language": "PT",
+                "text": "A Interface de Design (Design Space) é o ambiente visual que hospeda todas as definições do sistema e do utilizador. Em termos práticos, é o espaço negro abaixo da régua deslizante que divide o ecrã horizontalmente, separando a Interface de Design (Design Space) na parte inferior da Interface dos Gráficos (Charting Space) no topo. Como uma hierarquia, apresenta Nós (Node’s) que permitem ao utilizador controlar certos aspectos da aparência, sensação e comportamento do espaço.",
+                "updated": 1712247402126
             }
         ]
     },
@@ -61,6 +66,11 @@
                     "text": "Tasarım alanını masaüstünüz veya sistemin kontrol odası olarak düşünün.",
                     "updated": 1654391961318,
                     "style": "Text"
+                },
+                {
+                    "language": "PT",
+                    "text": "Pense na Interface de Design (Design Space) como o seu ambiente de trabalho, ou a sala de controlo do sistema.",
+                    "updated": 1712247544692
                 }
             ]
         }

@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Superalgos umożliwia uruchomienie Client na jednej maszynie i dostęp do niego przez przeglądarkę z innej maszyny w sieci.",
                 "updated": 1674835028959
+            },
+            {
+                "language": "PT",
+                "text": "O Superalgos permite executar o Cliente (Client) numa máquina e aceder-lhe através do navegador a partir de outra máquina na rede.",
+                "updated": 1712261991239
             }
         ],
         "updated": 1616410688496
@@ -118,6 +123,11 @@
                     "language": "PL",
                     "text": "Wielu użytkowników wybiera uruchomienie Client w chmurze, na maszynach jednopłytkowych, takich jak Raspberry Pi, lub na dedykowanym komputerze, który mogą pozostawić włączony przez cały czas, dzięki czemu mogą handlować na żywo. Węzeł sieciowy Węzeł LAN Network Node reprezentuje maszynę, na której uruchomiony jest Client.",
                     "updated": 1674835221873
+                },
+                {
+                    "language": "PT",
+                    "text": "Muitos utilizadores optam por executar o Cliente (Client) na nuvem, em máquinas como o Raspberry Pi, ou num PC dedicado que pode ficar ligado todo o tempo quando estão a negociar em tempo real. O Nó de Rede LAN (LAN Network Node) \"Meu Computador/My Computer\" representa a máquina onde o Cliente está a ser executado.",
+                    "updated": 1712262140191
                 }
             ],
             "updated": 1636910159513
@@ -176,6 +186,11 @@
                     "language": "PL",
                     "text": "Na ten moment Superalgos nie implementuje żadnych form zabezpieczeń. Powinieneś używać systemu tylko w zabezpieczonej sieci lokalnej. Jeśli zdecydowałeś się na uruchomienie Client w chmurze, musisz sam zadbać o odpowiednie zabezpieczenia.",
                     "updated": 1674909462369
+                },
+                {
+                    "language": "PT",
+                    "text": "Por enquanto, o Superalgos não tem qualquer forma de segurança. Assim, deve utilizar o sistema apenas no contexto de uma Rede Local (Local Area Network) restrita. Se optar por executar o Cliente na nuvem, sugerimos que implemente a sua própria segurança. ",
+                    "updated": 1713260883455
                 }
             ]
         }

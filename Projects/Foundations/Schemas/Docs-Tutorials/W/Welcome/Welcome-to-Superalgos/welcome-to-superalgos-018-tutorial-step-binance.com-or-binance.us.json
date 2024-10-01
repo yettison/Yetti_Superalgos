@@ -58,6 +58,11 @@
                 "language": "PL",
                 "text": "Zanim zaczniemy gromadzenie danych, mam do Ciebie małe pytanie: czy handlujesz na giełdzie binance.com, binance.us, czy na żadnej z nich?",
                 "updated": 1674934603876
+            },
+            {
+                "language": "PT",
+                "text": "Antes de começarmos a mineração de dados, tenho uma pequena pergunta: para negociar usa a binance.com, binance.us ou em nenhuma destas?",
+                "updated": 1712264824022
             }
         ],
         "updated": 1622189667210
@@ -116,6 +121,11 @@
                     "language": "PL",
                     "text": "Jeśli handlujesz na binance.com lub w ogóle nie handlujesz na Binance, to możesz pominąć ten i następny krok!",
                     "updated": 1674934647205
+                },
+                {
+                    "language": "PT",
+                    "text": "Se faz trading na binance.com ou não negocia com a Binance de todo, então pode saltar este passo e o prosseguir!",
+                    "updated": 1712265059932
                 }
             ]
         },
@@ -173,6 +183,11 @@
                     "language": "PL",
                     "text": "Jeśli handlujesz na binance.us musisz skonfigurować węzeł Binance po prawej stronie! Filmik na następnym kroku pokazuje jak to zrobić!",
                     "updated": 1674934665226
+                },
+                {
+                    "language": "PT",
+                    "text": "Se negocia na binance.us, é necessário configurar o Nó (Node) da Binance corretamente! O vídeo no próximo passo mostra como! ",
+                    "updated": 1713260932171
                 }
             ]
         },
@@ -230,6 +245,11 @@
                     "language": "PL",
                     "text": "Wejdź do konfiguracji i zmień codeName na \"binanceus\". Wyjdź z edytora, zmiany zapiszą się automatycznie.",
                     "updated": 1674934707939
+                },
+                {
+                    "language": "PT",
+                    "text": "Aceda à configuração e mude o codeName para \"binanceus\". Ao sair do editor a informação é guardada automaticamente.",
+                    "updated": 1712265226613
                 }
             ]
         },
@@ -287,6 +307,11 @@
                     "language": "PL",
                     "text": "Zmień etykietę węzła na \"Binanceus\".",
                     "updated": 1674934761114
+                },
+                {
+                    "language": "PT",
+                    "text": "Altere o nome do nó para \"Binanceus\".",
+                    "updated": 1712265372842
                 }
             ]
         }

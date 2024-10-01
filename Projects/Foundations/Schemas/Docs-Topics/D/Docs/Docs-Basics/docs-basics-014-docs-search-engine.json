@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Dokümanlar, kullanıcıların sayfa koleksiyonunda arama yapmasına olanak tanıyan bir arama motoruna sahiptir.",
                 "updated": 1652646643199
+            },
+            {
+                "language": "PT",
+                "text": "Os Documentos disponibilizam um motor de busca que permite aos utilizadores pesquisar através da biblioteca de páginas.",
+                "updated": 1712247986212
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Arama motoru, daha sonra kullanıcıların arama kutusuna yazdıkları bu ifadelerle eşleşmeleri bulmak için kullanılan bir Dokümanlar Arama Motoru Dizini ( Docs Search Engine Index ) oluşturur. ",
                     "updated": 1652646758183
+                },
+                {
+                    "language": "PT",
+                    "text": "O motor de busca constrói um Índice do Motor de Busca de Docs (Docs Search Engine Index) que é posteriormente utilizado para encontrar correspondências com as frases que os utilizadores escrevem no campo de busca.",
+                    "updated": 1712248097659
                 }
             ]
         }

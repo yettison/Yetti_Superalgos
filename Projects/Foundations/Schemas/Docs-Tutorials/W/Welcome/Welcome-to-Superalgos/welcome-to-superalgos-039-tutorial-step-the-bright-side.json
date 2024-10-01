@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "Do tej pory poznałeś ciemną stronę Superalgos. Przygotuj się na poznanie jasnej strony: Charting Space.",
                 "updated": 1675079747846
+            },
+            {
+                "language": "PT",
+                "text": "Até agora, esteve confinado do lado escuro do Superalgos. Prepare-se para ser exposto à luz: a Interface dos Gráficos (Charting Space). ",
+                "updated": 1713261156293
             }
         ]
     },
@@ -114,6 +119,11 @@
                     "language": "PL",
                     "text": "Charting Space znajduje się na górze Design Space, oddzielona turkusowym suwakiem. Jak można się spodziewać, Charting Space jest konfigurowalna i bardzo elastyczna. Wszystko, co się w niej dzieje, jest zdefiniowane w hierarchii Charting Space.",
                     "updated": 1675079818280
+                },
+                {
+                    "language": "PT",
+                    "text": "A Interface dos Gráficos (Charting Space) vive no topo do espaço de design, separado por um separador turquesa. Como seria de esperar do Superalgos, a Interface dos Gráficos (Charting Space) é configurável e altamente flexível. Tudo o que acontece lá é definido na hierarquia do Interface dos Gráficos (Charting Space). ",
+                    "updated": 1712352479285
                 }
             ]
         },
@@ -169,6 +179,11 @@
                     "language": "PL",
                     "text": "Charting Space jest znana z tego, że potrafi zawrócić ludziom w głowie. Proszę, powstrzymaj się od kontynuowania tego samouczka, jeśli jesteś obecnie pod wpływem substancji psychoaktywnych.",
                     "updated": 1675079931207
+                },
+                {
+                    "language": "PT",
+                    "text": "O Interface dos Gráficos (Charting Space) é conhecido por surpreender as pessoas. Por favor, abstenha-se de continuar com este tutorial se estiver atualmente sob a influência de substâncias psicoativas.",
+                    "updated": 1712352553442
                 }
             ],
             "updated": 1616416552336

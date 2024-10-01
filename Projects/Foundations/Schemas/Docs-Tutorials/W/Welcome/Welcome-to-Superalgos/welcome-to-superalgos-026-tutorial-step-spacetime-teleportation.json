@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Ok, w rzeczywistości nie będziesz się teleportował, ani nie będziesz zaginał czasoprzestrzeni, ale prawie tak się poczujesz! Nadszedł czas, aby nauczyć się korzystać z mapy Design Space.",
                 "updated": 1674946213147
+            },
+            {
+                "language": "PT",
+                "text": "Ok, é verdade que não vai ser teletransportado, nem dobrar o espaço-tempo, mas nada parecido! Está na hora de aprender a usar o mapa da Interface de Design (Design Space). ",
+                "updated": 1713261027687
             }
         ]
     },
@@ -117,6 +122,11 @@
                     "language": "PL",
                     "text": "Powiedziałem wcześniej, że Design Space jest ogromny i to miałem na myśli! Przejście z jednego rogu do drugiego zajęłoby setki kliknięć i przeciągnięć. O ile używanie klawiatury pozwala na rozwijanie karkołomnych prędkości, to nie jest to tak fajne jak teleportacja! Oto jak to działa:",
                     "updated": 1674946181641
+                },
+                {
+                    "language": "PT",
+                    "text": "Como disse anteriormente a Interface de Design (Design Space) é enorme, e estava a falar mesmo a sério! Ir de um canto ao canto oposto pode representar centenas de cliques e arrastões com o rato. Embora ao usar o teclado possibilita atingir velocidades vertiginosas, não é tão “cool” como ser teletransportado! É assim que funciona:",
+                    "updated": 1712341320517
                 }
             ],
             "updated": 1616414991030
@@ -176,6 +186,11 @@
                     "language": "PL",
                     "text": "Kliknij prawym przyciskiem myszy, aby otworzyć mapę i kliknij lewym przyciskiem myszy w dowolnym miejscu, aby przejść do tego konkretnego miejsca!",
                     "updated": 1674946131590
+                },
+                {
+                    "language": "PT",
+                    "text": "Ao clicar no botão direito do rato abre o mapa e em seguida clica com o botão esquerdo do rato em qualquer lugar para ir para esse local específico!",
+                    "updated": 1712341414179
                 }
             ]
         },
@@ -233,6 +248,11 @@
                     "language": "PL",
                     "text": "Spójrz na mnie. Jestem w lewym dolnym rogu Design Space? Teraz już wiesz, gdzie mnie znaleźć!",
                     "updated": 1674946119586
+                },
+                {
+                    "language": "PT",
+                    "text": "Olha para mim no canto inferior esquerdo da Interface de Design (Design Space). Agora já sabes onde me encontrar!",
+                    "updated": 1712341498735
                 }
             ]
         }

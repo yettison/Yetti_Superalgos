@@ -171,10 +171,12 @@ exports.newPlatformApp = function newPlatformApp() {
             SA.logger.info('Real-time Trading Signals ................................... Enables the broadcasting and consumption of trading signals.')
             SA.logger.info('Portfolio Manager ........................................... Portfolio Manager bots supervise and manage Trading Bots for improved capital allocation and risk management.')
             SA.logger.info('')
+            /*
             SA.logger.info("What's next? This is the current development pipeline:")
             SA.logger.info('')
             SA.logger.info('Superalgos Mobile ........................................... Will allow users to consume trading signals from their mobile phones.')
             SA.logger.info('')
+            */
             SA.logger.info('Join the @superalgosdevelop Telegram Group to learn more!')
             SA.logger.info('')
             

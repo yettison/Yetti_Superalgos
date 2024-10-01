@@ -28,6 +28,8 @@ GLOBAL.CUSTOM_FAIL_RESPONSE = {
     message: "Custom Message"
 }
 
+let exports = {}
+
 let browserCanvas                 // This is the canvas object of the browser.
 
 function spacePad(str, max) {
@@ -44,6 +46,7 @@ function loadSuperalgos() {
     setupHTMLTextArea()
     setupHTMLInput()
     setupHTMLCanvas()
+    loadDocumentationLanguages()
     loadDebugModule()
 
     if ((browser.name !== "Chrome" && browser.name !== "Safari") || (browser.name === "Chrome" && parseInt(browser.version) < 85) || (browser.name === "Safari" && parseInt(browser.version) < 13)) {
@@ -119,6 +122,17 @@ function loadSuperalgos() {
         browserCanvas.style.border = "none"
 
         browserCanvas.style.top = 0 + 'px'
+    }
+
+    function loadDocumentationLanguages() {
+        let path = "WebServer/languages.json"
+        httpRequest(undefined, path, onRequired)
+
+        function onRequired(result, data) {
+            if(result == GLOBAL.DEFAULT_OK_RESPONSE) {
+                GLOBAL.LANGUAGES = JSON.parse(data)
+            }
+        }
     }
 
     function loadDebugModule() {

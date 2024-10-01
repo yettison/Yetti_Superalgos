@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Właśnie tak! Wskaźniki zaczynają działać tak szybko jak Sensor Bot skończy swoją pracę!",
                 "updated": 1674944867817
+            },
+            {
+                "language": "PT",
+                "text": "Os indicadores começarão a funcionar assim que o sensor do bot terminar o seu trabalho! Todas as Tarefas dos Dados (Data Tasks) estão coordenadas! ",
+                "updated": 1713261001271
             }
         ],
         "updated": 1687631966901
@@ -118,6 +123,11 @@
                     "language": "PL",
                     "text": "Obserwujesz procesy węzła Candles Volumes. Zbiera on z giełdy jednominutowe świece i gromadzi je dla całego zdefiniowanego przedziału czasu.",
                     "updated": 1674945572904
+                },
+                {
+                    "language": "PT",
+                    "text": "Está a assistir aos processos dos Volumes de Velas (Candles Volumes). Ele transforma as velas de um minuto que o sensor do bot descarrega da correctora em velas para todos os intervalos de tempo.",
+                    "updated": 1712339967564
                 }
             ]
         },
@@ -176,6 +186,11 @@
                     "language": "PL",
                     "text": "Co się stanie po zakończeniu?",
                     "updated": 1674945367851
+                },
+                {
+                    "language": "PT",
+                    "text": "O que acontece depois de terminar?",
+                    "updated": 1712340046812
                 }
             ]
         },
@@ -233,6 +248,11 @@
                     "language": "PL",
                     "text": "Inne boty czekają, aż Candles Volumes zakończy swoją pracę, aby mogły zacząć robić swoje. Wyobraź sobie, że bot musi obliczyć 20-okresową Simple Moving Average dla wszystkich przedziałów czasowych. Potrzebuje Data Product wyprodukowanego przez Candles Volumes jako danych wejściowych do obliczenia SMA. Nazywamy to Data Dependency.",
                     "updated": 1674945701620
+                },
+                {
+                    "language": "PT",
+                    "text": "Os outros bots precisam que os Volumes das Velas terminem o seu trabalho para que possam começar o deles. Imagine que um bot precisa calcular uma Média Móvel Simples (MMS) de 20 períodos para todos os intervalos de tempo. Ele precisa do Produto de Dados produzido pelos Volumes de Velas como entrada para o cálculo da MMS. Chamamos a esta necessidade, uma Dependência de Dados.",
+                    "updated": 1712340210503
                 }
             ]
         }
