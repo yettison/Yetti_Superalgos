@@ -24,12 +24,10 @@
                     <th class="text-center">Bot Name</th>
                     <th class="text-center">Exchange</th>
                     <th class="text-center">Pair Asset</th>
-                    <th class="text-center">Initial Balance</th>
-                    <th class="text-center">End Balance</th>
                     <th class="text-center">Profit/Loss</th>
+                    <th class="text-center">Hit Ratio</th>
                     <th class="text-center">ROI</th>
                     <th class="text-center">Annualized Return</th>
-                    <th class="text-center">Hit Ratio</th>
                     <th class="text-center">Details</th>
                   </tr>
                 </thead>
@@ -44,18 +42,14 @@
                       <td class="text-center">{{ report.exchange || 'Unknown' }}</td>
                       <!-- Pair Asset -->
                       <td class="text-center">{{ report.pairAsset || 'Unknown' }}</td>
-                      <!-- Initial Balance -->
-                      <td class="text-center">{{ report.initialBalanceQuoted || report.initialBalanceBase || 'N/A' }}</td>
-                      <!-- End Balance -->
-                      <td class="text-center">{{ report.endBalanceQuoted || report.endBalanceBase || 'N/A' }}</td>
                       <!-- Profit/Loss -->
                       <td class="text-center">{{ report.profitLossQuoted || report.profitLossBase || 'N/A' }}</td>
+                      <!-- Hit Ratio -->
+                      <td class="text-center">{{ report.hitRatioQuoted || report.hitRatioBase || 'N/A' }}%</td>
                       <!-- ROI -->
                       <td class="text-center">{{ report.ROIQuoted || report.ROIBase }}%</td>
                       <!-- Annualized Return -->
                       <td class="text-center">{{ report.annualizedReturnQuoted || report.annualizedReturnBase }}%</td>
-                      <!-- Hit Ratio -->
-                      <td class="text-center">{{ report.hitRatioQuoted || report.hitRatioBase || 'N/A' }}%</td>
                       <!-- Details Button -->
                       <td class="text-center">
                         <button class="btn btn-primary" @click="toggleDetails(report.reportPath)">
@@ -86,7 +80,7 @@
                             </div>
 
                             <!-- Columna 3 -->
-                            <div class="col-md-6 col-lg-3">
+                            <div class="col-md-6 col-lg-2">
                               <p><strong>Hits (Quoted):</strong> {{ report.hitsQuoted }}</p>
                               <p><strong>Fails (Quoted):</strong> {{ report.failsQuoted }}</p>
                               <p><strong>Hits (Base):</strong> {{ report.hitsBase }}</p>
@@ -95,7 +89,20 @@
                             </div>
 
                             <!-- Columna 4 -->
-                            <div class="col-md-6 col-lg-3">
+                            <div class="col-md-6 col-lg-2">
+                              <p><strong>Positions Open (Quoted):</strong> {{ report.hitsQuoted }}</p>
+                              <p><strong>Closed by TP (Quoted):</strong> {{ report.failsQuoted }}</p>
+                              <p><strong>Closed by SL (Quoted):</strong> {{ report.hitsBase }}</p>
+                              <p><strong>Closed by Other (Quoted):</strong> {{ report.failsBase }}</p>
+                              <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
+                            </div>
+
+                            <!-- Columna 5 -->
+                            <div class="col-md-6 col-lg-2">
+                              <p><strong>Positions Open (Base):</strong> {{ report.hitsQuoted }}</p>
+                              <p><strong>Closed by TP (Base):</strong> {{ report.failsQuoted }}</p>
+                              <p><strong>Closed by SL (Base):</strong> {{ report.hitsBase }}</p>
+                              <p><strong>Closed by Other (Base):</strong> {{ report.failsBase }}</p>
                               <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
                             </div>
                           </div>
