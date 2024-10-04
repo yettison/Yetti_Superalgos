@@ -20,7 +20,10 @@
               <table class="table table-striped table-hover">
                 <thead>
                   <tr>
+                    <th class="text-center">Last Execution</th>
                     <th class="text-center">Bot Name</th>
+                    <th class="text-center">Exchange</th>
+                    <th class="text-center">Pair Asset</th>
                     <th class="text-center">Initial Balance</th>
                     <th class="text-center">End Balance</th>
                     <th class="text-center">Profit/Loss</th>
@@ -31,38 +34,75 @@
                   </tr>
                 </thead>
                 <tbody v-if="simulationData && simulationData.length > 0">
-                  <tr v-for="report in simulationData" :key="report?.reportPath || 'unknown'">
-                    <td class="text-center">{{ report.displayName || 'Unknown' }}</td>
-                    <td class="text-center">{{ report.initialBalanceQuoted || report.initialBalanceBase || 'N/A' }}</td>
-                    <td class="text-center">{{ report.endBalanceQuoted || report.endBalanceBase || 'N/A' }}</td>
-                    <td class="text-center">{{ report.profitLossQuoted || report.profitLossBase || 'N/A' }}</td>
-                    <td class="text-center">{{ report.ROIQuoted || report.ROIBase }}%</td>
-                    <td class="text-center">{{ report.annualizedReturnQuoted || report.annualizedReturnBase }}%</td>
-                    <td class="text-center">{{ report.hitRatioQuoted || report.hitRatioBase || 'N/A' }}%</td>
-                    <td class="text-center">
-                      <button class="btn btn-primary" @click="toggleDetails(report?.reportPath)">
-                        {{ activeIndex === report?.reportPath ? 'Hide' : 'Show' }} Details
-                      </button>
-                    </td>
-                  </tr>
+                  <template v-for="report in simulationData" :key="report.reportPath">
+                    <tr>
+                      <!-- Last Execution -->
+                      <td class="text-center">{{ report.lastExecution || 'N/A' }}</td>
+                      <!-- Bot Name -->
+                      <td class="text-center">{{ report.botName || 'Unknown' }}</td>
+                      <!-- Exchange -->
+                      <td class="text-center">{{ report.exchange || 'Unknown' }}</td>
+                      <!-- Pair Asset -->
+                      <td class="text-center">{{ report.pairAsset || 'Unknown' }}</td>
+                      <!-- Initial Balance -->
+                      <td class="text-center">{{ report.initialBalanceQuoted || report.initialBalanceBase || 'N/A' }}</td>
+                      <!-- End Balance -->
+                      <td class="text-center">{{ report.endBalanceQuoted || report.endBalanceBase || 'N/A' }}</td>
+                      <!-- Profit/Loss -->
+                      <td class="text-center">{{ report.profitLossQuoted || report.profitLossBase || 'N/A' }}</td>
+                      <!-- ROI -->
+                      <td class="text-center">{{ report.ROIQuoted || report.ROIBase }}%</td>
+                      <!-- Annualized Return -->
+                      <td class="text-center">{{ report.annualizedReturnQuoted || report.annualizedReturnBase }}%</td>
+                      <!-- Hit Ratio -->
+                      <td class="text-center">{{ report.hitRatioQuoted || report.hitRatioBase || 'N/A' }}%</td>
+                      <!-- Details Button -->
+                      <td class="text-center">
+                        <button class="btn btn-primary" @click="toggleDetails(report.reportPath)">
+                          {{ activeIndex === report.reportPath ? 'Hide' : 'Show' }} Details
+                        </button>
+                      </td>
+                    </tr>
 
-                  <!-- Show additional details when the button is clicked -->
-                  <tr v-if="activeIndex === report?.reportPath">
-                    <td colspan="8">
-                      <div class="details-section">
-                        <p><strong>Begin Rate:</strong> {{ report.beginRate }}</p>
-                        <p><strong>End Rate:</strong> {{ report.endRate }}</p>
-                        <p><strong>Initial Base Balance ({{ report.episodeBaseAsset }}):</strong> {{ report.initialBalanceBase }}</p>
-                        <p><strong>End Base Balance ({{ report.episodeBaseAsset }}):</strong> {{ report.endBalanceBase }}</p>
-                        <p><strong>Initial Quoted Balance ({{ report.episodeQuotedAsset }}):</strong> {{ report.initialBalanceQuoted }}</p>
-                        <p><strong>End Quoted Balance ({{ report.episodeQuotedAsset }}):</strong> {{ report.endBalanceQuoted }}</p>
-                        <p><strong>Hits (Base):</strong> {{ report.hitsBase }}</p>
-                        <p><strong>Fails (Base):</strong> {{ report.failsBase }}</p>
-                        <p><strong>Hits (Quoted):</strong> {{ report.hitsQuoted }}</p>
-                        <p><strong>Fails (Quoted):</strong> {{ report.failsQuoted }}</p>
-                      </div>
-                    </td>
-                  </tr>
+                    <!-- Fila adicional para mostrar los detalles -->
+                    <tr v-if="activeIndex === report.reportPath">
+                      <td colspan="12">
+                        <div class="details-section">
+                          <div class="row">
+                            <!-- Columna 1 -->
+                            <div class="col-md-6 col-lg-3">
+                              <p><strong>Begin Date:</strong> {{ report.beginDate ?? 'N/A' }}</p>
+                              <p><strong>End Date:</strong> {{ report.endDate ?? 'N/A' }}</p>
+                              <p><strong>Begin Rate:</strong> {{ report.beginRate ?? 'N/A' }}</p>
+                              <p><strong>End Rate:</strong> {{ report.endRate ?? 'N/A' }}</p>
+                            </div>
+
+                            <!-- Columna 2 -->
+                            <div class="col-md-6 col-lg-3">
+                              <p><strong>Initial Quoted Balance ({{ report.episodeQuotedAsset }}):</strong> {{ report.initialBalanceQuoted }}</p>
+                              <p><strong>End Quoted Balance ({{ report.episodeQuotedAsset }}):</strong> {{ report.endBalanceQuoted }}</p>
+                              <p><strong>Initial Base Balance ({{ report.episodeBaseAsset }}):</strong> {{ report.initialBalanceBase }}</p>
+                              <p><strong>End Base Balance ({{ report.episodeBaseAsset }}):</strong> {{ report.endBalanceBase }}</p>
+                            </div>
+
+                            <!-- Columna 3 -->
+                            <div class="col-md-6 col-lg-3">
+                              <p><strong>Hits (Quoted):</strong> {{ report.hitsQuoted }}</p>
+                              <p><strong>Fails (Quoted):</strong> {{ report.failsQuoted }}</p>
+                              <p><strong>Hits (Base):</strong> {{ report.hitsBase }}</p>
+                              <p><strong>Fails (Base):</strong> {{ report.failsBase }}</p>
+                              <!-- Puedes agregar más datos aquí si lo deseas -->
+                            </div>
+
+                            <!-- Columna 4 -->
+                            <div class="col-md-6 col-lg-3">
+                              <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </template>
                 </tbody>
               </table>
             </div>
@@ -71,18 +111,30 @@
 
         <!-- Panel 2: Performance Chart -->
         <template v-slot:tabPanel-2>
-          <div>
-            <label for="reportSelector">Select Report:</label>
-            <select id="reportSelector" v-model="selectedReport">
-              <option v-for="report in simulationData" :value="report" :key="report.reportPath">
-                {{ report.displayName || 'No Reports' }}
-              </option>
-            </select>
-          </div>
-          
-          <div v-if="selectedReport">
-            <canvas ref="performanceChartCanvas"></canvas>
-            <p>Report loaded: {{ selectedReport.displayName }}</p>
+          <div v-if="simulationData && simulationData.length > 0">
+            <div class="row align-items-end">
+              <!-- Selector de Reportes -->
+              <div class="col-md-6">
+                <label for="reportSelector">Select Report:</label>
+                <select id="reportSelector" class="form-control" v-model="selectedReport">
+                  <option disabled value="">Select a report</option>
+                  <option v-for="report in simulationData" :value="report.reportPath" :key="report.reportPath">
+                    {{ report.botName || 'No Reports' }}
+                  </option>
+                </select>
+              </div>
+
+              <!-- Botón para actualizar el gráfico -->
+              <div class="col-md-2">
+                <button class="btn btn-primary mt-4" @click="updatePerformanceChart">Load Report</button>
+              </div>
+            </div>
+
+            <!-- Gráfico de rendimiento -->
+            <div class="mt-4">
+              <canvas ref="performanceChartCanvas"></canvas>
+              <p>Report loaded: {{ getReportByPath(selectedReport)?.botName || 'Unknown' }}</p>
+            </div>
           </div>
           <div v-else>No simulation data available.</div>
         </template>
@@ -97,17 +149,39 @@
 
         <!-- Panel 4: Price Change Chart -->
         <template v-slot:tabPanel-4>
-          <div>
-            <label for="candleSelector">Select Candle Data:</label>
-            <select id="candleSelector" v-model="selectedCandleData">
-              <option v-for="key in candleDataPaths" :value="key" :key="key">
-                {{ key }}
-              </option>
-            </select>
-          </div>
+          <div v-if="candleDataPaths.length > 0">
+            <div class="row align-items-end">
+              <!-- Selector de datos de velas -->
+              <div class="col-md-4">
+                <label for="candleSelector">Select Candle Data:</label>
+                <select id="candleSelector" class="form-control" v-model="selectedCandleData">
+                  <option disabled value="">Select candle data</option>
+                  <option v-for="key in candleDataPaths" :value="key" :key="key">
+                    {{ key }}
+                  </option>
+                </select>
+              </div>
 
-          <div v-if="selectedCandleData && candleChartData ">
+              <!-- Selectores de rango de fechas -->
+              <div class="col-md-3">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" class="form-control" v-model="startDate" @change="updateCandleChart" />
+              </div>
+              <div class="col-md-3">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" class="form-control" v-model="endDate" @change="updateCandleChart" />
+              </div>
+
+              <!-- Botón para actualizar el gráfico -->
+              <div class="col-md-2">
+                <button class="btn btn-primary mt-4" @click="updateCandleChart">Update Chart</button>
+              </div>
+            </div>
+
+            <!-- Gráfico de velas -->
+            <div class="mt-4">
               <canvas ref="candleChartCanvas"></canvas>
+            </div>
           </div>
 
           <div v-else>No candle data available.</div>
@@ -149,10 +223,12 @@ export default defineComponent({
       candlesDataKey: "Platform-CandlesData",
       activeTab: 0,
       simulationData: [],
-      priceChangeData: [],
+      priceChangeData: {},
       candleDataPaths: [],
       selectedReport: null,
       selectedCandleData: null, 
+      startDate: null,
+      endDate: null,  
       performanceChart: null,
       candleChart: null,
       isDestroyed: false,
@@ -226,10 +302,12 @@ export default defineComponent({
     },
     
     simulationData(newData) {
-      if (newData.length) {
+      if (Array.isArray(newData) && newData.length > 0) {
+        this.selectedReport = this.selectedReport || newData[0];
         this.updatePerformanceChart();
       }
     },
+
 
     selectedReport(newReport) {
       if (newReport) {
@@ -244,7 +322,8 @@ export default defineComponent({
     },
 
     priceChangeData(newData) {
-      if (newData.length) {
+      if (Object.keys(newData).length > 0) {
+        this.selectedCandleData = this.selectedCandleData || Object.keys(newData)[0];
         this.updateCandleChart();
       }
     },
@@ -252,15 +331,15 @@ export default defineComponent({
 
   mounted() {
     this.$nextTick(() => {
-        setTimeout(() => {
-            if (this.simulationData.length > 0) {
-                this.updatePerformanceChart();
-            }
+      if (this.simulationData.length > 0) {
+        this.selectedReport = this.selectedReport || this.simulationData[0];
+        this.updatePerformanceChart();
+      }
 
-            if (this.priceChangeData.length > 0) {
-                this.updateCandleChart();
-            }
-        }, 100);  // Delay to ensure DOM elements are ready
+      if (Object.keys(this.priceChangeData).length > 0) {
+        this.selectedCandleData = this.selectedCandleData || Object.keys(this.priceChangeData)[0];
+        this.updateCandleChart();
+      }
     });
   },
 
@@ -283,6 +362,10 @@ export default defineComponent({
       } catch (error) {
         console.error('Error parsing candlesData:', error);
       }
+    },
+
+    getReportByPath(reportPath) {
+      return this.simulationData.find(report => report.reportPath === reportPath);
     },
 
     activateTab(index) {
@@ -317,15 +400,25 @@ export default defineComponent({
 
     updatePerformanceChart() {
       this.$nextTick(() => {
+        const selectedReport = this.getReportByPath(this.selectedReport);
+        if (!selectedReport) {
+          console.warn('No selected report to display.');
+          return;
+        }
         const canvas = this.$refs.performanceChartCanvas;
         if (!canvas) {
           console.error('performanceChartCanvas is not available');
           return;
         }
         const ctx = canvas.getContext('2d');
-        const labels = [new Date(this.selectedReport.beginDate), new Date(this.selectedReport.endDate)];
-        const data = [this.selectedReport.initialBalanceQuoted || this.selectedReport.initialBalanceBase, 
-                      this.selectedReport.endBalanceQuoted || this.selectedReport.endBalanceBase];
+        const labels = [
+          new Date(selectedReport.beginDate),
+          new Date(selectedReport.endDate),
+        ];
+        const data = [
+          selectedReport.initialBalanceQuoted || selectedReport.initialBalanceBase,
+          selectedReport.endBalanceQuoted || selectedReport.endBalanceBase,
+        ];
 
         this.performanceChartData.labels = labels;
         this.performanceChartData.datasets[0].data = data;
@@ -344,56 +437,72 @@ export default defineComponent({
 
     updateCandleChart() {
       this.$nextTick(() => {
-          const canvas = this.$refs.candleChartCanvas;
-          if (!canvas) {
-              console.error('Candle chart canvas is not available or not initialized.');
-              return;
-          }
+        const canvas = this.$refs.candleChartCanvas;
+        if (!canvas) {
+          console.error('Candle chart canvas is not available or not initialized.');
+          return;
+        }
 
-          const ctx = canvas.getContext('2d');
-          const selectedData = this.priceChangeData[this.selectedCandleData];
-          
-          // Add logging to debug
-          console.log('Selected Candle Data:', this.selectedCandleData);
-          console.log('Price Change Data:', this.priceChangeData);
-          console.log('Selected Data for Chart:', selectedData);
-          
-          if (!selectedData || selectedData.length === 0) {
-              console.warn('No valid candle data to display.');
-              return;
-          }
+        if (!this.selectedCandleData) {
+          console.warn('No selected candle data to display.');
+          return;
+        }
 
-          const labels = selectedData.map(candle => new Date(candle.date));  // Convert date strings to Date objects
-          const highData = selectedData.map(candle => candle.high);
-          const lowData = selectedData.map(candle => candle.low);
+        const ctx = canvas.getContext('2d');
+        const selectedData = this.priceChangeData[this.selectedCandleData];
 
-          this.candleChartData.labels = labels;
-          this.candleChartData.datasets = [
-            {
-              label: 'High Price',
-              data: highData,
-              borderColor: 'rgba(75, 192, 192, 1)',
-              borderWidth: 1,
-              fill: false,
-            },
-            {
-              label: 'Low Price',
-              data: lowData,
-              borderColor: 'rgba(255, 99, 132, 1)',
-              borderWidth: 1,
-              fill: false,
-            }
-          ];
+        if (!selectedData || selectedData.length === 0) {
+          console.warn('No valid candle data to display.');
+          return;
+        }
 
-          if (this.candleChart) {
-            this.candleChart.destroy();
-          }
+        // Filter data based on selected date range
+        let filteredData = selectedData;
+        if (this.startDate) {
+          const startDateObj = new Date(this.startDate);
+          filteredData = filteredData.filter(candle => candle.date >= startDateObj);
+        }
+        if (this.endDate) {
+          const endDateObj = new Date(this.endDate);
+          filteredData = filteredData.filter(candle => candle.date <= endDateObj);
+        }
 
-          this.candleChart = new ChartJS(ctx, {
-            type: 'line',
-            data: this.candleChartData,
-            options: this.candleChartOptions,
-          });
+        if (filteredData.length === 0) {
+          console.warn('No candle data available in the selected date range.');
+          return;
+        }
+
+        const labels = filteredData.map(candle => candle.date);
+        const highData = filteredData.map(candle => candle.high);
+        const lowData = filteredData.map(candle => candle.low);
+
+        this.candleChartData.labels = labels;
+        this.candleChartData.datasets = [
+          {
+            label: 'High Price',
+            data: highData,
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+            fill: false,
+          },
+          {
+            label: 'Low Price',
+            data: lowData,
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1,
+            fill: false,
+          },
+        ];
+
+        if (this.candleChart) {
+          this.candleChart.destroy();
+        }
+
+        this.candleChart = new ChartJS(ctx, {
+          type: 'line',
+          data: this.candleChartData,
+          options: this.candleChartOptions,
+        });
       });
     },
 
@@ -401,10 +510,17 @@ export default defineComponent({
       // Procesar datos de reporte
       if (this.dataKey in data) {
         const newReports = (data[this.dataKey] || []).map(report => {
-          const pathParts = report.reportPath ? report.reportPath.split("\\") : [];
+          if (!report || !report.reportPath) {
+            console.warn('Reporte sin reportPath:', report);
+            return null;
+          }
+          const pathParts = report.reportPath.split("\\");
           report.displayName = this.generateDisplayName(report, pathParts);
           return report;
-        });
+        }).filter(report => report !== null); // Filtrar reportes inválidos
+
+        // Limpiar simulationData existente para eliminar entradas inválidas
+        this.simulationData = this.simulationData.filter(report => report && report.reportPath);
 
         // Actualizar reportes
         newReports.forEach(newReport => {
@@ -421,6 +537,9 @@ export default defineComponent({
             this.updatePerformanceChart();
           }
         });
+      }
+      if (!this.selectedReport && this.simulationData.length > 0) {
+        this.selectedReport = this.simulationData[0];
       }
 
       // Procesar datos de velas
@@ -479,6 +598,9 @@ export default defineComponent({
           }
         });
       }
+      if (!this.selectedCandleData && this.candleDataPaths.length > 0) {
+        this.selectedCandleData = this.candleDataPaths[0];
+      }
     },
 
     cacheReportData(reports) {
@@ -487,17 +609,24 @@ export default defineComponent({
     },
 
     generateDisplayName(item, pathParts) {
-      if (item.dataPath) { // Exchange | Pair Display
+      if (item.dataPath) {
+        // Este bloque no es relevante para nuestros reportes actuales, lo podemos omitir o ajustar según sea necesario.
+      } else {
+        // Report Display Name
+        const cleanLastExecution = item.lastExecution || "No Execution";
         const exchange = pathParts[9] || "Unknown Exchange";
         const pair = pathParts[10] || "Unknown Pair";
-        const date = new Date(item.beginDate).toLocaleDateString();
-        return `${exchange} | ${pair} | ${date}`;
-      } else { // Report Display Name
-        const cleanLastExecution = item.lastExecution || "No Execution";
-        const exchange = pathParts[9] || "Unknown10";
-        const pair = pathParts[10] || "Unknown12";
-        const session = pathParts[12] || "Unknown14";
-        return `${cleanLastExecution} | ${session} | ${pair} | ${exchange}`;
+        const session = pathParts[12] || "Unknown Session";
+        const botName = session; // Asignamos el session como botName
+
+        // Asignamos las propiedades al objeto item (report)
+        item.lastExecution = cleanLastExecution;
+        item.exchange = exchange;
+        item.pairAsset = pair;
+        item.botName = botName;
+
+        // Retornamos un displayName si aún lo necesitamos
+        return `${cleanLastExecution} | ${botName} | ${pair} | ${exchange}`;
       }
     },
   },
@@ -537,6 +666,18 @@ thead {
 
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.details-section {
+  padding: 10px;
+}
+
+.details-section p {
+  margin-bottom: 5px;
 }
 
 .empty {
