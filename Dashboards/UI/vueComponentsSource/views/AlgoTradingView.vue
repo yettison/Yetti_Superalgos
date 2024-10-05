@@ -1,207 +1,298 @@
 <template>
-  <div class="dashboard-window container-fluid">
-    <div class="row col-12">
+  <div class="container-fluid">
+    <div class="row">
       <div class="col-3">
         <img class="image" :src="dashboardIcon" />
       </div>
-      <div class="col-6 mt-4 text-center">
+      <div class="col-9 mt-4 text-center">
         <h2><strong></strong></h2>
         <h5>Track or Compare your Trading Bots Performance!</h5>
       </div>
     </div>
-    
-    <div class="row col-12">
-      <Tabs :tabList="tabList" @tabChanged="handleTabChange">
 
-        <!-- Panel 1: My Reports -->
-        <template v-slot:tabPanel-1>
-          <div class="dashboard-window container-fluid">
-            <div class="row col-12">
-              <table class="table table-striped table-hover">
-                <thead>
+    <div class="row mt-4">
+      <div class="col-12">
+        <Tabs :tabList="tabList" @tabChanged="handleTabChange">
+          <!-- Panel 1: My Reports -->
+          <template v-slot:tabPanel-1>
+            <table class="table table-striped table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th class="text-center">Last Execution</th>
+                  <th class="text-center">Bot Name</th>
+                  <th class="text-center">Exchange</th>
+                  <th class="text-center">Pair Asset</th>
+                  <th class="text-center">Profit/Loss</th>
+                  <th class="text-center">Hit Ratio</th>
+                  <th class="text-center">ROI</th>
+                  <th class="text-center">Annualized Return</th>
+                  <th class="text-center">Details</th>
+                </tr>
+              </thead>
+              <tbody v-if="simulationData && simulationData.length > 0">
+                <template v-for="report in simulationData" :key="report.reportPath">
                   <tr>
-                    <th class="text-center">Last Execution</th>
-                    <th class="text-center">Bot Name</th>
-                    <th class="text-center">Exchange</th>
-                    <th class="text-center">Pair Asset</th>
-                    <th class="text-center">Profit/Loss</th>
-                    <th class="text-center">Hit Ratio</th>
-                    <th class="text-center">ROI</th>
-                    <th class="text-center">Annualized Return</th>
-                    <th class="text-center">Details</th>
-                  </tr>
-                </thead>
-                <tbody v-if="simulationData && simulationData.length > 0">
-                  <template v-for="report in simulationData" :key="report.reportPath">
-                    <tr>
-                      <!-- Last Execution -->
-                      <td class="text-center">{{ report.lastExecution || 'N/A' }}</td>
-                      <!-- Bot Name -->
-                      <td class="text-center">{{ report.botName || 'Unknown' }}</td>
-                      <!-- Exchange -->
-                      <td class="text-center">{{ report.exchange || 'Unknown' }}</td>
-                      <!-- Pair Asset -->
-                      <td class="text-center">{{ report.pairAsset || 'Unknown' }}</td>
-                      <!-- Profit/Loss -->
-                      <td class="text-center">{{ report.profitLossQuoted || report.profitLossBase || 'N/A' }}</td>
-                      <!-- Hit Ratio -->
-                      <td class="text-center">{{ report.hitRatioQuoted || report.hitRatioBase || 'N/A' }}%</td>
-                      <!-- ROI -->
-                      <td class="text-center">{{ report.ROIQuoted || report.ROIBase }}%</td>
-                      <!-- Annualized Return -->
-                      <td class="text-center">{{ report.annualizedReturnQuoted || report.annualizedReturnBase }}%</td>
-                      <!-- Details Button -->
-                      <td class="text-center">
-                        <button class="btn btn-primary" @click="toggleDetails(report.reportPath)">
-                          {{ activeIndex === report.reportPath ? 'Hide' : 'Show' }} Details
+                    <!-- Last Execution -->
+                    <td class="text-center">
+                      {{ report.lastExecution ? report.lastExecution.slice(0, -13) : 'N/A' }}
+                    </td>
+                    <!-- Bot Name -->
+                    <td class="text-center">{{ report.botName || 'Unknown' }}</td>
+                    <!-- Exchange -->
+                    <td class="text-center">{{ report.exchange || 'Unknown' }}</td>
+                    <!-- Pair Asset -->
+                    <td class="text-center">{{ report.pairAsset || 'Unknown' }}</td>
+                    <!-- Profit/Loss -->
+                    <td class="text-center">
+                      {{ typeof report.profitLossQuoted === 'number' ? report.profitLossQuoted.toFixed(2) :
+                        (typeof report.profitLossBase === 'number' ? report.profitLossBase.toFixed(2) : 'N/A') }}
+                    </td>
+                    <!-- Hit Ratio -->
+                    <td class="text-center">
+                      {{ typeof report.hitRatioQuoted === 'number' ? report.hitRatioQuoted.toFixed(2) :
+                        (typeof report.hitRatioBase === 'number' ? report.hitRatioBase.toFixed(2) : 'N/A') }}%
+                    </td>
+                    <!-- ROI -->
+                    <td class="text-center">
+                      {{ typeof report.ROIQuoted === 'number' ? report.ROIQuoted.toFixed(2) :
+                        (typeof report.ROIBase === 'number' ? report.ROIBase.toFixed(2) : 'N/A') }}%
+                    </td>
+                    <!-- Annualized Return -->
+                    <td class="text-center">
+                      {{ typeof report.annualizedRateOfReturnQuoted === 'number' ? report.annualizedRateOfReturnQuoted.toFixed(2) :
+                        (typeof report.annualizedRateOfReturnBase === 'number' ? report.annualizedRateOfReturnBase.toFixed(2) : 'N/A') }}%
+                    </td>
+                    <!-- Actions -->
+                    <td class="text-center">
+                      <div class="dropdown" :class="{ 'is-active': activeDropdown === report.reportPath }">
+                        <button class="btn btn-primary btn-sm dropdown-toggle" @click="toggleDropdown(report.reportPath)">
+                          ···
                         </button>
-                      </td>
-                    </tr>
+                        <div class="dropdown-menu" v-if="activeDropdown === report.reportPath">
+                          <button class="dropdown-item btn btn-primary btn-sm" @click.prevent="toggleDetails(report.reportPath)">Last Report</button>
+                          <button class="dropdown-item btn btn-primary btn-sm" @click.prevent="compareLastReport(report.reportPath)">Previous Report</button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
 
-                    <!-- Fila adicional para mostrar los detalles -->
-                    <tr v-if="activeIndex === report.reportPath">
-                      <td colspan="12">
-                        <div class="details-section">
-                          <div class="row">
-                            <!-- Columna 1 -->
-                            <div class="col-md-6 col-lg-3">
-                              <p><strong>Begin Date:</strong> {{ report.beginDate ?? 'N/A' }}</p>
-                              <p><strong>End Date:</strong> {{ report.endDate ?? 'N/A' }}</p>
-                              <p><strong>Begin Rate:</strong> {{ report.beginRate ?? 'N/A' }}</p>
-                              <p><strong>End Rate:</strong> {{ report.endRate ?? 'N/A' }}</p>
-                            </div>
+                  <!-- Fila adicional para mostrar los detalles -->
+                  <tr v-if="activeIndex === report.reportPath">
+                    <td colspan="9">
+                      <div class="details-section">
+                        <h5>Last Report Details</h5>
+                        <div class="row">
+                          <!-- Columna 1 -->
+                          <div class="col-md-6 col-lg-2">
+                            <p><strong>Begin:</strong> {{ report.beginDate ? report.beginDate.slice(0, -13) : 'N/A' }} </p>
+                            <p>@ {{ report.beginRate || 'N/A' }} {{ report.episodeQuotedAsset || '' }} </p>
+                            <p><strong>End:</strong> {{ report.endDate ? report.endDate.slice(0, -13) : 'N/A' }} </p>
+                            <p>@ {{ report.endRate || 'N/A' }} {{ report.episodeQuotedAsset || '' }} </p>
+                            <p><strong>Periods:</strong> {{ report.periods || 'N/A' }}</p>
+                            <p><strong>Time Frame:</strong> </p>
+                            <p>{{ report.timeFrames || 'N/A' }}</p>
+                          </div>
 
-                            <!-- Columna 2 -->
-                            <div class="col-md-6 col-lg-3">
-                              <p><strong>Initial Quoted Balance ({{ report.episodeQuotedAsset }}):</strong> {{ report.initialBalanceQuoted }}</p>
-                              <p><strong>End Quoted Balance ({{ report.episodeQuotedAsset }}):</strong> {{ report.endBalanceQuoted }}</p>
-                              <p><strong>Initial Base Balance ({{ report.episodeBaseAsset }}):</strong> {{ report.initialBalanceBase }}</p>
-                              <p><strong>End Base Balance ({{ report.episodeBaseAsset }}):</strong> {{ report.endBalanceBase }}</p>
-                            </div>
+                          <!-- Columna 2 -->
+                          <div class="col-md-6 col-lg-2">
+                            <p><strong>Initial Quoted Balance ({{ report.episodeQuotedAsset || '' }}):</strong> {{ report.initialBalanceQuoted ? report.initialBalanceQuoted.toFixed(2) : 'N/A' }}</p>
+                            <p><strong>End Quoted Balance ({{ report.episodeQuotedAsset || '' }}):</strong> {{ report.endBalanceQuoted ? report.endBalanceQuoted.toFixed(2) : 'N/A' }}</p>
+                            <p><strong>Initial Base Balance ({{ report.episodeBaseAsset || '' }}):</strong> {{ report.initialBalanceBase ? report.initialBalanceBase.toFixed(2) : 'N/A' }}</p>
+                            <p><strong>End Base Balance ({{ report.episodeBaseAsset || '' }}):</strong> {{ report.endBalanceBase ? report.endBalanceBase.toFixed(2) : 'N/A' }}</p>
+                          </div>
 
-                            <!-- Columna 3 -->
-                            <div class="col-md-6 col-lg-2">
-                              <p><strong>Hits (Quoted):</strong> {{ report.hitsQuoted }}</p>
-                              <p><strong>Fails (Quoted):</strong> {{ report.failsQuoted }}</p>
-                              <p><strong>Hits (Base):</strong> {{ report.hitsBase }}</p>
-                              <p><strong>Fails (Base):</strong> {{ report.failsBase }}</p>
-                              <!-- Puedes agregar más datos aquí si lo deseas -->
-                            </div>
+                          <!-- Columna 3 -->
+                          <div class="col-md-6 col-lg-2">
+                            <p><strong>Hits (Quoted):</strong> {{ report.hitsQuoted || 'N/A' }}</p>
+                            <p><strong>Fails (Quoted):</strong> {{ report.failsQuoted || 'N/A' }}</p>
+                            <p><strong>Hits (Base):</strong> {{ report.hitsBase || 'N/A' }}</p>
+                            <p><strong>Fails (Base):</strong> {{ report.failsBase || 'N/A' }}</p>
+                          </div>
 
-                            <!-- Columna 4 -->
-                            <div class="col-md-6 col-lg-2">
-                              <p><strong>Positions Open (Quoted):</strong> {{ report.hitsQuoted }}</p>
-                              <p><strong>Closed by TP (Quoted):</strong> {{ report.failsQuoted }}</p>
-                              <p><strong>Closed by SL (Quoted):</strong> {{ report.hitsBase }}</p>
-                              <p><strong>Closed by Other (Quoted):</strong> {{ report.failsBase }}</p>
-                              <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
-                            </div>
+                          <!-- Columna 4 -->
+                          <div class="col-md-6 col-lg-3">
+                            <p><strong>Orders:</strong> {{ report.orders || 'N/A' }}</p>
+                            <p><strong>Positions:</strong> {{ report.positions || 'N/A' }}</p>
+                            <p><strong>Positions Open (Quoted):</strong> </p>
+                            <p><strong>Positions Open (Base):</strong> </p>
+                            <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
+                          </div>
 
-                            <!-- Columna 5 -->
-                            <div class="col-md-6 col-lg-2">
-                              <p><strong>Positions Open (Base):</strong> {{ report.hitsQuoted }}</p>
-                              <p><strong>Closed by TP (Base):</strong> {{ report.failsQuoted }}</p>
-                              <p><strong>Closed by SL (Base):</strong> {{ report.hitsBase }}</p>
-                              <p><strong>Closed by Other (Base):</strong> {{ report.failsBase }}</p>
-                              <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
-                            </div>
+                          <!-- Columna 5 -->
+                          <div class="col-md-6 col-lg-2">
+                            <p><strong>Closed by TP (Quoted):</strong> </p>
+                            <p><strong>Closed by SL (Quoted):</strong></p>
+                            <p><strong>Closed by TP (Base):</strong> </p>
+                            <p><strong>Closed by SL (Base):</strong></p>
+                            <p><strong>Closed by Other (Q):</strong></p>
+                            <p><strong>Closed by Other (B):</strong></p>
+                            <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
                           </div>
                         </div>
-                      </td>
-                    </tr>
-                  </template>
-                </tbody>
-              </table>
+                      </div>
+                    </td>
+                  </tr>
+
+                      <!-- Fila adicional para mostrar los detalles del reporte anterior -->
+                  <tr v-if="comparingIndex === report.reportPath && report.previousReport">
+                    <td colspan="9">
+                      <div class="details-section bg-light">
+                        <h5>Previous Report Details</h5>
+                        <div class="row">
+                          <!-- Columna 1 -->
+                          <div class="col-md-6 col-lg-2">
+                            <p><strong>Begin:</strong> {{ report.previousReport.beginDate ? report.previousReport.beginDate.slice(0, -13) : 'N/A' }} </p>
+                            <p>@ {{ report.previousReport.beginRate || 'N/A' }} {{ report.previousReport.episodeQuotedAsset || '' }} </p>
+                            <p><strong>End:</strong> {{ report.previousReport.endDate ? report.previousReport.endDate.slice(0, -13) : 'N/A' }} </p>
+                            <p>@ {{ report.previousReport.endRate || 'N/A' }} {{ report.previousReport.episodeQuotedAsset || '' }} </p>
+                            <p><strong>Periods:</strong> {{ report.previousReport.periods || 'N/A' }}</p>
+                            <p><strong>Time Frame:</strong> </p>
+                            <p>{{ report.previousReport.timeFrames || 'N/A' }}</p>
+                          </div>
+
+                          <!-- Columna 2 -->
+                          <div class="col-md-6 col-lg-2">
+                            <p><strong>Initial Quoted Balance ({{ report.previousReport.episodeQuotedAsset || '' }}):</strong> {{ report.previousReport.initialBalanceQuoted ? report.previousReport.initialBalanceQuoted.toFixed(2) : 'N/A' }}</p>
+                            <p><strong>End Quoted Balance ({{ report.previousReport.episodeQuotedAsset || '' }}):</strong> {{ report.previousReport.endBalanceQuoted ? report.previousReport.endBalanceQuoted.toFixed(2) : 'N/A' }}</p>
+                            <p><strong>Initial Base Balance ({{ report.previousReport.episodeBaseAsset || '' }}):</strong> {{ report.previousReport.initialBalanceBase ? report.previousReport.initialBalanceBase.toFixed(2) : 'N/A' }}</p>
+                            <p><strong>End Base Balance ({{ report.previousReport.episodeBaseAsset || '' }}):</strong> {{ report.previousReport.endBalanceBase ? report.previousReport.endBalanceBase.toFixed(2) : 'N/A' }}</p>
+                          </div>
+
+                          <!-- Columna 3 -->
+                          <div class="col-md-6 col-lg-2">
+                            <p><strong>Hits (Quoted):</strong> {{ report.previousReport.hitsQuoted || 'N/A' }}</p>
+                            <p><strong>Fails (Quoted):</strong> {{ report.previousReport.failsQuoted || 'N/A' }}</p>
+                            <p><strong>Hits (Base):</strong> {{ report.previousReport.hitsBase || 'N/A' }}</p>
+                            <p><strong>Fails (Base):</strong> {{ report.previousReport.failsBase || 'N/A' }}</p>
+                          </div>
+
+                          <!-- Columna 4 -->
+                          <div class="col-md-6 col-lg-3">
+                            <p><strong>Orders:</strong> {{ report.previousReport.orders || 'N/A' }}</p>
+                            <p><strong>Positions:</strong> {{ report.previousReport.positions || 'N/A' }}</p>
+                            <p><strong>Positions Open (Quoted):</strong> </p>
+                            <p><strong>Positions Open (Base):</strong> </p>
+                            <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
+                          </div>
+
+                          <!-- Columna 5 -->
+                          <div class="col-md-6 col-lg-2">
+                            <p><strong>Closed by TP (Quoted):</strong> </p>
+                            <p><strong>Closed by SL (Quoted):</strong></p>
+                            <p><strong>Closed by TP (Base):</strong> </p>
+                            <p><strong>Closed by SL (Base):</strong></p>
+                            <p><strong>Closed by Other (Q):</strong></p>
+                            <p><strong>Closed by Other (B):</strong></p>
+                            <!-- Puedes agregar más datos aquí o dejar la columna vacía si no hay más datos -->
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+          </template>
+
+          <!-- Panel 2: Performance Chart -->
+          <template v-slot:tabPanel-2>
+            <div v-if="simulationData && simulationData.length > 0">
+              <div class="row align-items-end">
+                <!-- Selector de Reportes -->
+                <div class="col-md-6">
+                  <label for="reportSelector">Select Report:</label>
+                  <select id="reportSelector" class="form-control" v-model="selectedReport">
+                    <option disabled value="">Select a report</option>
+                    <option v-for="report in simulationData" :value="report.reportPath" :key="report.reportPath">
+                      {{ report.botName || 'No Reports' }}
+                    </option>
+                  </select>
+                </div>
+
+                <!-- Botón para actualizar el gráfico -->
+                <div class="col-md-2">
+                  <button class="btn btn-primary mt-4" @click="updatePerformanceChart">Load Report</button>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-primary mt-4" @click="resetZoom">Reset Zoom</button>
+                </div>
+              </div>
+
+              <!-- Bot Selection Dropdown -->
+              <div class="dropdown" :class="{ 'is-active': activeDropdown === 'botSelection' }">
+                <button class="btn btn-primary dropdown-toggle" @click="toggleDropdown('botSelection')">Select Bots</button>
+                <div class="dropdown-menu">
+                  <div class="dropdown-item" v-for="(bot, index) in botList" :key="index">
+                    <input type="checkbox" :id="'bot' + index" v-model="selectedBots" :value="bot" />
+                    <label :for="'bot' + index">{{ bot }}</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Performance Chart -->
+              <div class="chart-container">
+                <canvas ref="performanceChartCanvas"></canvas>
+                <p>Report loaded: {{ getReportByPath(selectedReport)?.botName || 'Unknown' }}</p>
+              </div>
             </div>
-          </div>
-        </template>
+            <div v-else>No simulation data available.</div>
+          </template>
 
-        <!-- Panel 2: Performance Chart -->
-        <template v-slot:tabPanel-2>
-          <div v-if="simulationData && simulationData.length > 0">
-            <div class="row align-items-end">
-              <!-- Selector de Reportes -->
-              <div class="col-md-6">
-                <label for="reportSelector">Select Report:</label>
-                <select id="reportSelector" class="form-control" v-model="selectedReport">
-                  <option disabled value="">Select a report</option>
-                  <option v-for="report in simulationData" :value="report.reportPath" :key="report.reportPath">
-                    {{ report.botName || 'No Reports' }}
-                  </option>
-                </select>
+          <template v-slot:tabPanel-3>
+            <div class="col-6 mt-4 text-center">
+              <h2><strong></strong></h2>
+              <h5>Comming soon...</h5>
+            </div>
+            <div>No data for this tab.</div>
+          </template>
+
+          <!-- Panel 4: Price Change Chart -->
+          <template v-slot:tabPanel-4>
+            <div v-if="candleDataPaths.length > 0">
+              <div class="row align-items-end">
+                <!-- Selector de datos de velas -->
+                <div class="col-md-4">
+                  <label for="candleSelector">Select Candle Data:</label>
+                  <select id="candleSelector" class="form-control" v-model="selectedCandleData">
+                    <option disabled value="">Select candle data</option>
+                    <option v-for="key in candleDataPaths" :value="key" :key="key">
+                      {{ key }}
+                    </option>
+                  </select>
+                </div>
+
+                <!-- Date Range Selectors -->
+                <div class="col-md-3">
+                  <label for="startDate">Start Date:</label>
+                  <input type="date" id="startDate" class="form-control" v-model="startDate" @change="updateCandleChart" />
+                </div>
+                <div class="col-md-3">
+                  <label for="endDate">End Date:</label>
+                  <input type="date" id="endDate" class="form-control" v-model="endDate" @change="updateCandleChart" />
+                </div>
+
+                <!-- Update Button -->
+                <div class="col-md-2">
+                  <button class="btn btn-primary mt-4" @click="updateCandleChart">Update Chart</button>
+                </div>
               </div>
 
-              <!-- Botón para actualizar el gráfico -->
-              <div class="col-md-2">
-                <button class="btn btn-primary mt-4" @click="updatePerformanceChart">Load Report</button>
+              <!-- Candle Chart -->
+              <div class="chart-container">
+                <canvas ref="candleChartCanvas"></canvas>
               </div>
             </div>
 
-            <!-- Gráfico de rendimiento -->
-            <div class="mt-4">
-              <canvas ref="performanceChartCanvas"></canvas>
-              <p>Report loaded: {{ getReportByPath(selectedReport)?.botName || 'Unknown' }}</p>
-            </div>
-          </div>
-          <div v-else>No simulation data available.</div>
-        </template>
-
-        <template v-slot:tabPanel-3>
-          <div class="col-6 mt-4 text-center">
-            <h2><strong></strong></h2>
-            <h5>Comming soon...</h5>
-          </div>
-          <div>No data for this tab.</div>
-        </template>
-
-        <!-- Panel 4: Price Change Chart -->
-        <template v-slot:tabPanel-4>
-          <div v-if="candleDataPaths.length > 0">
-            <div class="row align-items-end">
-              <!-- Selector de datos de velas -->
-              <div class="col-md-4">
-                <label for="candleSelector">Select Candle Data:</label>
-                <select id="candleSelector" class="form-control" v-model="selectedCandleData">
-                  <option disabled value="">Select candle data</option>
-                  <option v-for="key in candleDataPaths" :value="key" :key="key">
-                    {{ key }}
-                  </option>
-                </select>
-              </div>
-
-              <!-- Selectores de rango de fechas -->
-              <div class="col-md-3">
-                <label for="startDate">Start Date:</label>
-                <input type="date" id="startDate" class="form-control" v-model="startDate" @change="updateCandleChart" />
-              </div>
-              <div class="col-md-3">
-                <label for="endDate">End Date:</label>
-                <input type="date" id="endDate" class="form-control" v-model="endDate" @change="updateCandleChart" />
-              </div>
-
-              <!-- Botón para actualizar el gráfico -->
-              <div class="col-md-2">
-                <button class="btn btn-primary mt-4" @click="updateCandleChart">Update Chart</button>
-              </div>
-            </div>
-
-            <!-- Gráfico de velas -->
-            <div class="mt-4">
-              <canvas ref="candleChartCanvas"></canvas>
-            </div>
-          </div>
-
-          <div v-else>No candle data available.</div>
-        </template>
-
-      </Tabs>
+            <div v-else>No candle data available.</div>
+          </template>
+        </Tabs>
+      </div>
     </div>
-    
-    <div class="row col-12">
-      <div class="col-6">Last update: {{ timestamp ? timestamp.slice(0, -1) : 'No timestamp available' }}</div>
+
+    <div class="row col-12 footer">
+      <div class="col-6">Last update: {{ timestamp ? timestamp.slice(0, -1)  : 'No timestamp available' }}</div>
       <div class="col-6">Running on: {{ host }}</div>
     </div>
-
   </div>
 </template>
 
@@ -213,8 +304,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Chart as ChartJS, registerables } from 'chart.js';
 import 'chartjs-adapter-date-fns';
 import { defineComponent } from 'vue';
+import zoomPlugin from 'chartjs-plugin-zoom';
 
-ChartJS.register(...registerables);
+
+ChartJS.register(...registerables, zoomPlugin);
 
 export default defineComponent({
   props: ["incomingData", "timestamp"],
@@ -241,6 +334,10 @@ export default defineComponent({
       isDestroyed: false,
       host: location.host.split(":")[0],
       activeIndex: null,
+      comparingIndex: null, 
+      activeDropdown: null,
+      botList: [],
+      selectedBots: [],
       performanceChartData: {
         labels: [],  // Time labels
         datasets: [
@@ -254,16 +351,37 @@ export default defineComponent({
         ],
       },
       performanceChartOptions: {
+        plugins: {
+          zoom: {
+            pan: {
+              enabled: true,
+              mode: 'x',
+            },
+            zoom: {
+              wheel: {
+                enabled: true, // Enable zooming via mouse wheel
+              },
+              drag: {
+                enabled: true, // Enable drag zooming
+              },
+              pinch: {
+                enabled: true, // Enable pinch zooming for touch devices
+              },
+              mode: 'x', // Zoom along x-axis
+            },
+          },
+        },
         scales: {
-          x: { type: 'time', title: { display: true, text: 'Time' } },
-          y: { 
+          x: {
+            type: 'time',
+            title: { display: true, text: 'Time' },
+          },
+          y: {
             title: { display: true, text: 'Balance' },
             beginAtZero: true,
-            position: 'right'  // Move Y-axis to the right
           },
         },
       },
-
       candleChartData: {
         labels: [],  // Time labels for candles
         datasets: [
@@ -287,12 +405,28 @@ export default defineComponent({
         scales: {
           x: { 
             type: 'time', 
-            title: { display: true, text: 'Time' },
+            title: { display: true, text: 'Date' } 
           },
           y: { 
             title: { display: true, text: 'Price' }, 
-            beginAtZero: false, 
-            position: 'right'  // Move Y-axis to the right
+            beginAtZero: false 
+          }
+        },
+        plugins: {
+          zoom: {
+            pan: {
+              enabled: true,
+              mode: 'x',
+            },
+            zoom: {
+              wheel: {
+                enabled: true,
+              },
+              drag: {
+                enabled: true,
+              },
+              mode: 'x',
+            },
           },
         },
       },
@@ -357,9 +491,34 @@ export default defineComponent({
   },
 
   methods: {
+    
+    toggleDropdown(reportPath) {
+      this.activeDropdown = this.activeDropdown === reportPath ? null : reportPath;
+    },
 
     toggleDetails(reportPath) {
       this.activeIndex = this.activeIndex === reportPath ? null : reportPath;
+      this.activeDropdown = null; // Close the dropdown
+      if (this.activeIndex === reportPath) {
+        this.comparingIndex = null;
+      }
+    },
+
+    compareLastReport(reportPath) {
+      this.comparingIndex = this.comparingIndex === reportPath ? null : reportPath;
+      this.activeDropdown = null; // Close the dropdown
+      if (this.comparingIndex === reportPath) {
+        this.activeIndex = null;
+      }
+    },
+
+    resetZoom() {
+      if (this.performanceChart) {
+        this.performanceChart.resetZoom();
+      }
+      if (this.candleChart) {
+        this.candleChart.resetZoom();
+      }
     },
 
     processCandlesData(candlesData) {
@@ -412,11 +571,13 @@ export default defineComponent({
           console.warn('No selected report to display.');
           return;
         }
+
         const canvas = this.$refs.performanceChartCanvas;
-        if (!canvas) {
-          console.error('performanceChartCanvas is not available');
+        if (!canvas || !canvas.getContext) {
+          console.error('performanceChartCanvas is not available or not initialized.');
           return;
         }
+
         const ctx = canvas.getContext('2d');
         const labels = [
           new Date(selectedReport.beginDate),
@@ -445,7 +606,7 @@ export default defineComponent({
     updateCandleChart() {
       this.$nextTick(() => {
         const canvas = this.$refs.candleChartCanvas;
-        if (!canvas) {
+        if (!canvas || !canvas.getContext) {
           console.error('Candle chart canvas is not available or not initialized.');
           return;
         }
@@ -516,28 +677,46 @@ export default defineComponent({
     processIncomingData(data) {
       // Procesar datos de reporte
       if (this.dataKey in data) {
-        const newReports = (data[this.dataKey] || []).map(report => {
+        const incomingReports = data[this.dataKey] || [];
+        incomingReports.forEach(report => {
           if (!report || !report.reportPath) {
             console.warn('Reporte sin reportPath:', report);
-            return null;
+            return;
           }
           const pathParts = report.reportPath.split("\\");
           report.displayName = this.generateDisplayName(report, pathParts);
-          return report;
-        }).filter(report => report !== null); // Filtrar reportes inválidos
 
-        // Limpiar simulationData existente para eliminar entradas inválidas
-        this.simulationData = this.simulationData.filter(report => report && report.reportPath);
+          const isPrevious = report.isPreviousReport;
+          const normalizedReportPath = report.reportPath.replace('Status.Report.json.Previous.json', 'Status.Report.json');
 
-        // Actualizar reportes
-        newReports.forEach(newReport => {
-          const existingIndex = this.simulationData.findIndex(report => report.reportPath === newReport.reportPath);
-          if (existingIndex === -1) {
-            this.simulationData.push(newReport);
-          } else if (JSON.stringify(newReport) !== JSON.stringify(this.simulationData[existingIndex])) {
-            this.simulationData[existingIndex] = newReport;
+          const existingIndex = this.simulationData.findIndex(r => r.reportPath === normalizedReportPath);
+
+          if (isPrevious) {
+            // Es un reporte anterior
+            if (existingIndex !== -1) {
+              // Agregar el previousReport al reporte existente
+              this.simulationData[existingIndex].previousReport = report;
+            } else {
+              // Crear una nueva entrada si el reporte actual no existe aún
+              this.simulationData.push({
+                reportPath: normalizedReportPath,
+                previousReport: report,
+              });
+            }
+          } else {
+            // Es un reporte actual
+            if (existingIndex !== -1) {
+              // Actualizar el reporte existente
+              this.simulationData[existingIndex] = Object.assign(this.simulationData[existingIndex], report);
+            } else {
+              // Agregar un nuevo reporte
+              this.simulationData.push(report);
+            }
           }
         });
+
+        // Filtrar simulationData para que solo contenga reportes actuales
+        this.simulationData = this.simulationData.filter(report => report && report.reportPath && !report.isPreviousReport);
 
         this.$nextTick(() => {
           if (this.$refs.performanceChartCanvas && this.simulationData.length > 0) {
@@ -549,7 +728,7 @@ export default defineComponent({
         this.selectedReport = this.simulationData[0];
       }
 
-      // Procesar datos de velas
+      // Procesar datos de velas (sin cambios)
       if (this.candlesDataKey in data) {
         const newCandleData = data[this.candlesDataKey].map(candle => {
           if (!candle || !candle.exchangePair || !Array.isArray(candle.candleData) || candle.candleData.length === 0) {
@@ -576,7 +755,7 @@ export default defineComponent({
             exchange: exchange,
             pair: pair,
             candles: validCandles.map(c => ({
-              date: new Date(c.beginDate),  // Convert beginDate to Date object
+              date: new Date(c.beginDate),
               high: c.high,
               low: c.low
             }))
@@ -609,6 +788,8 @@ export default defineComponent({
         this.selectedCandleData = this.candleDataPaths[0];
       }
     },
+  
+
 
     cacheReportData(reports) {
       localStorage.setItem('cachedReports', JSON.stringify(reports));
@@ -648,13 +829,25 @@ export default defineComponent({
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  height: auto;
 }
 
 .image {
-    margin-top: 10px;
-    height: 100px;
-  }
+  margin-top: 10px;
+  height: 100px;
+}
 
+.btn-primary {
+  margin-right: 2px;
+  margin-left: 2px;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table-responsive {
+  max-height: 70vh;
+  overflow-y: auto;
+}
 
 .table {
   margin-top: 20px;
@@ -671,20 +864,23 @@ thead {
   background-color: #dee2e6;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
 .details-section {
   padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  display: block;
+  width: 100%;
 }
 
-.details-section p {
-  margin-bottom: 5px;
+.details-section.bg-light {
+  background-color: #e9ecef;
+  display: block;
+  width: 100%;
+}
+
+.col-md-6, .col-lg-2, .col-lg-3 {
+  flex: 1; /* Ensure columns expand to full width inside details */
+  margin-bottom: 10px; /* Add space between each block */
 }
 
 .empty {
@@ -694,7 +890,99 @@ thead {
   padding: 20px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  z-index: 1000;
+  background-color: #343a40;
+  min-width: 1rem;
+  padding: 0;
+  margin-bottom: 20px; /* Add spacing between details */
+  font-size: 1rem;
+  text-align: left;
+  list-style: none;
+  border: none;
+  border-radius: 0;
+  right: 0; /* Alinear el menú al lado derecho */
+}
+
+.dropdown.is-active .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item {
+  width: 100%;
+  padding: 0.25rem 1rem;
+  text-align: left;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.dropdown-menu .btn {
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #495057;
+}
+
+.dropdown-menu .btn {
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+
 button {
   font-size: 0.9em;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #c5c4c42a;
+  color: #000;
+  padding: 5px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.chart-container {
+  position: relative;
+  max-width: 80%;
+  max-height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+@media (max-width: 768px) {
+  .image {
+    height: 80px;
+  }
+}
+
 </style>

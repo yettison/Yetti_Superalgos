@@ -181,8 +181,7 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                 const stat = await fs.stat(filePath);
                 if (stat && stat.isDirectory()) {
                     results = results.concat(await findStatusReports(filePath));
-                } else if (filePath.endsWith('Status.Report.json')) {
-                    results.push(filePath);
+                } else if (filePath.endsWith('Status.Report.json') || filePath.endsWith('Status.Report.json.Previous.json')) {                    results.push(filePath);
                 }
             }
             return results;
@@ -218,6 +217,9 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                 
                     const ROIQuoted = tradingEpisode.episodeQuotedAsset?.ROI?.value || 0;
                     const ROIBase = tradingEpisode.episodeBaseAsset?.ROI?.value || 0;
+
+                    const annualizedRateOfReturnQuoted = tradingEpisode.episodeQuotedAsset?.annualizedRateOfReturn?.value || 0;
+                    const annualizedRateOfReturnBase = tradingEpisode.episodeBaseAsset?.annualizedRateOfReturn?.value || 0;
                 
                     const hitRatioBase = tradingEpisode.episodeBaseAsset?.hitRatio?.value || 0;
                     const hitRatioQuoted = tradingEpisode.episodeQuotedAsset?.hitRatio?.value || 0;
@@ -229,6 +231,14 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                     // Ensure episodeQuotedAsset exists before accessing hits and fails
                     const hitsQuoted = tradingEpisode.episodeQuotedAsset?.hits?.value || 0;
                     const failsQuoted = tradingEpisode.episodeQuotedAsset?.fails?.value || 0;
+
+                    // Episode Counters
+                    const periods = tradingEpisode.tradingEpisodeCounters?.periods?.value || 0;
+                    const strategies = tradingEpisode.tradingEpisodeCounters?.strategies?.value || 0;
+                    const positions = tradingEpisode.tradingEpisodeCounters?.positions?.value || 0;
+                    const orders = tradingEpisode.tradingEpisodeCounters?.orders?.value || 0;
+
+
                 
                     const beginRate = tradingEpisode.beginRate?.value || 0;
                     const endRate = tradingEpisode.endRate?.value || 0;
@@ -238,15 +248,21 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                         : jsonData.lastFile
                             ? jsonData.lastFile.slice(0, -1)
                             : "N/A";
+
+                    const isPrevious = reportPath.endsWith('Status.Report.json.Previous.json');
+
                 
                     let filteredData = {
+                        isPreviousReport: isPrevious,
                         lastExecution: lastExecution,
                         beginDate: new Date(tradingEpisode.begin?.value || 0).toISOString().slice(0, -1),
                         endDate: new Date(tradingEpisode.end?.value || 0).toISOString().slice(0, -1),
+                        timeFrames: jsonData.timeFrames,
                 
                         // Base Asset
                         episodeBaseAsset: tradingEpisode.episodeBaseAsset?.value || 'Unknown',
                         initialBalanceBase: initialBalanceBase,
+                        annualizedRateOfReturnBase: annualizedRateOfReturnBase,
                         endBalanceBase: endBalanceBase,
                         balanceBase: balanceBase,
                         profitLossBase: profitLossBase,
@@ -257,6 +273,7 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                 
                         // Quoted Asset
                         episodeQuotedAsset: tradingEpisode.episodeQuotedAsset?.value || 'Unknown',
+                        annualizedRateOfReturnQuoted: annualizedRateOfReturnQuoted,
                         initialBalanceQuoted: initialBalanceQuoted,
                         endBalanceQuoted: endBalanceQuoted,
                         balanceQuoted: balanceQuoted,
@@ -269,13 +286,19 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                         // Rates
                         beginRate: beginRate,
                         endRate: endRate,
+
+                        //Episode Counters
+                        periods: periods,
+                        strategies: strategies,
+                        positions: positions,
+                        orders: orders,
                 
                         reportPath,  // Report path
                     };
                 
                     let messageToSend = `${new Date().toISOString()}|*|Platform|*|Data|*|SimulationResult|*|${JSON.stringify(filteredData)}`;
                     socketClient.send(messageToSend);
-                    //SA.logger.info(`Simulation data sent from SA to Dashboard for ${messageToSend}`);
+                    SA.logger.info(`Simulation data sent from SA to Dashboard for ${messageToSend}`);
                 }                
             }
         } catch (error) {
