@@ -977,8 +977,9 @@ export default defineComponent({
               });
           }
       }
-    },
       */
+    },
+      
     addOrUpdateReport(report) {
       // Primero, extraemos los datos para obtener botName, exchange y pairAsset
       this.extractReportData(report);
