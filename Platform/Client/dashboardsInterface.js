@@ -151,8 +151,10 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
 
             sendSimulationData();
             sendCandlesData();  
+            //sendOutputData();
             setInterval(sendSimulationData, 60000);
             setInterval(sendCandlesData, 60000);         
+            //setInterval(sendOutputData, 60000);         
         });
 
         socketClient.on('close', function (close) {
@@ -170,9 +172,11 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
 
     async function sendSimulationData() {
         const fs = require('fs').promises;
+        const path = require('path');
     
         const basePath = path.join(global.env.PATH_TO_DATA_STORAGE, 'Project', 'Algorithmic-Trading', 'Trading-Mine', 'Masters', 'Low-Frequency');
     
+        // Función para encontrar los reportes de estado
         async function findStatusReports(dir) {
             let results = [];
             const list = await fs.readdir(dir);
@@ -181,7 +185,8 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                 const stat = await fs.stat(filePath);
                 if (stat && stat.isDirectory()) {
                     results = results.concat(await findStatusReports(filePath));
-                } else if (filePath.endsWith('Status.Report.json') || filePath.endsWith('Status.Report.json.Previous.json')) {                    results.push(filePath);
+                } else if (filePath.endsWith('Status.Report.json') || filePath.endsWith('Status.Report.json.Previous.json')) {
+                    results.push(filePath);
                 }
             }
             return results;
@@ -200,112 +205,25 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
                     continue;
                 }
     
-                const tradingEngine = jsonData.simulationState?.tradingEngine;
-                const tradingEpisode = tradingEngine?.tradingCurrent?.tradingEpisode;
+                jsonData.reportPath = reportPath; // Agrega el path del reporte
     
-                if (tradingEngine && tradingEpisode) {
-                    const initialBalanceBase = tradingEpisode.episodeBaseAsset?.beginBalance?.value || 0;
-                    const endBalanceBase = tradingEpisode.episodeBaseAsset?.endBalance?.value || 0;
-                    const balanceBase = tradingEpisode.episodeBaseAsset?.balance?.value || 0;
-                
-                    const initialBalanceQuoted = tradingEpisode.episodeQuotedAsset?.beginBalance?.value || 0;
-                    const endBalanceQuoted = tradingEpisode.episodeQuotedAsset?.endBalance?.value || 0;
-                    const balanceQuoted = tradingEpisode.episodeQuotedAsset?.balance?.value || 0;
-                
-                    const profitLossQuoted = tradingEpisode.episodeQuotedAsset?.profitLoss?.value || 0;
-                    const profitLossBase = tradingEpisode.episodeBaseAsset?.profitLoss?.value || 0;
-                
-                    const ROIQuoted = tradingEpisode.episodeQuotedAsset?.ROI?.value || 0;
-                    const ROIBase = tradingEpisode.episodeBaseAsset?.ROI?.value || 0;
-
-                    const annualizedRateOfReturnQuoted = tradingEpisode.episodeQuotedAsset?.annualizedRateOfReturn?.value || 0;
-                    const annualizedRateOfReturnBase = tradingEpisode.episodeBaseAsset?.annualizedRateOfReturn?.value || 0;
-                
-                    const hitRatioBase = tradingEpisode.episodeBaseAsset?.hitRatio?.value || 0;
-                    const hitRatioQuoted = tradingEpisode.episodeQuotedAsset?.hitRatio?.value || 0;
-                
-                    // Ensure episodeBaseAsset exists before accessing hits and fails
-                    const hitsBase = tradingEpisode.episodeBaseAsset?.hits?.value || 0;
-                    const failsBase = tradingEpisode.episodeBaseAsset?.fails?.value || 0;
-                
-                    // Ensure episodeQuotedAsset exists before accessing hits and fails
-                    const hitsQuoted = tradingEpisode.episodeQuotedAsset?.hits?.value || 0;
-                    const failsQuoted = tradingEpisode.episodeQuotedAsset?.fails?.value || 0;
-
-                    // Episode Counters
-                    const periods = tradingEpisode.tradingEpisodeCounters?.periods?.value || 0;
-                    const strategies = tradingEpisode.tradingEpisodeCounters?.strategies?.value || 0;
-                    const positions = tradingEpisode.tradingEpisodeCounters?.positions?.value || 0;
-                    const orders = tradingEpisode.tradingEpisodeCounters?.orders?.value || 0;
-
-
-                
-                    const beginRate = tradingEpisode.beginRate?.value || 0;
-                    const endRate = tradingEpisode.endRate?.value || 0;
-                
-                    let lastExecution = jsonData.lastExecution
-                        ? jsonData.lastExecution.slice(0, -1)
-                        : jsonData.lastFile
-                            ? jsonData.lastFile.slice(0, -1)
-                            : "N/A";
-
-                    const isPrevious = reportPath.endsWith('Status.Report.json.Previous.json');
-
-                
-                    let filteredData = {
-                        isPreviousReport: isPrevious,
-                        lastExecution: lastExecution,
-                        beginDate: new Date(tradingEpisode.begin?.value || 0).toISOString().slice(0, -1),
-                        endDate: new Date(tradingEpisode.end?.value || 0).toISOString().slice(0, -1),
-                        timeFrames: jsonData.timeFrames,
-                
-                        // Base Asset
-                        episodeBaseAsset: tradingEpisode.episodeBaseAsset?.value || 'Unknown',
-                        initialBalanceBase: initialBalanceBase,
-                        annualizedRateOfReturnBase: annualizedRateOfReturnBase,
-                        endBalanceBase: endBalanceBase,
-                        balanceBase: balanceBase,
-                        profitLossBase: profitLossBase,
-                        ROIBase: ROIBase,
-                        hitRatioBase: hitRatioBase,
-                        hitsBase: hitsBase,
-                        failsBase: failsBase,
-                
-                        // Quoted Asset
-                        episodeQuotedAsset: tradingEpisode.episodeQuotedAsset?.value || 'Unknown',
-                        annualizedRateOfReturnQuoted: annualizedRateOfReturnQuoted,
-                        initialBalanceQuoted: initialBalanceQuoted,
-                        endBalanceQuoted: endBalanceQuoted,
-                        balanceQuoted: balanceQuoted,
-                        profitLossQuoted: profitLossQuoted,
-                        ROIQuoted: ROIQuoted,
-                        hitRatioQuoted: hitRatioQuoted,
-                        hitsQuoted: hitsQuoted,
-                        failsQuoted: failsQuoted,
-                
-                        // Rates
-                        beginRate: beginRate,
-                        endRate: endRate,
-
-                        //Episode Counters
-                        periods: periods,
-                        strategies: strategies,
-                        positions: positions,
-                        orders: orders,
-                
-                        reportPath,  // Report path
-                    };
-                
-                    let messageToSend = `${new Date().toISOString()}|*|Platform|*|Data|*|SimulationResult|*|${JSON.stringify(filteredData)}`;
-                    socketClient.send(messageToSend);
-                    SA.logger.info(`Simulation data sent from SA to Dashboard for ${messageToSend}`);
-                }                
+                //SA.logger.info('Data to send (before stringifying):', jsonData);
+    
+                // Serializar jsonData a una cadena JSON
+                const jsonDataString = JSON.stringify(jsonData);
+    
+                // Construir el mensaje a enviar
+                const messageToSend = `${new Date().toISOString()}|*|Platform|*|Data|*|SimulationResult|*|${jsonDataString}`;
+    
+                //SA.logger.info('Message send from:', JSON.stringify(reportPath));
+    
+                socketClient.send(messageToSend);
             }
         } catch (error) {
             console.error('Error processing simulation data:', error);
         }
     }
-    
+
     async function sendCandlesData() {
         const fs = require('fs').promises;
         const path = require('path');
@@ -409,7 +327,162 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
         } catch (error) {
             SA.logger.error('Error processing candle data:', error);
         }
-    }        
+    }   
+    
+    async function sendOutputData() {
+        const fs = require('fs').promises;
+        const path = require('path');
+        const zlib = require('zlib');
+    
+        const basePath = path.join(global.env.PATH_TO_DATA_STORAGE, 'Project', 'Algorithmic-Trading', 'Trading-Mine', 'Masters', 'Low-Frequency');
+    
+        function extractTradingSessionInfo(outputPath) {
+            const pathParts = outputPath.split(path.sep);
+            const outputIndex = pathParts.indexOf('Output');
+            if (outputIndex === -1 || outputIndex >= pathParts.length - 1) return null;
+    
+            const exchange = pathParts[outputIndex - 2];
+            const assetPair = pathParts[outputIndex - 1];
+            const tradingSession = pathParts[outputIndex + 1];
+    
+            return { exchange, assetPair, tradingSession };
+        }
+    
+        async function findDataFiles(dir, timeFrames) {
+            let results = [];
+            const list = await fs.readdir(dir);
+    
+            for (const file of list) {
+                const filePath = path.resolve(dir, file);
+                const stat = await fs.stat(filePath);
+    
+                if (stat && stat.isDirectory()) {
+                    if (timeFrames.some(timeFrame => filePath.includes(timeFrame))) {
+                        results = results.concat(await findDataFiles(filePath, timeFrames));
+                    }
+                } else if (filePath.endsWith('Data.json')) {
+                    results.push(filePath);
+                }
+            }
+            return results;
+        }
+    
+        async function getTimeFrames(dir) {
+            const timeFramesPath = path.join(dir, 'Time.Frames.json');
+            try {
+                const timeFramesData = await fs.readFile(timeFramesPath, 'utf8');
+                return JSON.parse(timeFramesData);
+            } catch (error) {
+                console.error(`Error reading Time.Frames.json from ${timeFramesPath}: ${error}`);
+                return [];
+            }
+        }
+    
+        function extractDataFromFile(jsonData) {
+            return jsonData.map(item => {
+                const potentialDates = item.filter(val => !isNaN(new Date(val).getTime()));
+    
+                if (potentialDates.length < 2) {
+                    console.warn(`Invalid date in data: ${item}`);
+                    return null;
+                }
+    
+                const startDate = new Date(potentialDates[0]).toISOString();
+                const endDate = new Date(potentialDates[1]).toISOString();
+    
+                const positionStatus = item.find(val => val === 'Open' || val === 'Closed') || 'Unknown';
+                const entryTarget = item.find(val => typeof val === 'number') || 'Unknown';
+                const exitTarget = item.find((val, idx) => idx > item.indexOf(entryTarget) && typeof val === 'number') || 'Unknown';
+                const profitLoss = item.find(val => typeof val === 'number') || 0;
+                const roi = item.find(val => typeof val === 'number' && val > 0) || 0;
+                const hitOrFail = item.includes('Hit') ? 'Hit' : 'Fail';
+    
+                return {
+                    startDate,
+                    endDate,
+                    positionStatus,
+                    entryTarget,
+                    exitTarget,
+                    profitLoss,
+                    roi,
+                    hitOrFail
+                };
+            }).filter(item => item !== null);
+        }
+    
+        async function processFilesInBatches(files, exchange, assetPair, tradingSession) {
+            const batchSize = 100;
+            for (let i = 0; i < files.length; i += batchSize) {
+                const batch = files.slice(i, i + batchSize);
+                const batchData = [];
+    
+                for (const dataFile of batch) {
+                    const data = await fs.readFile(dataFile, 'utf8');
+                    let jsonData;
+                    try {
+                        jsonData = JSON.parse(data);
+                    } catch (parseError) {
+                        console.error('Error parsing JSON:', parseError);
+                        continue;
+                    }
+    
+                    const extractedData = extractDataFromFile(jsonData);
+                    if (extractedData.length > 0) {
+                        batchData.push(...extractedData);
+                    }
+                }
+    
+                if (batchData.length > 0) {
+                    const messageToSend = {
+                        exchange,
+                        assetPair,
+                        tradingSession,
+                        data: batchData
+                    };
+    
+                    const message = `${new Date().toISOString()}|*|Platform|*|Data|*|Platform-SimulationOutput|*|${JSON.stringify(messageToSend)}`;
+                    const compressedData = zlib.gzipSync(message);
+                    socketClient.send(compressedData);
+                    //SA.logger.info(`Compressed output data sent for batch: ${exchange}/${assetPair}/${tradingSession}`);
+                }
+            }
+        }
+    
+        try {
+            const exchangeDirs = await fs.readdir(basePath);
+            for (const exchange of exchangeDirs) {
+                const exchangePath = path.join(basePath, exchange);
+                const assetPairs = await fs.readdir(exchangePath);
+    
+                for (const assetPair of assetPairs) {
+                    const outputPath = path.join(exchangePath, assetPair, 'Output');
+                    const tradingSessionInfo = extractTradingSessionInfo(outputPath);
+    
+                    // Validate tradingSessionInfo before destructuring
+                    if (!tradingSessionInfo) {
+                        console.warn(`Could not extract trading session info from path: ${outputPath}`);
+                        continue;
+                    }
+    
+                    // Now it's safe to destructure the tradingSessionInfo
+                    const { exchange, assetPair, tradingSession } = tradingSessionInfo;
+    
+                    const timeFrames = await getTimeFrames(outputPath);
+                    const dataFiles = await findDataFiles(outputPath, timeFrames);
+    
+                    if (dataFiles.length > 0) {
+                        await processFilesInBatches(dataFiles, exchange, assetPair, tradingSession);
+                    } else {
+                        console.warn(`No Data.json files found for ${exchange}/${assetPair}/${tradingSession}`);
+                    }
+                }
+            }
+        } catch (error) {
+            console.error('Error processing output data:', error);
+        }
+    }
+    
+     
     
     // async function sendGovernance() {
     //     let test = {
