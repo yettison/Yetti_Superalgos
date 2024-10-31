@@ -25,3 +25,6 @@
 [submodule "Network"]
 	path = Plugins/Network
 	url = https://github.com/Superalgos/Network-Plugins
+[submodule "Bitcoin-Factory/Reports/History"]
+	path = Bitcoin-Factory/Reports/History
+	url = https://github.com/Superalgos/Bitcoin-Factory-History
