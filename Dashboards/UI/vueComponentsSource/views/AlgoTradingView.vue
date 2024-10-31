@@ -879,7 +879,7 @@ export default defineComponent({
         this.selectedReport = this.simulationData[0];
       }
 
-      // Procesar datos de velas (sin cambios)
+      // Procesar datos de velas
       if (this.candlesDataKey in data) {
         const newCandleData = data[this.candlesDataKey].map(candle => {
           if (!candle || !candle.exchangePair || !Array.isArray(candle.candleData) || candle.candleData.length === 0) {
@@ -939,7 +939,7 @@ export default defineComponent({
         this.selectedCandleData = this.candleDataPaths[0];
       }
 
-      // Handle Output Data (new)
+      // Handle Output Data
       if (this.outputData in data) {
         const outputData = data[this.outputData];
         if (outputData && outputData.filePath) {

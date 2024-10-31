@@ -24,7 +24,7 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
     let port = global.env.DASHBOARDS_WEB_SOCKETS_INTERFACE_PORT
     let url = 'ws://localhost:'+ port
     let eventsServerClient = PL.servers.TASK_MANAGER_SERVER.newEventsServerClient()
-    const path = require('path'); 
+    //const path = require('path'); 
 
 
     return thisObject
@@ -154,7 +154,7 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
             //sendOutputData();
             setInterval(sendSimulationData, 60000);
             setInterval(sendCandlesData, 60000);         
-            //setInterval(sendOutputData, 60000);         
+            // setInterval(sendOutputData, 60000);         
         });
 
         socketClient.on('close', function (close) {
@@ -329,7 +329,7 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
         }
     }   
     
-    async function sendOutputData() {
+    /*async function sendOutputData() {
         const fs = require('fs').promises;
         const path = require('path');
         const zlib = require('zlib');
@@ -481,7 +481,8 @@ exports.newDashboardsInterface = function newDashboardsInterface() {
             console.error('Error processing output data:', error);
         }
     }
-    
+    */
+
      
     
     // async function sendGovernance() {
