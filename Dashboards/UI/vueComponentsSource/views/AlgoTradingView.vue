@@ -939,7 +939,7 @@ export default defineComponent({
         this.selectedCandleData = this.candleDataPaths[0];
       }
 
-      // Handle Output Data
+      /* Handle Output Data
       if (this.outputData in data) {
         const outputData = data[this.outputData];
         if (outputData && outputData.filePath) {
@@ -978,7 +978,7 @@ export default defineComponent({
           }
       }
     },
-
+      */
     addOrUpdateReport(report) {
       // Primero, extraemos los datos para obtener botName, exchange y pairAsset
       this.extractReportData(report);
