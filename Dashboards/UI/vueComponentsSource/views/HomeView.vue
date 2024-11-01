@@ -5,6 +5,7 @@
     <br/>
     <span>The purpose of this app is to help make visualizing and accessing data from Superalgos a breeze.</span>
   </div>
+  
 </template>
 
 <script>
@@ -18,27 +19,59 @@
         dataKey: '',
         dataObjects: [],
         dashboardIcon: dashboardIcon,
+        loadingDashboard: false
       }
     },
     computed: {
+
     },
     methods: {
+      createDashboard () {
+        named = window.prompt("Name your New Dashboard");
+      }
     },  
   };
 </script>
 
 <style scoped>
   .dashboard-window {
-    font-size: bold;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    background-color: #242424;
+    color: #d1d1d1;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
   }
   
   .image {
     margin-top: 10px;
-    height: 100px;
+    width: 100px;
+    height: auto;
   }
-</style>
+  
+  .action-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #c72929;
+    color: #d1d1d1;
+    padding: 12px 24px;
+    margin: 5px;
+    border: 2px solid #c72929;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #c72929;
+    border: 2px solid #d3d2d2;
+  }
+  
+  .btn:disabled {
+    background-color: #343434;
+    color: #a0a0a0;
+  }
+  </style>
 
