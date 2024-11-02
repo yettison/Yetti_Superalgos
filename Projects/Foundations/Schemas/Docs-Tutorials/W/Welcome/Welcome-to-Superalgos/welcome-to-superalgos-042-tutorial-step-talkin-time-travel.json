@@ -57,6 +57,11 @@
                 "language": "PL",
                 "text": "Wspomniałem wcześniej, że w tym obszarze roboczym znajdują się dwa wykresy. W Superalgos każdy z nich nazywamy Time Machine.",
                 "updated": 1675081116687
+            },
+            {
+                "language": "PT",
+                "text": "Anteriormente mencionei que existem apenas dois gráficos neste Área de Trabalho (Workspace). No Superalgos, chamamos a cada um deles de Máquina do Tempo (Time Machine). ",
+                "updated": 1713261186758
             }
         ]
     },
@@ -113,6 +118,11 @@
                     "language": "PL",
                     "text": "Time Machine może pomieścić jeden lub więcej Timeline Chart. Nazywamy je Time Machine, ponieważ wszystkie  Timeline Chart w ramach Time Machine są zsynchronizowane w czasie. Ta cecha Time Machine pozwala na nakładanie różnych warstw danych dzielących ten sam Time Scale.",
                     "updated": 1675081341942
+                },
+                {
+                    "language": "PT",
+                    "text": "Uma máquina do tempo (Time Machine) pode conter um ou mais gráficos na linha temporal (Timeline Chart). Chamamo-las de máquina do tempo porque todos os gráficos de linha temporal (Timeline Chart) dentro de uma máquina do tempo estão sincronizados no tempo. Esta característica das máquinas do tempo permite sobrepor diferentes camadas de dados partilhando a mesma Escala de Tempo (Time Scale).",
+                    "updated": 1712854985338
                 }
             ]
         },
@@ -168,6 +178,11 @@
                     "language": "PL",
                     "text": "Najedź kursorem myszy na Time Machine!",
                     "updated": 1675081419313
+                },
+                {
+                    "language": "PT",
+                    "text": "Passe o ponteiro do rato por cima das máquinas do tempo!",
+                    "updated": 1713258413177
                 }
             ]
         },
@@ -224,6 +239,11 @@
                     "language": "PL",
                     "text": "Zwróć uwagę na etykietę pojawiającą się po lewej stronie, pokazującą, z którymi giełdami i rynkami dane są powiązane. W jednej Time Machine mogą znajdować się dane z wielu rynków i wielu giełd!",
                     "updated": 1675081615077
+                },
+                {
+                    "language": "PT",
+                    "text": "Já reparou na etiqueta que aparece do lado esquerdo, mostrando quais as correctoras e mercados com que os dados estão associados. Uma única máquina do tempo pode conter dados de múltiplos mercados e múltiplas correctoras!",
+                    "updated": 1712855139981
                 }
             ]
         }

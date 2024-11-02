@@ -29,7 +29,8 @@ exports.newTradingSignalsModulesIncomingCandleSignals = function () {
         /*
         Let's tell the world that we received a trading signal.
         */
-       TS.projects.foundations.functionLibraries.taskFunctions.taskHearBeat("Candle Signal received, delayed " + rankingStats.accumulatedDelay / 1000 + " seconds. Position in Queue: " + rankingStats.positionInQueue + " / " + rankingStats.queueSize, true)
+        let taskType = TS.projects.foundations.functionLibraries.taskFunctions.getTaskType()
+        TS.projects.foundations.functionLibraries.taskFunctions.taskHearBeat("Candle Signal received, delayed " + rankingStats.accumulatedDelay / 1000 + " seconds. Position in Queue: " + rankingStats.positionInQueue + " / " + rankingStats.queueSize + " (" + taskType + " Task)", true )
         /*
         What we have just received are not Trading Signals, but a Signal Meesage
         that represents the File Key needed to locate and open a file with all the
@@ -76,9 +77,28 @@ exports.newTradingSignalsModulesIncomingCandleSignals = function () {
             if (keys === undefined) { keys = [] }
             keys.push(key)
             keysByCandle.set(candleKey, keys)
+
+            /* If this is a Trading Task, provide information about received trading signals (not candle/trading system signals) on console */
+            if (taskType === 'Trading' && tradingSignalMessage.tradingSignal.signalDefinition?.type !== undefined && tradingSignalMessage.tradingSignal.signalDefinition?.type !== 'Trading System Signal') {
+                SA.logger.info("Trading Signal received | Type: " + tradingSignalMessage.tradingSignal.signalDefinition.type + " | Label: " + getSignalLabel(tradingSignalMessage.tradingSignal.signalDefinition.id))
+            }
+            
         }
     }
 
+    function getSignalLabel(signalDefinitionId) {
+        let signalLabel = "no local mapping found"
+        for (let i = 0; i < TS.projects.foundations.globals.taskConstants.TASK_NODE.bot.processes.length; i++) {
+            let ten = TS.projects.foundations.globals.processConstants.CONSTANTS_BY_PROCESS_INDEX_MAP.get(i).TRADING_SYSTEM_NODE
+            let ref = SA.projects.visualScripting.utilities.nodeFunctions.nodeMeshToPathArray(ten, signalDefinitionId)
+            if (ref.at(-2)?.name) {
+                signalLabel = ref.at(-2).name
+                break
+            }
+        }
+        return signalLabel
+    }
+    
     function mantain(candle) {
         let candleKey =
             candle.begin + '-' +

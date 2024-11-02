@@ -18,6 +18,11 @@
                 "language": "TR",
                 "text": "Bir Özellik Katkı Talebi oluşturmak için Özellikler (Features) hiyerarşisinden birindeki bir Özellik (Feature) düğümüne başvurmak için bu düğümü kullanın. Bu iddia, o Özellik üzerinde çalıştığınızı, onu yarattığınızı veya geliştirdiğinizi ve buna göre ödüllendirilmeyi beklediğinizi beyan ettiğiniz anlamına gelir!",
                 "updated": 1644497527852
+            },
+            {
+                "language": "DE",
+                "text": "Verwenden Sie diesen Knoten, um auf einen Feature -Knoten in der Feature -Hierarchie zu verweisen, um einen Feature Contribution Claim zu erstellen. Dieser Anspruch bedeutet, dass Sie erklären, dass Sie an diesem Feature gearbeitet haben, es entweder erstellt oder verbessert haben, und dass Sie erwarten, entsprechend belohnt zu werden! ",
+                "updated": 1713211712399
             }
         ]
     },
@@ -58,6 +63,11 @@
                     "text": "Konfigürasyon",
                     "updated": 1654394790372,
                     "style": "Title"
+                },
+                {
+                    "language": "DE",
+                    "text": "Konfiguration",
+                    "updated": 1712605372569
                 }
             ]
         }

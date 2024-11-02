@@ -13,6 +13,11 @@
                 "language": "TR",
                 "text": "Özellikler hiyerarşisindeki bir Özellik düğümü ile referans oluşturmak için bu düğümü kullanın. Bu oylamayla, Ağırlık Gücünü başvurulan düğüme aktarırsınız. Bu şekilde, düğüm hiyerarşide bulunan Jeton Ödüllerinden daha fazlasını alır. Projenin farklı alanlarının nasıl teşvik edileceğini bu şekilde etkilersiniz.",
                 "updated": 1654394796320
+            },
+            {
+                "language": "DE",
+                "text": "Verwenden Sie diesen Knoten, um einen Bezug (Feature) zu einem Merkmalsknoten in einer Merkmalshierarchie (Features hierarchy) herzustellen. Mit dieser Abstimmung geben Sie Gewichtskraft an den referenzierten Knoten weiter. Auf diese Weise erhält der Knoten mehr von den in der Hierarchie verfügbaren Token-Belohnungen (Token Rewards). Auf diese Weise beeinflussen Sie, wie verschiedene Bereiche des Projekts incentiviert werden. ",
+                "updated": 1713211725170
             }
         ]
     },
@@ -48,6 +53,11 @@
                     "text": "Birden Fazla Çalışma Alanında Çalışma",
                     "updated": 1654394807941,
                     "style": "Subtitle"
+                },
+                {
+                    "language": "DE",
+                    "text": "Arbeiten an mehreren Arbeitsbereichen",
+                    "updated": 1712605406001
                 }
             ]
         },
@@ -93,6 +103,11 @@
                     "text": "Konfigürasyon",
                     "updated": 1654394826931,
                     "style": "Title"
+                },
+                {
+                    "language": "DE",
+                    "text": "Konfiguration",
+                    "updated": 1712605413170
                 }
             ]
         }

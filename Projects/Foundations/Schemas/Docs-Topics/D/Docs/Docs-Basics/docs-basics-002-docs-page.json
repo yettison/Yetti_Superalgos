@@ -26,6 +26,11 @@
                 "language": "TR",
                 "text": "Bir Dokümanlar Sayfası,bir  JSON dosyasıdır ve diskte depolanır.",
                 "updated": 1646205938813
+            },
+            {
+                "language": "PT",
+                "text": "Uma Página de Documentos (Docs Page) é, em última instância, um ficheiro JSON armazenado no seu disco.",
+                "updated": 1712251368577
             }
         ]
     },
@@ -55,6 +60,11 @@
                     "language": "TR",
                     "text": "Dokümanlar, aşağıda gösterilen yolda kaydedilirler.",
                     "updated": 1646205969754
+                },
+                {
+                    "language": "PT",
+                    "text": "Os Documentos são uma coleção de páginas, cada uma delas gravada como um ficheiro JSON no seguinte caminho:",
+                    "updated": 1712251420727
                 }
             ]
         },
@@ -86,6 +96,11 @@
                     "language": "TR",
                     "text": "Her klasörde bir Dokümanlar Sayfası Kategorisi bulunan bir dizin yapısı uygulanır:",
                     "updated": 1646206077921
+                },
+                {
+                    "language": "PT",
+                    "text": "Segue uma estrutura do diretório, onde cada pasta apresenta uma Categoria das Páginas dos Documentos:",
+                    "updated": 1712251504123
                 }
             ]
         },

@@ -13,6 +13,11 @@
                 "language": "TR",
                 "text": "Özellikler hiyerarşisi, mevcut yazılım özelliklerini veya istek listesindeki henüz geliştirilmemiş özellikleri tanımlar. Kodun bakımını yaparak koruyan geliştiricileri ödüllendirmek için özellikler tanımlanmıştır. Henüz var olmayan özelliklerin tanımları, söz konusu özelliklerin yaratılmasını ve katkısını teşvik etmeyi amaçlamaktadır.",
                 "updated": 1644570438814
+            },
+            {
+                "language": "DE",
+                "text": "Die Funktionshierarchie definiert bestehende Softwarefunktionen oder Funktionen, die auf der Wunschliste stehen und noch entwickelt werden müssen. Die Definition bestehender Funktionen dient der Belohnung von Mitwirkenden, die den Code pflegen. Definitionen von Funktionen, die noch nicht existieren, sollen einen Anreiz für die Erstellung und den Beitrag zu diesen Funktionen bieten. ",
+                "updated": 1713211741304
             }
         ]
     },
@@ -35,6 +40,11 @@
                     "language": "TR",
                     "text": "Belirli Özellik düğümlerinin veya Özellik Sınıfı (Features Class) düğümleri tarafından temsil edilen özellik (Feature) kümelerinin gelişim yönünü etkilemek için Ağırlık Oylarınızı (Weight Votes) kullanın.",
                     "updated": 1644570981358
+                },
+                {
+                    "language": "DE",
+                    "text": "Verwenden Sie Ihre Gewichtungsstimmen (Weight Votes), um die Richtung der Entwicklung bestimmter Merkmalsknoten (Feature nodes) oder Merkmalsgruppen, die durch Merkmalsklassenknoten (Feature Class nodes) dargestellt werden, zu beeinflussen.",
+                    "updated": 1712605442585
                 }
             ]
         }

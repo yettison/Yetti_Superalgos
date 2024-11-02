@@ -59,6 +59,11 @@
                 "language": "PL",
                 "text": "Węzeł Data Tasks kontroluje wszystkie zadania związane z gromadzeniem danych dla LAN Network Node.",
                 "updated": 1674934176451
+            },
+            {
+                "language": "PT",
+                "text": "O Nó (Node) Tarefas dos Dados (Data Tasks) controla todas as tarefas de mineração de dados (Data Mines) definidas para este Nó de Rede LAN (LAN Network Node).",
+                "updated": 1712263985198
             }
         ],
         "updated": 1636910229969
@@ -118,6 +123,11 @@
                     "language": "PL",
                     "text": "Za chwilę rozpoczniesz następujące czynności, które zostaną omówione później:",
                     "updated": 1674934260178
+                },
+                {
+                    "language": "PT",
+                    "text": "Está prestes a começar a primeira das seguintes atividades que iremos abordar nos próximos minutos:",
+                    "updated": 1712264059225
                 }
             ]
         },
@@ -175,6 +185,11 @@
                     "language": "PL",
                     "text": "Uruchomienie operacji zdobywania danych, aby uzyskać dane dla rynku BTC/USDT z Market.",
                     "updated": 1674934336831
+                },
+                {
+                    "language": "PT",
+                    "text": "Executar uma operação de mineração de dados (Data Mine) para obter dados para o Mercado (Market) BTC/USDT da correctora.",
+                    "updated": 1712264268181
                 }
             ],
             "updated": 1640350823953
@@ -232,6 +247,11 @@
                     "language": "PL",
                     "text": "Uruchomienie Backtesting Session opartą o istniejącą strategię open-source.",
                     "updated": 1674934399261
+                },
+                {
+                    "language": "PT",
+                    "text": "Executar uma Sessão de Backtesting (Backtesting Session) com uma estratégia de código aberto existente. ",
+                    "updated": 1713260924257
                 }
             ],
             "updated": 1616414607531
@@ -289,6 +309,11 @@
                     "language": "PL",
                     "text": "Uruchomienie Live Trading Session z minimalnym wkładem, żeby przetestować inne krytyczne aspekty systemu.",
                     "updated": 1674934546545
+                },
+                {
+                    "language": "PT",
+                    "text": "Executar uma Executar uma Sessão de Backtesting (Backtesting Session) com uma estratégia de código aberto existente. com fundos mínimos, para testar outros aspectos críticos do sistema.",
+                    "updated": 1712264629809
                 }
             ],
             "updated": 1660142821699
@@ -346,6 +371,11 @@
                     "language": "PL",
                     "text": "Jesteś gotowy? Możemy zaczynać?",
                     "updated": 1674934485420
+                },
+                {
+                    "language": "PT",
+                    "text": "Tudo ok? Vamos começar?",
+                    "updated": 1712264722828
                 }
             ]
         }

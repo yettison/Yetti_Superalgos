@@ -13,6 +13,11 @@
                 "language": "TR",
                 "text": "Özellik Sınıfı düğümü, özellikleri rastgele düzenlemelerde gruplamak için kullanılan bir organizasyon aracıdır. Düğüm Ağırlık Oyları alabilir. Aldığında, oylar yavru düğümler arasında eşit olarak dağıtılır.",
                 "updated": 1654394766015
+            },
+            {
+                "language": "DE",
+                "text": "Der Merkmalsklassenknoten ist ein Organisationsmittel zur Gruppierung von Merkmalen in beliebiger Anordnung. Der Knoten kann Gewichtungsstimmen (Weight Votes) erhalten. Wenn dies der Fall ist, werden die Stimmen gleichmäßig auf die Nachfolgeknoten verteilt. ",
+                "updated": 1713211701736
             }
         ]
     },
@@ -36,6 +41,11 @@
                     "text": "İçindeki tüm özellikler de dahil olmak üzere tüm sınıfı desteklemek istediğinizde Ağırlık Oylarını bir Özellik Sınıfı düğümüne yönlendirebilirsiniz.",
                     "updated": 1654394771625,
                     "style": "Text"
+                },
+                {
+                    "language": "DE",
+                    "text": "Sie können Gewichtungsstimmen (Weight Votes) auf einen Feature Class-Knoten richten, wenn Sie beabsichtigen, die gesamte Klasse, einschließlich aller darin enthaltenen Features, zu unterstützen.",
+                    "updated": 1712605335894
                 }
             ]
         },
@@ -57,6 +67,11 @@
                     "text": "Konfigürasyon",
                     "updated": 1654394778002,
                     "style": "Title"
+                },
+                {
+                    "language": "DE",
+                    "text": "Konfiguration",
+                    "updated": 1712605342546
                 }
             ]
         },

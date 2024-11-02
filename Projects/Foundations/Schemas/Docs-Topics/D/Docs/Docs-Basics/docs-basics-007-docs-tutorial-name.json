@@ -25,6 +25,11 @@
                 "language": "TR",
                 "text": "Eğitimin (Tutorial) adını ifade eder. Aynı Dokümanlar Eğitim Adına (Docs Tutorial Name) sahip sayfalar, aynı eğitime aittir.",
                 "updated": 1646208573349
+            },
+            {
+                "language": "PT",
+                "text": "Refere-se ao nome do tutorial. Páginas com o mesmo Nome no Tutorial dos Documentos (Docs Tutorial Name) pertencem ao mesmo tutorial.",
+                "updated": 1712249418964
             }
         ]
     },
@@ -53,6 +58,11 @@
                     "language": "TR",
                     "text": "Bir öğreticiyi (Tutorial) açıklayan bir sayfa yoktur. Öğreticilerin (Tutorial) nasıl düzenleneceğini belirleyen Tutorial hiyerarşisidir. Ancak, Dokümanlar bağlamında, Dokümanlar Eğitim Adı (Docs Tutorial Name), belirli bir öğretici altında bir dizi ilgili sayfayı gruplamak için kullanılır.",
                     "updated": 1646209125001
+                },
+                {
+                    "language": "PT",
+                    "text": "Não há uma página descrevendo um tutorial. É a hierarquia do Tutorial que determina como os tutoriais são organizados. No entanto, no contexto dos Documentos, o Nome do Tutorial dos Documentos (Docs Tutorial Name) é usado para agrupar um conjunto de páginas relacionadas sob um determinado tutorial.",
+                    "updated": 1712249492032
                 }
             ]
         }

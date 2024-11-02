@@ -6,7 +6,8 @@
         </div>
         <div class="col-6 mt-4 text-center">
           <h2><strong>Welcome to the Superalgos Governance Dashboard!</strong></h2>
-          <h5>Manage your SA tokens and control the distribution program from one place!</h5>
+          <h5>(Under Construction ...)</h5>
+                  <!-- Manage your SA tokens and control the distribution program from one place! -->
         </div>
       </div>
       <div class="row col-12 justify-content-end">
@@ -121,6 +122,8 @@
           tabList: ["Overview", "Staking Programs", "Liquidity Programs", "Referrals Program", "Contributors", "Distribution Report"],
           dataKey: 'Platform-Governance',
           dashboardIcon: dashboardIcon,
+          loadingProfile: false,
+          loadingWallet: false,
           userObj: [],
           distrObj: [],
           stackObj: [], 
@@ -193,7 +196,7 @@
       },
       methods: {
         /* 
-        To-DO: Function to catch -UserInfo messages
+        To-DO: Function to catch -UserInfo messages (Wallet, User balance, Token Power, Token Power Distribution on different Programs, etc.)
         */
         getUserInfo(){
           this.userObj = []
@@ -258,21 +261,28 @@
           return this.refObj        
         },
         /* 
-        To-DO: Function to Connect a Web3 wallet
+        To-DO: Function to Create new User Profile 
         */
-        /*
-        connectWallet: async function() {
-          
+        async createUserProfile() {
+          this.loadingProfile = true;
+          // Implement your logic here and set loadingProfile to false when done
+          this.loadingProfile = false;
         },
-        */
         /* 
-        To-DO: Function to Create new User Profile
+        To-DO: Function to Connect a Web3 Wallet
         */
+        async connectWallet() {
+          this.loadingWallet = true;
+          // Implement your logic here and set loadingWallet to false when done
+          this.loadingWallet = false;
+        },
         /* 
         To-DO: Function for Contribute changes button on User Profile
         */
+       sendContribution() {
+       },
         /* 
-        Urls to buy Tokens from Pankcake, 1Inch and Superalgos Webpage
+        Urls to buy Tokens from Pankcake, 1Inch and URL to Superalgos Webpage
         */
         buyToken1 () {
           window.open('https://pancakeswap.finance/info/token/0xfb981ed9a92377ca4d75d924b9ca06df163924fd', '_blank') 
@@ -287,17 +297,44 @@
     }  
   </script>
   
-  <style scoped>
-    .dashboard-window {
-      font-size: bold;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    
-    .image {
-      margin-top: 10px;
-      height: 100px;
-    }
+<style scoped>
+  .dashboard-window {
+    background-color: #242424;
+    color: #d1d1d1;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .image {
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+  }
+  
+  .action-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: #c72929;
+    color: #d1d1d1;
+    padding: 12px 24px;
+    margin: 5px;
+    border: 2px solid #c72929;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #c72929;
+    border: 2px solid #d3d2d2;
+  }
+  
+  .btn:disabled {
+    background-color: #343434;
+    color: #a0a0a0;
+  }
   </style>

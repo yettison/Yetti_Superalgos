@@ -20,6 +20,11 @@
                 "language": "TR",
                 "text": "Bir kitap, her biri kitaptaki bir bölümü temsil eden bir konular topluluğudur. Bir kitabın amacı, genellikle tüm bir Projeyi ( Project ) kapsayan, baştan sona doğrusal okuma için optimize edilmiş bir bilgi özeti sunmaktır.",
                 "updated": 1652646539026
+            },
+            {
+                "language": "PT",
+                "text": "Um livro é uma coleção de tópicos, cada um representando um capítulo no livro. O objetivo de um livro é oferecer um compêndio de informações otimizado para uma leitura linear, do início ao fim, geralmente cobrindo um projeto (Project) completo.",
+                "updated": 1712248195533
             }
         ]
     },
@@ -43,6 +48,11 @@
                     "language": "TR",
                     "text": "Bir kitap kendi içinde bir sayfadır. Sayfa, her biri kitapta bir bölüm oluşturan konuların bir listesini içerir.",
                     "updated": 1652646581115
+                },
+                {
+                    "language": "PT",
+                    "text": "Um livro é uma página em si mesma. A página apresenta uma lista de tópicos, cada um constituindo um capítulo no livro.",
+                    "updated": 1712248245263
                 }
             ]
         }

@@ -60,6 +60,11 @@
                 "language": "PL",
                 "text": "Zanim pokażę Ci resztę menu, przyjrzyjmy się innej hierarchii: LAN Network.",
                 "updated": 1674834731551
+            },
+            {
+                "language": "PT",
+                "text": "Antes de mostrar o menu restante, vamos dar uma olhada na outra hierarquia: a Rede LAN (LAN Network).",
+                "updated": 1712260576838
             }
         ],
         "updated": 1640343243633
@@ -120,6 +125,11 @@
                     "language": "PL",
                     "text": "Hierarchia sieci LAN jest punktem dowodzenia systemu. To tutaj kontrolujesz swoje Data Tasks, Testing Trading Tasks i Production Trading Tasks.",
                     "updated": 1674834762406
+                },
+                {
+                    "language": "PT",
+                    "text": "A hierarquia da Rede LAN é a sala de controle do sistema. É onde se controla as Tarefas dos Dados (Data Tasks), Tarefas de Teste de Negociação (Testing Trading Tasks) e Tarefas de Negociação da Produção (Production Trading Tasks). ",
+                    "updated": 1713260874182
                 }
             ],
             "updated": 1640343257331
@@ -179,6 +189,11 @@
                     "language": "PL",
                     "text": "Rozwiń hierarchię i zajrzyj do środka!",
                     "updated": 1674834829119
+                },
+                {
+                    "language": "PT",
+                    "text": "Abra a hierarquia e dê uma espreitadela!",
+                    "updated": 1712261556480
                 }
             ]
         },
@@ -238,6 +253,11 @@
                     "language": "PL",
                     "text": "Widzisz te węzły, o których wspomniałem wcześniej? Super! Jesteśmy tutaj, aby rozpocząć Twoją pierwszą w życiu operację zdobywania danych.",
                     "updated": 1674834899116
+                },
+                {
+                    "language": "PT",
+                    "text": "Consegue ver os Nós (Node's) que referi? Fantástico! Vamos começar com a sua primeira operação de mineração de dados.",
+                    "updated": 1712261696663
                 }
             ]
         },
@@ -296,6 +316,11 @@
                     "language": "PL",
                     "text": "Ale zanim zaczniemy, mam do Ciebie szybkie pytanie: czy łączysz się z Client zdalnie?",
                     "updated": 1674834939917
+                },
+                {
+                    "language": "PT",
+                    "text": "Mas antes de começarmos, tenho uma pergunta rápida: está a aceder ao Cliente remotamente?",
+                    "updated": 1712261903525
                 }
             ]
         }
